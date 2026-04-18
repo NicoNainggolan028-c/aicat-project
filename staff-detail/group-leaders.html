@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - Pemimpin Grup</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="//assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/sections.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/menu/staff-detail.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/partner negara/partner.html "
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Staf</a></li>
+                <li><a class="dropdown-item" href="/mitra.html">Mitra</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="/index.html"
+        >
+          <img src="/assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="/assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/partner negara/partner.html "
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li><a class="dropdown-item" href="/mitra.html">Mitra</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/cara-daftar.html">Cara Daftar</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════
+         HERO MINI
+    ══════════════════════════════ -->
+    <section class="hero-staf">
+      <div class="container hero-staf-dalam">
+        <h1 data-aos="fade-up">
+          <em>Pemimpin Grup</em><br />
+          AICAT
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Para Pemimpin Grup berpengalaman yang membimbing peserta melalui
+          program akademik dan praktik di AICAT, memastikan kualitas
+          pembelajaran dan pengalaman di lapangan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         4 MENU LINGKARAN
+         Admin aktif — lainnya nonaktif
+    ══════════════════════════════ -->
+    <div class="menu-lingkaran-wrapper">
+      <div class="container">
+        <div class="menu-lingkaran-grid">
+          <!-- 1. Admin — AKTIF di halaman ini -->
+          <a
+            href="/staff-detail/administrasi-staff.html"
+            class="menu-lingkaran-item"
+          >
+            <div class="lingkaran lingkaran-admin">
+              <div class="lingkaran-ikon"><i class="bi bi-building"></i></div>
+              <div class="lingkaran-teks">Administrative<br />Staff</div>
+            </div>
+            <div class="lingkaran-label">Staf Administrasi</div>
+          </a>
+
+          <!-- 2. Dosen — nonaktif -->
+          <a href="/staff-detail/lectures.html  " class="menu-lingkaran-item">
+            <div class="lingkaran lingkaran-dosen">
+              <div class="lingkaran-ikon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="lingkaran-teks">Lecturers</div>
+            </div>
+            <div class="lingkaran-label">Dosen & Pengajar</div>
+          </a>
+
+          <!-- 3. Supervisor — nonaktif -->
+          <a href="/staff-detail/supervisors.html" class="menu-lingkaran-item">
+            <div class="lingkaran lingkaran-supervisor">
+              <div class="lingkaran-ikon"><i class="bi bi-eye-fill"></i></div>
+              <div class="lingkaran-teks">Supervisors</div>
+            </div>
+            <div class="lingkaran-label">Supervisor</div>
+          </a>
+
+          <!-- 4. Pemimpin — nonaktif -->
+          <a
+            href="/staff-detail/group-leaders.html"
+            class="menu-lingkaran-item aktif"
+          >
+            <div class="lingkaran lingkaran-pemimpin">
+              <div class="lingkaran-ikon"><i class="bi bi-star-fill"></i></div>
+              <div class="lingkaran-teks">Group<br />Leaders</div>
+            </div>
+            <div class="lingkaran-label">Pemimpin Grup</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         KONTEN UTAMA
+    ══════════════════════════════ -->
+    <section class="konten-staf">
+      <div class="container">
+        <div class="judul-seksi" data-aos="fade-up">
+          <div class="garis-dekorasi"></div>
+          <span class="label-seksi">Pemimpin Grup</span>
+          <h2>Tim Pemimpin Grup AICAT</h2>
+          <p>
+            Klik foto untuk membaca biografi singkat setiap anggota tim pemimpin
+            grup.
+          </p>
+        </div>
+
+        <div class="grid-foto-staf">
+          <!-- ════════════════════════════════════════ Staf 1 ════════════════════════════════════════════════ -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Alice dari Kenya"
+            data-jabatan="Pemimpin Grup – Kenya (2022–2023)"
+            data-asal="Nairobi, Kenya"
+            data-bergabung="2022"
+            data-foto="/assets/images/staff/pemimpin_grup/Alice.jpg"
+            data-bio="
+            <b>Posisi:</b><br>
+            Pemimpin Grup – Kenya (AICAT 2022–2023)<br><br>
+
+            <b>Asal:</b><br>
+            Nairobi, Kenya<br><br>
+
+            <b>Biografi Singkat:</b><br>
+            Alice Kakwasi Mwikya adalah alumni AICAT yang saat ini menjabat sebagai pemimpin grup untuk peserta Kenya periode 2022–2023. Ia lahir dan besar di Nairobi, ibu kota Kenya, serta memiliki pengalaman belajar dan tinggal di berbagai kota dan negara.<br><br>
+
+            Ia memiliki semangat tinggi untuk terus mengeksplorasi dunia, memahami cara hidup orang lain, serta mempelajari berbagai pendekatan dalam bertahan hidup dan berkembang, khususnya di bidang pertanian.<br><br>
+
+            <b>Pengalaman & Visi:</b><br>
+            Pengalamannya di AICAT memberikan dampak besar dalam hidupnya. Ia percaya bahwa program ini tidak hanya mencetak petani dan ahli pertanian yang unggul, tetapi juga membentuk pemimpin global masa depan.<br><br>
+
+            Alice menggambarkan perjalanannya di AICAT seperti seorang petani yang merawat bibit hingga mencapai potensi terbaiknya.<br><br>
+
+            <b>Nilai & Prinsip:</b><br>
+            Ia percaya bahwa tidak ada yang mustahil selama seseorang memiliki tekad, hati, dan pikiran yang fokus untuk mencapainya.
+            "
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/pemimpin_grup/Alice.jpg"
+                alt="Alice dari Kenya"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Alice dari Kenya</div>
+              <div class="jabatan-staf">Pemimpin Grup</div>
+            </div>
+          </div>
+
+          <!-- ════════════════════════════════════════ Staf 2 ════════════════════════════════════════════════ -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Gasper dari Tanzania"
+            data-jabatan="Pemimpin Grup – Tanzania (2022–2023)"
+            data-asal="Dar es Salaam, Tanzania"
+            data-bergabung="2022"
+            data-foto="/assets/images/staff/pemimpin_grup/Gasper2.jpg"
+            data-bio="
+            <b>Posisi:</b><br>
+            Pemimpin Grup – Tanzania (AICAT 2022–2023)<br><br>
+
+            <b>Asal:</b><br>
+            Dar es Salaam, Tanzania<br><br>
+
+            <b>Biografi Singkat:</b><br>
+            Gasper Gwamaka Mpokigwa merupakan pemimpin grup mahasiswa Tanzania di AICAT untuk tahun akademik 2022–2023. Ia lahir di Dar es Salaam, pusat ekonomi utama di Tanzania, dan memiliki gelar Sarjana Sains di bidang Ilmu dan Teknologi Tanaman.<br><br>
+
+            <b>Pengalaman & Peran:</b><br>
+            Sebagai pemimpin dari kelompok perintis mahasiswa Tanzania di AICAT, ia menghadapi pengalaman baru yang menuntutnya untuk terus belajar dan memahami berbagai hal setiap hari. Ia berkomitmen untuk memimpin dengan penuh dedikasi, menjadi yang terdepan dalam memberi arah, serta memastikan tidak ada anggota yang tertinggal dalam proses transformasi ini.<br><br>
+
+            <b>Visi & Pandangan:</b><br>
+            Ia percaya bahwa dunia bergantung pada sektor pertanian untuk pemenuhan kebutuhan pangan. Melalui program AICAT, ia menyadari bahwa segala hal mungkin dicapai dalam pertanian, namun membutuhkan komitmen tinggi dan kemampuan berpikir kritis dalam menghadapi berbagai tantangan guna menjamin ketahanan pangan.
+            "
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/pemimpin_grup/Gasper2.jpg"
+                alt="Gasper dari Tanzania"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Gasper dari Tanzania</div>
+              <div class="jabatan-staf">Pemimpin Grup</div>
+            </div>
+          </div>
+
+          <!-- ════════════════════════════════════════ Staf 3 ════════════════════════════════════════════════ -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Bond dari Thailand"
+            data-jabatan="Pemimpin Grup – Thailand (2021–2022)"
+            data-asal="Bangkok, Thailand"
+            data-bergabung="2021"
+            data-foto="/assets/images/staff/pemimpin_grup/Bond.jpg"
+            data-bio="
+            <b>Posisi:</b><br>
+            Pemimpin Grup – Thailand (AICAT 2021–2022)<br><br>
+
+            <b>Asal:</b><br>
+            Bangkok, Thailand<br><br>
+
+            <b>Biografi Singkat:</b><br>
+            Sittiporn Sornngay merupakan pemimpin grup mahasiswa Thailand di AICAT periode 2021–2022. Ia lahir dan besar di Bangkok, ibu kota Thailand, serta memiliki latar belakang pendidikan di bidang musik.<br><br>
+
+            Ia meraih gelar Sarjana Sound Engineering dari Fakultas Musik, Bangkok Thonburi University. Setelah lulus, ia dipercaya menjadi sekretaris dan tutor privat di fakultas tersebut selama 3 tahun.<br><br>
+
+            <b>Pengalaman & Perjalanan:</b><br>
+            Berasal dari dunia musik, pengalaman kepemimpinannya di AICAT menjadi perjalanan pembelajaran yang sangat berharga. Ia memiliki impian untuk menjelajahi dunia dan mempelajari berbagai hal baru, yang akhirnya terwujud saat terpilih sebagai pemimpin grup di AICAT.<br><br>
+
+            <b>Karakter & Minat:</b><br>
+            Ia adalah pribadi yang menyukai tantangan, gemar mencoba hal baru, serta memiliki ketertarikan besar pada musik, seni, dan perjalanan untuk mencari pengalaman hidup baru.<br><br>
+
+            <b>Pandangan:</b><br>
+            Meskipun sebelumnya tidak memiliki latar belakang di bidang pertanian, AICAT membantunya memahami pentingnya pertanian dan peran besar sektor ini dalam ketahanan pangan dunia saat ini.
+            "
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/pemimpin_grup/Bond.jpg"
+                alt="Bond dari Thailand"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Bond dari Thailand</div>
+              <div class="jabatan-staf">Pemimpin Grup</div>
+            </div>
+          </div>
+
+          <!-- ════════════════════════════════════════ Staf 4 ════════════════════════════════════════════════ -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Sheikh dari The Gambia"
+            data-jabatan="Pemimpin Grup – The Gambia & Vanuatu"
+            data-asal="The Gambia, Afrika Barat"
+            data-bergabung="-"
+            data-foto="/assets/images/staff/pemimpin_grup/Sheikh 2.jpg"
+            data-bio='
+            <b>Posisi:</b><br>
+            Pemimpin Grup – The Gambia & Vanuatu<br><br>
+
+            <b>Asal:</b><br>
+            The Gambia, Afrika Barat<br><br>
+
+            <b>Biografi Singkat:</b><br>
+            Sheikh Adama Jallow merupakan lulusan University of The Gambia dengan gelar B.Sc di bidang Pertanian (Ilmu Peternakan). Ia dikenal sebagai pribadi yang berdedikasi, berbakat, ambisius, dan memiliki motivasi tinggi, serta mampu bekerja secara mandiri dengan disiplin yang kuat.<br><br>
+
+            Ia juga merupakan pembelajar cepat yang mampu menyerap ide-ide baru dan berkomunikasi secara efektif dalam berbagai situasi.<br><br>
+
+            <b>Pengalaman & Pandangan:</b><br>
+            Pengalaman yang ia dapatkan di AICAT sangatlah luar biasa. Ia mempelajari berbagai inovasi dan teknik di bidang pertanian, namun lebih dari itu, ia juga mendapatkan kesempatan untuk berinteraksi dengan berbagai budaya, tradisi, dan kebiasaan dari berbagai negara.<br><br>
+
+            Ia percaya bahwa konsep "Pertanian tanpa batas" menjadi kekuatan utama AICAT.<br><br>
+
+            <b>Peran & Nilai:</b><br>
+            Ia merasa sangat bersyukur dan terhormat dapat memimpin mahasiswa dari The Gambia dan Vanuatu. Baginya, peran ini bukan hanya tentang memimpin, tetapi juga tentang melayani dan terus belajar dari sesama.
+            '
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/pemimpin_grup/Sheikh 2.jpg"
+                alt="Sheikh dari The Gambia"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Sheikh dari The Gambia</div>
+              <div class="jabatan-staf">Pemimpin Grup</div>
+            </div>
+          </div>
+
+          <!-- ════════════════════════════════════════ Staf 5═══════════════════════════════════════════════ -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Hosmenio dari Timor Leste"
+            data-jabatan="Pemimpin Grup – Timor Leste (2022–2023)"
+            data-asal="Poros, Timor Leste"
+            data-bergabung="2022"
+            data-foto="/assets/images/staff/pemimpin_grup/Hosmenio2.jpg"
+            data-bio="
+            <b>Posisi:</b><br>
+            Pemimpin Grup – Timor Leste (AICAT 2022–2023)<br><br>
+
+            <b>Asal:</b><br>
+            Poros, Timor Leste<br><br>
+
+            <b>Biografi Singkat:</b><br>
+            Hosmenio Fernandes merupakan alumni AICAT dan saat ini menjabat sebagai pemimpin grup mahasiswa Timor Leste untuk tahun akademik 2022–2023. Ia lahir di Poros, sebuah kota kecil di bagian timur Timor Leste.<br><br>
+
+            Ia menyelesaikan pendidikan Sarjana Agronomi di National University of Timor Lorosa’e (UNTL), serta memiliki pengalaman sebagai staf teknis lapangan di Kementerian Pertanian dan Perikanan (MAF). Ia juga pernah menjadi relawan dosen di salah satu institusi pendidikan tinggi di Timor Leste.<br><br>
+
+            <b>Pengalaman & Nilai:</b><br>
+            Ia memperoleh banyak pengalaman dan pembelajaran dari pendidikan, pekerjaan, serta lingkungan keluarga, yang membentuknya menjadi pribadi yang rajin, berkomitmen, dan selalu haus akan pengetahuan baru di bidang pertanian.<br><br>
+
+            Ia menjunjung tinggi nilai kejujuran, transparansi, serta menghargai keberagaman, dan selalu siap menghadapi tantangan baru.<br><br>
+
+            <b>Visi & Tujuan:</b><br>
+            Ia percaya bahwa pelatihan, baik formal maupun non-formal, merupakan kunci dalam membentuk generasi petani milenial yang unggul serta meningkatkan kemampuan kepemimpinan.<br><br>
+
+            Melalui AICAT, ia melihat kesempatan besar untuk mengembangkan diri, memperluas pengalaman, serta menginspirasi orang lain untuk menghadapi tantangan dan mengubahnya menjadi peluang bagi diri sendiri, keluarga, dan masyarakat.
+            "
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/pemimpin_grup/Hosmenio2.jpg"
+                alt="Hosmenio dari Timor Leste"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Hosmenio dari Timor Leste</div>
+              <div class="jabatan-staf">Pemimpin Grup</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         POPUP BIO
+    ══════════════════════════════ -->
+    <div class="overlay-bio" id="overlayBio">
+      <div class="kotak-bio" id="kotakBio">
+        <div class="bio-header">
+          <img class="bio-foto" id="bioFoto" src="" alt="" />
+          <div class="bio-header-info">
+            <div class="bio-jabatan" id="bioJabatan"></div>
+            <div class="bio-nama" id="bioNama"></div>
+            <div class="bio-tag">
+              <i class="bi bi-geo-alt-fill" style="font-size: 11px"></i>
+              <span id="bioAsal"></span>
+            </div>
+          </div>
+          <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup">
+            &#x2715;
+          </button>
+        </div>
+
+        <div class="bio-isi">
+          <div class="bio-label">Biografi Singkat</div>
+          <p class="bio-teks" id="bioTeks"></p>
+
+          <div class="bio-fakta">
+            <div class="fakta-item">
+              <div class="fakta-label">Asal Negara</div>
+              <div class="fakta-nilai" id="faktaAsal"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Bergabung Sejak</div>
+              <div class="fakta-nilai" id="faktaBergabung"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Divisi</div>
+              <div class="fakta-nilai" id="faktaDivisi"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Lokasi</div>
+              <div class="fakta-nilai" id="faktaLokasi">Sapir, Arava</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="/assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="/assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="/pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      (function () {
+        /* ── Referensi elemen popup ── */
+        var overlayBio = document.getElementById("overlayBio");
+        var tombolTutup = document.getElementById("tombolTutup");
+
+        var elBioFoto = document.getElementById("bioFoto");
+        var elBioNama = document.getElementById("bioNama");
+        var elBioJabatan = document.getElementById("bioJabatan");
+        var elBioAsal = document.getElementById("bioAsal");
+        var elBioTeks = document.getElementById("bioTeks");
+        var elFaktaAsal = document.getElementById("faktaAsal");
+        var elFaktaBergabung = document.getElementById("faktaBergabung");
+        var elFaktaDivisi = document.getElementById("faktaDivisi");
+
+        /* ── Buka popup bio ── */
+        window.bukaBio = function (kartu) {
+          // Isi popup utama
+          elBioFoto.src = kartu.getAttribute("data-foto");
+          elBioFoto.alt = kartu.getAttribute("data-nama");
+          elBioNama.textContent = kartu.getAttribute("data-nama");
+          elBioJabatan.textContent = kartu.getAttribute("data-jabatan");
+          elBioAsal.textContent = kartu.getAttribute("data-asal");
+
+          // Bio text (HTML)
+          elBioTeks.innerHTML = kartu.getAttribute("data-bio");
+
+          // Fakta tambahan
+          elFaktaAsal.textContent = kartu.getAttribute("data-asal");
+          elFaktaBergabung.textContent = kartu.getAttribute("data-bergabung");
+          elFaktaDivisi.textContent = kartu.getAttribute("data-jabatan");
+
+          // Tampilkan popup
+          overlayBio.classList.add("tampil");
+          document.body.style.overflow = "hidden";
+        };
+
+        /* ── Tutup popup ── */
+        function tutupBio() {
+          overlayBio.classList.remove("tampil");
+          document.body.style.overflow = "";
+        }
+
+        tombolTutup.addEventListener("click", tutupBio);
+
+        /* Klik di luar kotak → tutup */
+        overlayBio.addEventListener("click", function (e) {
+          if (e.target === overlayBio) tutupBio();
+        });
+
+        /* Tekan Escape → tutup */
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") tutupBio();
+        });
+      })();
+    </script>
+  </body>
+</html>

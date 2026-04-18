@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - Lokasi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/lokasi.css" />
+    <link rel="stylesheet" href="assets/css/menu/komunitas-lightbox.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html "
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li><a class="dropdown-item" href="mitra.html">Mitra</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Lokasi kerja</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+            <li><a class="dropdown-item" href="mitra.html">Mitra</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         HERO
+    ═══════════════════════════════════ -->
+    <section class="lokasi-hero">
+      <div class="container">
+        <div class="hero-eyebrow" data-aos="fade-up">
+          <i class="bi bi-geo-alt-fill"></i>
+          Arava, Israel Selatan
+        </div>
+
+        <h1 data-aos="fade-up" data-aos-delay="80">
+          Wilayah <em>Arava</em><br />Pusat Pertanian Internasional
+        </h1>
+
+        <p class="lead" data-aos="fade-up" data-aos-delay="160">
+          AICAT – Arava International Center for Agriculture Training berlokasi
+          di Central Arava Regional Council, di selatan Israel dekat perbatasan
+          Yordania. Kawasan ini mencakup 6% dari total luas wilayah Israel.
+        </p>
+
+        <div class="scroll-cue" data-aos="fade-up" data-aos-delay="240">
+          <div class="scroll-cue-line"></div>
+          Gulir untuk menjelajahi
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         MAIN BODY
+    ═══════════════════════════════════ -->
+    <section class="lokasi-body">
+      <div class="container">
+        <!-- ROW 1 — Peta + Deskripsi -->
+        <div class="row g-5 align-items-start mb-5">
+          <!-- PETA aicatnya -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="map-wrap">
+              <div class="map-header">
+                <span class="map-header-title">
+                  <i class="bi bi-map me-2 text-success"></i>
+                  Peta Wilayah Arava
+                </span>
+                <span class="map-badge">Central Arava</span>
+              </div>
+              <div class="map-container">
+                <img src="assets/images/peta/peta.jpg" alt="peta-aicat" />
+              </div>
+            </div>
+          </div>
+
+          <!-- DESKRIPSI WILAYAH -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <span class="section-tag">Tentang Wilayah</span>
+            <h2 class="section-heading">
+              Kawasan Arava,<br />Jantung Inovasi Pertanian
+            </h2>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 15px;
+                line-height: 1.85;
+                margin-bottom: 24px;
+              "
+            >
+              AICAT berlokasi di
+              <strong>Central Arava Regional Council</strong>, di wilayah
+              selatan Israel dekat perbatasan Yordania. Kawasan yang tampak
+              tandus ini justru menjadi laboratorium hidup teknologi pertanian
+              tercanggih di dunia, memanfaatkan sistem irigasi tetes, sensor
+              tanah, dan rumah kaca modern.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div
+                  style="
+                    background: var(--bg-cream);
+                    border-radius: 14px;
+                    padding: 18px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 11px;
+                      font-weight: 700;
+                      color: var(--green-mid);
+                      letter-spacing: 1.5px;
+                      text-transform: uppercase;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Komunitas
+                  </div>
+                  <div
+                    style="
+                      font-size: 22px;
+                      font-weight: 800;
+                      color: var(--green-dark);
+                    "
+                  >
+                    7 Total
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-muted)">
+                    5 pertanian + 1 pusat + 1 ekowisata
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  style="
+                    background: var(--bg-cream);
+                    border-radius: 14px;
+                    padding: 18px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 11px;
+                      font-weight: 700;
+                      color: var(--green-mid);
+                      letter-spacing: 1.5px;
+                      text-transform: uppercase;
+                      margin-bottom: 6px;
+                    "
+                  >
+                    Penduduk
+                  </div>
+                  <div
+                    style="
+                      font-size: 22px;
+                      font-weight: 800;
+                      color: var(--green-dark);
+                    "
+                  >
+                    ±3.500
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-muted)">
+                    Jiwa di seluruh kawasan
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Komposisi komunitas list -->
+            <div class="info-box">
+              <h4>
+                <i class="bi bi-pin-map-fill me-2 text-success"></i>Komposisi
+                Kawasan
+              </h4>
+              <ul class="info-list">
+                <li>
+                  5 komunitas pertanian: Idan, Hatzeva, Ein Yahav, Tsofar, Paran
+                </li>
+                <li>1 pusat komunitas: Sapir (lokasi utama AICAT)</li>
+                <li>1 komunitas ekowisata: Zuqim</li>
+                <li>Luas wilayah setara 6% dari total luas Israel</li>
+                <li>
+                  Terletak di lembah Araba, antara Laut Mati dan Teluk Aqaba
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row 1 -->
+
+        <div class="mb-5">
+          <div class="text-center mb-4" data-aos="fade-up">
+            <span class="section-tag">Komunitas</span>
+            <h2 class="section-heading">7 Komunitas Wilayah Arava</h2>
+          </div>
+
+          <div class="row g-3">
+            <!-- 5 komunitas pertanian -->
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <div class="komunitas-card" data-location="idan">
+                <div class="komunitas-num">01 · Pertanian</div>
+                <div class="komunitas-name">Idan</div>
+                <div class="komunitas-type">
+                  <div class="komunitas-dot"></div>
+                  Pertanian Sayuran
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="60"
+            >
+              <div class="komunitas-card" data-location="hatzeva">
+                <div class="komunitas-num">02 · Pertanian</div>
+                <div class="komunitas-name">Hatzeva</div>
+                <div class="komunitas-type">
+                  <div class="komunitas-dot"></div>
+                  Pertanian & Bunga
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="120"
+            >
+              <div class="komunitas-card" data-location="ein-yahav">
+                <div class="komunitas-num">03 · Pertanian</div>
+                <div class="komunitas-name">Ein Yahav</div>
+                <div class="komunitas-type">
+                  <div class="komunitas-dot"></div>
+                  Pertanian Modern
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="180"
+            >
+              <div
+                class="komunitas-card sapir"
+                data-location="sapir"
+                style="
+                  border-color: rgba(212, 175, 55, 0.4);
+                  background: linear-gradient(135deg, #fffdf4, #fff);
+                "
+              >
+                <div class="komunitas-num" style="color: var(--gold)">
+                  04 · Pusat AICAT ★
+                </div>
+                <div class="komunitas-name" style="color: var(--gold)">
+                  Sapir
+                </div>
+                <div class="komunitas-type">
+                  <div
+                    class="komunitas-dot"
+                    style="background: var(--gold)"
+                  ></div>
+                  Pusat Komunitas & Pelatihan
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="240"
+            >
+              <div class="komunitas-card" data-location="tsofar">
+                <div class="komunitas-num">05 · Pertanian</div>
+                <div class="komunitas-name">Tsofar</div>
+                <div class="komunitas-type">
+                  <div class="komunitas-dot"></div>
+                  Perkebunan Kurma
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="komunitas-card"
+                data-location="zuqim"
+                style="border-color: rgba(0, 70, 249, 0.2)"
+              >
+                <div class="komunitas-num" style="color: var(--navy)">
+                  06 · Ekowisata
+                </div>
+                <div class="komunitas-name" style="color: var(--navy)">
+                  Zuqim
+                </div>
+                <div class="komunitas-type">
+                  <div
+                    class="komunitas-dot"
+                    style="background: var(--navy)"
+                  ></div>
+                  Komunitas Ekowisata
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="360"
+            >
+              <div class="komunitas-card" data-location="paran">
+                <div class="komunitas-num">07 · Pertanian</div>
+                <div class="komunitas-name">Paran</div>
+                <div class="komunitas-type">
+                  <div class="komunitas-dot"></div>
+                  Peternakan & Kebun
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /komunitas cards -->
+
+        <!-- ROW 3 — Hasil Bumi + Sumber Penghidupan -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="info-box">
+              <div class="info-box-icon"><i class="bi bi-flower2"></i></div>
+              <h4>Komoditas Pertanian Utama</h4>
+              <ul class="info-list">
+                <li>
+                  Produk agrikultur: paprika, tomat, terong, dan sayuran lainnya
+                </li>
+                <li>Bunga potong untuk pasar ekspor Eropa</li>
+                <li>Akuakultur — budidaya ikan air tawar</li>
+                <li>Peternakan sapi dan kambing</li>
+                <li>Perkebunan: Kurma, Mangga, Anggur</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <div class="info-box-icon">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <h4>Keunggulan Teknologi Arava</h4>
+              <ul class="info-list">
+                <li>Sistem irigasi tetes yang menjadi standar global</li>
+                <li>Rumah kaca (greenhouse) dengan kendali iklim penuh</li>
+                <li>Sensor tanah dan cuaca terintegrasi IoT</li>
+                <li>Pengolahan air limbah untuk irigasi ulang</li>
+                <li>Penelitian varietas unggul tahan panas dan kering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row 3 -->
+
+        <!-- HIGHLIGHT STRIP -->
+        <div data-aos="fade-up">
+          <div class="highlight-strip">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-6">
+                <h3>Sumber Penghidupan Kawasan Arava</h3>
+                <p>
+                  Sumber penghidupan utama di Arava berasal dari pertanian
+                  modern yang sangat maju. Teknologi mutakhir yang digunakan di
+                  Arava berada di garis terdepan pertanian Israel dan dunia,
+                  menjadikan kawasan ini destinasi belajar ideal bagi para
+                  petani internasional.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <div class="hl-stat">
+                      <div class="hl-stat-num">6%</div>
+                      <div class="hl-stat-label">Luas Israel</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="hl-stat">
+                      <div class="hl-stat-num">50+</div>
+                      <div class="hl-stat-label">Negara Peserta</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="hl-stat">
+                      <div class="hl-stat-num">30+</div>
+                      <div class="hl-stat-label">Tahun Pengalaman</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /container -->
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/komunitas-lightbox.js"></script>
+  </body>
+</html>

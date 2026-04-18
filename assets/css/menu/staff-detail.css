@@ -1,0 +1,578 @@
+/* ══════════════════════════════════════════════
+         VARIABEL WARNA — selaras dengan staff.css
+      ══════════════════════════════════════════════ */
+:root {
+  --hijau-tua: #1f4d36;
+  --hijau-tengah: #2e7d32;
+  --hijau-muda: #1fbf8f;
+  --emas: #d4af37;
+  --navy: #1f3c88;
+  --krem: #f6f8f4;
+  --teks-gelap: #111;
+  --teks-redup: #6b7280;
+  --batas: rgba(31, 77, 54, 0.1);
+
+  --warna-admin: #c85a1a;
+  --warna-dosen: #d4920a;
+  --warna-supervisor: #1f6b3a;
+  --warna-pemimpin: #5c3a14;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--krem);
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
+/* ══════════════════════════════════════════════
+         HERO MINI — lebih kecil dari staff.html
+══════════════════════════════════════════════ */
+.hero-staf {
+  position: relative;
+  height: 40vh;
+  min-height: 460px;
+  background:
+    linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
+    url("/assets/images/backgorund/staf.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero-staf-dalam {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.hero-staf h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(28px, 4vw, 50px);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.hero-staf h1 em {
+  font-style: italic;
+  color: var(--emas);
+}
+
+.hero-staf p {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 420px;
+  line-height: 1.75;
+}
+
+/* ══════════════════════════════════════════════
+         4 MENU LINGKARAN — overlap di atas hero
+      ══════════════════════════════════════════════ */
+.menu-lingkaran-wrapper {
+  position: relative;
+  z-index: 20;
+  margin-top: -80px;
+  margin-bottom: 0;
+}
+
+.menu-lingkaran-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.menu-lingkaran-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-lingkaran-item:hover {
+  transform: translateY(-6px);
+}
+
+/* Lingkaran */
+.lingkaran {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+  border: 4px solid transparent;
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+  position: relative;
+}
+
+.lingkaran-ikon {
+  font-size: 22px;
+  margin-bottom: 6px;
+  opacity: 0.88;
+}
+
+.lingkaran-teks {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Warna per lingkaran */
+.lingkaran-admin {
+  background: radial-gradient(circle at 35% 35%, #e07030, var(--warna-admin));
+}
+.lingkaran-dosen {
+  background: radial-gradient(circle at 35% 35%, #f0aa20, var(--warna-dosen));
+}
+.lingkaran-supervisor {
+  background: radial-gradient(
+    circle at 35% 35%,
+    #2e9050,
+    var(--warna-supervisor)
+  );
+}
+.lingkaran-pemimpin {
+  background: radial-gradient(
+    circle at 35% 35%,
+    #7a5020,
+    var(--warna-pemimpin)
+  );
+}
+
+/* STATE AKTIF — lingkaran yang sedang di halaman ini */
+.menu-lingkaran-item.aktif .lingkaran {
+  border-color: #fff;
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.35),
+    0 16px 48px rgba(0, 0, 0, 0.3);
+  transform: scale(1.06);
+}
+
+/* Label bawah lingkaran */
+.lingkaran-label {
+  margin-top: 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--teks-gelap);
+  text-align: center;
+  line-height: 1.35;
+}
+
+.menu-lingkaran-item.aktif .lingkaran-label {
+  color: var(--warna-admin);
+  font-weight: 700;
+}
+
+/* Garis aktif bawah label */
+.lingkaran-label::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: transparent;
+  border-radius: 2px;
+  margin: 4px auto 0;
+  width: 0;
+  transition:
+    width 0.3s ease,
+    background 0.3s;
+}
+
+.menu-lingkaran-item.aktif .lingkaran-label::after {
+  width: 36px;
+  background: var(--warna-admin);
+}
+
+/* ══════════════════════════════════════════════
+         KONTEN UTAMA — judul + grid foto staf
+      ══════════════════════════════════════════════ */
+.konten-staf {
+  padding: 64px 0 100px;
+  background: var(--krem);
+}
+
+.judul-seksi {
+  margin-bottom: 48px;
+}
+
+.label-seksi {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--warna-admin);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.judul-seksi h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  color: var(--teks-gelap);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.judul-seksi p {
+  font-size: 15px;
+  color: var(--teks-redup);
+  max-width: 520px;
+  line-height: 1.75;
+}
+
+/* Garis dekorasi */
+.garis-dekorasi {
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--warna-admin), var(--emas));
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+/* ── Grid foto staf ── */
+.grid-foto-staf {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+}
+
+/* Kartu foto staf — bisa diklik */
+.kartu-staf {
+  background: var(--krem);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--batas);
+  cursor: pointer;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+  position: relative;
+}
+
+.kartu-staf:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.1);
+  border-color: rgba(200, 90, 26, 0.3);
+}
+
+/* Foto */
+.foto-staf-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #dde4d9;
+}
+
+.foto-staf-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.kartu-staf:hover .foto-staf-wrap img {
+  transform: scale(1.06);
+}
+
+/* Overlay "klik untuk bio" */
+.overlay-klik {
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 90, 26, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.kartu-staf:hover .overlay-klik {
+  opacity: 1;
+}
+
+.overlay-klik span {
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Info bawah foto */
+.info-staf {
+  padding: 14px 16px 16px;
+}
+
+.nama-staf {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--teks-gelap);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.jabatan-staf {
+  font-size: 11.5px;
+  color: var(--warna-admin);
+  font-weight: 500;
+}
+
+/* ══════════════════════════════════════════════
+         POPUP BIO — muncul saat foto diklik
+      ══════════════════════════════════════════════ */
+.overlay-bio {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(5px);
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s;
+}
+
+.overlay-bio.tampil {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kotak-bio {
+  background: #fff;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.overlay-bio.tampil .kotak-bio {
+  transform: translateY(0) scale(1);
+}
+
+/* Header popup */
+.bio-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 28px 20px;
+  border-bottom: 1px solid var(--batas);
+  position: relative;
+}
+
+.bio-foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+  border: 3px solid var(--batas);
+}
+
+.bio-header-info {
+  flex: 1;
+}
+
+.bio-jabatan {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--warna-admin);
+  margin-bottom: 5px;
+}
+
+.bio-nama {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--teks-gelap);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.bio-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--teks-redup);
+  background: var(--krem);
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--batas);
+}
+
+.tombol-tutup {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--batas);
+  background: transparent;
+  color: #666;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s,
+    color 0.2s;
+}
+
+.tombol-tutup:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+  transform: rotate(90deg);
+}
+
+/* Isi bio */
+.bio-isi {
+  padding: 22px 28px 28px;
+}
+
+.bio-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--hijau-tengah);
+  margin-bottom: 10px;
+}
+
+.bio-teks {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Fakta singkat */
+.bio-fakta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fakta-item {
+  background: var(--krem);
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--batas);
+}
+
+.fakta-label {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--warna-admin);
+  margin-bottom: 3px;
+}
+
+.fakta-nilai {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--hijau-tua);
+}
+
+/* ══════════════════════════════════════════════
+         RESPONSIVE
+      ══════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .grid-foto-staf {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-foto-staf {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .foto-staf-wrap {
+    height: 170px;
+  }
+  .konten-staf {
+    padding: 48px 0 72px;
+  }
+
+  .bio-fakta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-staf {
+    height: 44vh;
+    min-height: 260px;
+  }
+  .menu-lingkaran-grid {
+    gap: 10px;
+  }
+  .lingkaran,
+  .menu-lingkaran-item .lingkaran {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .lingkaran-ikon {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .lingkaran-teks {
+    font-size: 10.5px;
+  }
+
+  .overlay-bio {
+    padding: 0;
+    align-items: flex-end;
+  }
+  .kotak-bio {
+    border-radius: 20px 20px 0 0;
+    max-height: 88vh;
+  }
+}

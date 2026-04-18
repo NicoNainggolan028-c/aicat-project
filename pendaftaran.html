@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - pendaftaran</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/pendaftaran.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li><a class="dropdown-item" href="#">Mitra</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Pendaftaran</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li><a class="dropdown-item" href="#">Mitra</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Pendaftaran</a></li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero-daftar">
+      <!-- Canvas cursor trail — hanya aktif di dalam hero ini -->
+      <canvas
+        id="hero-cursor-canvas"
+        style="
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 1;
+        "
+      ></canvas>
+      <div class="container" style="position: relative; z-index: 2">
+        <div class="hero-daftar-lingkup">
+          <div class="lencana-hero" data-aos="fade-up">
+            <i class="bi bi-pencil-square"></i>
+            Pendaftaran Peserta
+          </div>
+
+          <h1 data-aos="fade-up" data-aos-delay="80">
+            Daftar & Bergabung<br />Bersama <em>AICAT</em>
+          </h1>
+
+          <p class="teks-lead" data-aos="fade-up" data-aos-delay="160">
+            Ambil langkah pertama menuju karier pertanian modern. Isi formulir
+            pendaftaran online kami dan jadilah bagian dari ribuan alumni AICAT
+            dari lebih dari 50 negara.
+          </p>
+
+          <div class="grup-tombol-hero" data-aos="fade-up" data-aos-delay="240">
+            <!--
+            GANTI HREF di bawah dengan link Google Form AICAT yang asli.
+            Contoh: href="https://forms.google.com/..."
+          -->
+            <a
+              href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tombol-daftar-utama"
+            >
+              <i class="bi bi-pencil-fill"></i>
+              Daftar Sekarang
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="#info-program" class="tombol-info-hero">
+              <i class="bi bi-info-circle"></i>
+              Pelajari program kami
+            </a>
+          </div>
+
+          <div class="catatan-gform" data-aos="fade-up" data-aos-delay="300">
+            <i
+              class="bi bi-shield-check"
+              style="font-size: 13px; color: var(--hijau-muda)"
+            ></i>
+            Formulir menggunakan Google Form yang aman — data kamu terlindungi
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         KONTEN UTAMA
+    ══════════════════════════════════════════ -->
+    <section class="konten-daftar">
+      <div class="container">
+        <!-- ══ PILIHAN PROGRAM ══ -->
+        <div id="info-program" class="mb-5" data-aos="fade-up">
+          <div class="garis-dekorasi"></div>
+          <span class="label-seksi">Pilih Program</span>
+          <h2>Program yang Tersedia</h2>
+          <p
+            style="
+              font-size: 15px;
+              color: var(--teks-redup);
+              max-width: 520px;
+              line-height: 1.75;
+              margin-bottom: 36px;
+            "
+          >
+            AICAT menawarkan tiga jenis program pelatihan. Pilih yang sesuai
+            dengan kebutuhan dan tujuanmu.
+          </p>
+        </div>
+
+        <div class="grid-program" data-aos="fade-up" data-aos-delay="60">
+          <!-- Program 1 — Diploma -->
+          <div class="kartu-program">
+            <div class="banner-program banner-diploma"></div>
+            <div class="isi-kartu-program">
+              <div class="ikon-program ikon-diploma">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="nomor-program nomor-diploma">01 · Program Utama</div>
+              <div class="nama-program">Diploma Program</div>
+              <div class="deskripsi-program">
+                Program diploma intensif selama 11 bulan di Arava, Israel.
+                Peserta mempelajari teknologi pertanian modern secara langsung
+                di lahan dan fasilitas AICAT.
+              </div>
+              <div class="detail-program">
+                <div class="detail-baris">
+                  <i class="bi bi-clock-fill"></i> Durasi: 11 Bulan
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-geo-alt-fill"></i> Lokasi: Sapir, Arava –
+                  Israel
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-translate"></i> Bahasa: Inggris
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-people-fill"></i> Kuota: Terbatas per angkatan
+                </div>
+              </div>
+              <a
+                href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tombol-daftar-program"
+              >
+                <i class="bi bi-pencil-fill"></i> Daftar Program Ini
+              </a>
+            </div>
+          </div>
+
+          <!-- Program 2 — Short Course -->
+          <div class="kartu-program">
+            <div class="banner-program banner-kursus"></div>
+            <div class="isi-kartu-program">
+              <div class="ikon-program ikon-kursus">
+                <i class="bi bi-calendar3"></i>
+              </div>
+              <div class="nomor-program nomor-kursus">02 · Kursus Singkat</div>
+              <div class="nama-program">Short Term Courses</div>
+              <div class="deskripsi-program">
+                Kursus jangka pendek 2–8 minggu yang fleksibel, dirancang untuk
+                profesional pertanian dan petani yang ingin memperbarui
+                pengetahuan secara spesifik.
+              </div>
+              <div class="detail-program">
+                <div class="detail-baris">
+                  <i class="bi bi-clock-fill"></i> Durasi: 2–8 Minggu
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-geo-alt-fill"></i> Lokasi: Sapir, Arava –
+                  Israel
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-translate"></i> Bahasa: Inggris
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-calendar-check"></i> Jadwal: Beberapa sesi per
+                  tahun
+                </div>
+              </div>
+              <a
+                href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tombol-daftar-program"
+                style="border-color: var(--navy); color: var(--navy)"
+                onmouseenter="
+                  this.style.background = 'var(--navy)';
+                  this.style.color = '#fff';
+                "
+                onmouseleave="
+                  this.style.background = 'transparent';
+                  this.style.color = 'var(--navy)';
+                "
+              >
+                <i class="bi bi-pencil-fill"></i> Daftar Program Ini
+              </a>
+            </div>
+          </div>
+
+          <!-- Program 3 — Spesial -->
+          <div class="kartu-program">
+            <div class="banner-program banner-spesial"></div>
+            <div class="isi-kartu-program">
+              <div class="ikon-program ikon-spesial">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="nomor-program nomor-spesial">03 · Program Khusus</div>
+              <div class="nama-program">Special Programs</div>
+              <div class="deskripsi-program">
+                Program kunjungan, study tour, dan pelatihan khusus yang
+                dirancang sesuai kebutuhan spesifik institusi, kementerian, atau
+                kelompok delegasi dari suatu negara.
+              </div>
+              <div class="detail-program">
+                <div class="detail-baris">
+                  <i class="bi bi-clock-fill"></i> Durasi: Menyesuaikan
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-geo-alt-fill"></i> Lokasi: Sapir, Arava –
+                  Israel
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-building"></i> Untuk: Institusi & Delegasi
+                </div>
+                <div class="detail-baris">
+                  <i class="bi bi-envelope-fill"></i> Hubungi kami untuk info
+                </div>
+              </div>
+              <a
+                href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tombol-daftar-program"
+                style="border-color: #c85a1a; color: #c85a1a"
+                onmouseenter="
+                  this.style.background = '#c85a1a';
+                  this.style.color = '#fff';
+                "
+                onmouseleave="
+                  this.style.background = 'transparent';
+                  this.style.color = '#c85a1a';
+                "
+              >
+                <i class="bi bi-pencil-fill"></i> Ajukan Program Ini
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /grid-program -->
+
+        <!-- ══ TOMBOL BESAR GOOGLE FORM ══ -->
+        <div class="blok-tombol-utama" data-aos="fade-up">
+          <div class="container-dalam">
+            <div class="ikon-gform">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <h3>Siap Mendaftar? <em>Isi Formulir Sekarang</em></h3>
+            <p>
+              Klik tombol di bawah untuk mengisi formulir pendaftaran online
+              AICAT melalui Google Form. Prosesnya mudah, cepat, dan gratis!
+            </p>
+
+            <!--
+              GANTI href di bawah dengan link Google Form AICAT yang asli.
+            -->
+            <a
+              href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tombol-gform-besar"
+            >
+              <i class="bi bi-pencil-fill"></i>
+              Buka Formulir Pendaftaran
+              <i class="bi bi-arrow-right ikon-panah"></i>
+            </a>
+
+            <div class="catatan-bawah-tombol">
+              <div class="poin-catatan">
+                <i class="bi bi-check-circle-fill"></i> Gratis & mudah diisi
+              </div>
+              <div class="poin-catatan">
+                <i class="bi bi-shield-check"></i> Data aman & terlindungi
+              </div>
+              <div class="poin-catatan">
+                <i class="bi bi-clock"></i> Proses < 10 menit
+              </div>
+              <div class="poin-catatan">
+                <i class="bi bi-globe2"></i> Tersedia 24 jam
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ LANGKAH PENDAFTARAN ══ -->
+        <div class="judul-langkah" data-aos="fade-up">
+          <div class="garis-dekorasi"></div>
+          <span class="label-seksi">Cara Mendaftar</span>
+          <h2>4 Langkah Mudah Pendaftaran</h2>
+          <p>
+            Ikuti langkah-langkah berikut untuk menyelesaikan proses pendaftaran
+            kamu.
+          </p>
+        </div>
+
+        <div class="grid-langkah">
+          <div class="kartu-langkah" data-aos="fade-up" data-aos-delay="0">
+            <div class="nomor-langkah">1</div>
+            <div class="judul-langkah-item">Buka Google Form</div>
+            <div class="deskripsi-langkah">
+              Klik tombol "Daftar Sekarang" dan kamu akan diarahkan ke formulir
+              pendaftaran resmi AICAT.
+            </div>
+          </div>
+
+          <div class="kartu-langkah" data-aos="fade-up" data-aos-delay="80">
+            <div class="nomor-langkah">2</div>
+            <div class="judul-langkah-item">Isi Data Diri</div>
+            <div class="deskripsi-langkah">
+              Lengkapi semua informasi yang diminta seperti nama, asal negara,
+              latar belakang pertanian, dan program yang dipilih.
+            </div>
+          </div>
+
+          <div class="kartu-langkah" data-aos="fade-up" data-aos-delay="160">
+            <div class="nomor-langkah">3</div>
+            <div class="judul-langkah-item">Unggah Dokumen</div>
+            <div class="deskripsi-langkah">
+              Siapkan dan unggah dokumen pendukung seperti foto diri, identitas,
+              dan surat keterangan yang diminta.
+            </div>
+          </div>
+
+          <div class="kartu-langkah" data-aos="fade-up" data-aos-delay="240">
+            <div class="nomor-langkah">4</div>
+            <div class="judul-langkah-item">Tunggu Konfirmasi</div>
+            <div class="deskripsi-langkah">
+              Tim AICAT akan menghubungi kamu melalui email atau WhatsApp dalam
+              waktu 7–14 hari kerja setelah formulir diterima.
+            </div>
+          </div>
+        </div>
+        <!-- /grid-langkah -->
+
+        <!-- ══ SYARAT PENDAFTARAN ══ -->
+        <div class="blok-syarat" data-aos="fade-up">
+          <div class="syarat-header">
+            <h3>Syarat & Ketentuan Pendaftaran</h3>
+            <p>
+              Pastikan kamu memenuhi persyaratan berikut sebelum mengisi
+              formulir.
+            </p>
+          </div>
+          <div class="grid-syarat">
+            <div class="kolom-syarat">
+              <div class="judul-kolom-syarat">
+                <i class="bi bi-person-check-fill"></i>
+                Persyaratan Umum
+              </div>
+              <ul class="daftar-syarat">
+                <li>Warga negara dari negara mitra AICAT yang terdaftar</li>
+                <li>Usia minimal 20 tahun dan maksimal 40 tahun</li>
+                <li>Memiliki latar belakang pertanian atau peternakan</li>
+                <li>
+                  Mampu berkomunikasi dalam Bahasa Inggris (minimal pasif)
+                </li>
+                <li>Sehat jasmani dan rohani, siap bekerja di lapangan</li>
+                <li>
+                  Mendapatkan rekomendasi dari instansi atau dinas pertanian
+                  setempat
+                </li>
+              </ul>
+            </div>
+            <div class="kolom-syarat">
+              <div class="judul-kolom-syarat">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                Dokumen yang Diperlukan
+              </div>
+              <ul class="daftar-syarat">
+                <li>Foto diri terbaru ukuran paspor (latar belakang putih)</li>
+                <li>Salinan paspor yang masih berlaku (min. 18 bulan)</li>
+                <li>Surat keterangan sehat dari dokter</li>
+                <li>Curriculum Vitae (CV) dalam Bahasa Inggris</li>
+                <li>Surat rekomendasi dari instansi pertanian / atasan</li>
+                <li>
+                  Sertifikat pendidikan terakhir (minimal SMA/SMK Pertanian)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /blok-syarat -->
+
+        <!-- ══ STRIP AKHIR ══ -->
+        <div class="strip-akhir" data-aos="fade-up">
+          <div class="isi-strip">
+            <h3>Jangan Tunda Impianmu,<br /><em>Daftar Hari Ini!</em></h3>
+            <p>
+              Ribuan alumni AICAT telah membuktikan perubahan nyata setelah
+              mengikuti program pelatihan di Arava. Giliran kamu untuk menjadi
+              bagian dari keluarga besar AICAT.
+            </p>
+            <div class="grup-tombol-strip">
+              <a
+                href="LINK_GOOGLE_FORM_AICAT_DI_SINI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="tombol-strip-utama"
+              >
+                <i class="bi bi-pencil-fill"></i>
+                Isi Formulir Sekarang
+              </a>
+              <a href="#" class="tombol-strip-kontak">
+                <i class="bi bi-envelope-fill"></i>
+                Hubungi Kami
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /container -->
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="#">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ══ HERO CURSOR TRAIL SCRIPT ══ -->
+    <script>
+      (function () {
+        var heroSection = document.querySelector(".hero-daftar");
+        var canvas = document.getElementById("hero-cursor-canvas");
+        if (!heroSection || !canvas) return;
+
+        var ctx = canvas.getContext("2d");
+        ctx.running = false;
+        ctx.frame = 1;
+
+        /* ── Oscillator (warna) ── */
+        function Oscillator(cfg) {
+          this.phase = cfg.phase || 0;
+          this.offset = cfg.offset || 0;
+          this.frequency = cfg.frequency || 0.001;
+          this.amplitude = cfg.amplitude || 1;
+        }
+        Oscillator.prototype.update = function () {
+          this.phase += this.frequency;
+          return this.offset + Math.sin(this.phase) * this.amplitude;
+        };
+
+        /* ── Config ── */
+        var E = {
+          friction: 0.5,
+          trails: 20,
+          size: 50,
+          dampening: 0.25,
+          tension: 0.98,
+        };
+
+        /* ── Posisi mouse relatif terhadap section ── */
+        var pos = { x: 0, y: 0 };
+        var lines = [];
+
+        function Node() {
+          this.x = this.y = this.vx = this.vy = 0;
+        }
+
+        /* ── Line ── */
+        function Line(cfg) {
+          this.spring = cfg.spring + 0.1 * Math.random() - 0.02;
+          this.friction = E.friction + 0.01 * Math.random() - 0.002;
+          this.nodes = [];
+          for (var i = 0; i < E.size; i++) {
+            var n = new Node();
+            n.x = pos.x;
+            n.y = pos.y;
+            this.nodes.push(n);
+          }
+        }
+        Line.prototype.update = function () {
+          var e = this.spring,
+            t = this.nodes[0];
+          t.vx += (pos.x - t.x) * e;
+          t.vy += (pos.y - t.y) * e;
+          for (var n, i = 0, a = this.nodes.length; i < a; i++) {
+            t = this.nodes[i];
+            if (i > 0) {
+              n = this.nodes[i - 1];
+              t.vx += (n.x - t.x) * e;
+              t.vy += (n.y - t.y) * e;
+              t.vx += n.vx * E.dampening;
+              t.vy += n.vy * E.dampening;
+            }
+            t.vx *= this.friction;
+            t.vy *= this.friction;
+            t.x += t.vx;
+            t.y += t.vy;
+            e *= E.tension;
+          }
+        };
+        Line.prototype.draw = function () {
+          var n = this.nodes[0].x,
+            i2 = this.nodes[0].y;
+          ctx.beginPath();
+          ctx.moveTo(n, i2);
+          for (var a = 1, o = this.nodes.length - 2; a < o; a++) {
+            var e = this.nodes[a],
+              t = this.nodes[a + 1];
+            n = 0.5 * (e.x + t.x);
+            i2 = 0.5 * (e.y + t.y);
+            ctx.quadraticCurveTo(e.x, e.y, n, i2);
+          }
+          e = this.nodes[a];
+          t = this.nodes[a + 1];
+          ctx.quadraticCurveTo(e.x, e.y, t.x, t.y);
+          ctx.stroke();
+          ctx.closePath();
+        };
+
+        /* ── Oscillator warna ── */
+        var colorOsc = new Oscillator({
+          phase: Math.random() * 2 * Math.PI,
+          amplitude: 85,
+          frequency: 0.0015,
+          offset: 285,
+        });
+
+        /* ── Resize canvas sesuai section ── */
+        function resizeCanvas() {
+          canvas.width = heroSection.offsetWidth;
+          canvas.height = heroSection.offsetHeight;
+        }
+
+        /* ── Render loop ── */
+        function render() {
+          if (!ctx.running) return;
+          ctx.globalCompositeOperation = "source-over";
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.globalCompositeOperation = "lighter";
+          ctx.strokeStyle = "rgba(31, 191, 143, 0.35)"; // --hijau-muda tetap
+          ctx.lineWidth = 1.2;
+          for (var i = 0; i < lines.length; i++) {
+            lines[i].update();
+            lines[i].draw();
+          }
+          ctx.frame++;
+          requestAnimationFrame(render);
+        }
+
+        /* ── Init lines ── */
+        function initLines() {
+          lines = [];
+          for (var i = 0; i < E.trails; i++) {
+            lines.push(new Line({ spring: 0.4 + (i / E.trails) * 0.025 }));
+          }
+        }
+
+        /* ── Mouse masuk section: aktifkan ── */
+        var started = false;
+        heroSection.addEventListener("mouseenter", function () {
+          if (!ctx.running) {
+            ctx.running = true;
+            if (!started) {
+              initLines();
+              started = true;
+            }
+            render();
+          }
+        });
+
+        /* ── Mouse keluar section: hentikan & bersihkan ── */
+        heroSection.addEventListener("mouseleave", function () {
+          ctx.running = false;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        /* ── Track posisi mouse relatif terhadap section ── */
+        heroSection.addEventListener("mousemove", function (e) {
+          var rect = heroSection.getBoundingClientRect();
+          pos.x = e.clientX - rect.left;
+          pos.y = e.clientY - rect.top;
+        });
+
+        /* ── Touch support ── */
+        heroSection.addEventListener(
+          "touchmove",
+          function (e) {
+            var rect = heroSection.getBoundingClientRect();
+            pos.x = e.touches[0].clientX - rect.left;
+            pos.y = e.touches[0].clientY - rect.top;
+          },
+          { passive: true },
+        );
+
+        /* ── Resize ── */
+        window.addEventListener("resize", resizeCanvas);
+        resizeCanvas();
+      })();
+    </script>
+  </body>
+</html>

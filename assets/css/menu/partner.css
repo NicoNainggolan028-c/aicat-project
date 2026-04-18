@@ -1,0 +1,489 @@
+:root {
+  --green-dark: #1f4d36;
+  --green-mid: #2e7d32;
+  --green-light: #1fbf8f;
+  --gold: #d4af37;
+  --navy: #1f3c88;
+  --bg-cream: #f6f8f4;
+  --text-dark: #111;
+  --text-muted: #6b7280;
+  --border: rgba(31, 77, 54, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-cream);
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
+/* ─────────────────────────────────────────────
+   HERO
+───────────────────────────────────────────── */
+.partner-hero {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
+    url("/assets/images/backgorund/mitra1.jpg") center/cover no-repeat;
+  padding: 140px 0 80px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.partner-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 15% 60%,
+      rgba(31, 191, 143, 0.13) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(212, 175, 55, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.partner-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.partner-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  background: rgba(31, 191, 143, 0.12);
+  border: 1px solid rgba(31, 191, 143, 0.28);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.partner-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.partner-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.partner-hero p.lead {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 500px;
+  line-height: 1.85;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.hero-stat-num {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 3px;
+}
+
+/* ─────────────────────────────────────────────
+   FILTER BAR
+───────────────────────────────────────────── */
+.filter-bar {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.filter-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filter-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  flex-shrink: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+
+.filter-btn.active {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: #fff;
+}
+
+/* ─────────────────────────────────────────────
+   MAIN BODY
+───────────────────────────────────────────── */
+.partner-body {
+  padding: 60px 0 100px;
+}
+
+.section-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-meta-title {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.section-meta-title strong {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.section-meta-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 4px 14px;
+}
+
+/* ─────────────────────────────────────────────
+   COUNTRY GRID
+───────────────────────────────────────────── */
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .countries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .countries-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   COUNTRY CARD  — <a> tag, navigasi ke halaman
+───────────────────────────────────────────── */
+.country-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(31, 77, 54, 0.12);
+  border-color: rgba(31, 191, 143, 0.3);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Bendera */
+.card-flag {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  background: #e8ede9;
+  flex-shrink: 0;
+}
+
+.card-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.country-card:hover .card-flag img {
+  transform: scale(1.07);
+}
+
+/* Overlay gradient bawah */
+.card-flag::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.15), transparent);
+  pointer-events: none;
+}
+
+/* Badge region */
+.flag-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 100px;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.flag-badge.asia {
+  background: rgba(31, 77, 54, 0.82);
+  color: #fff;
+}
+.flag-badge.africa {
+  background: rgba(200, 150, 12, 0.85);
+  color: #fff;
+}
+.flag-badge.pacific {
+  background: rgba(31, 60, 136, 0.82);
+  color: #fff;
+}
+
+/* Nomor urut */
+.flag-num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Info */
+.card-info {
+  padding: 16px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-region {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  margin-bottom: 4px;
+}
+
+.card-country {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.card-desc {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.card-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.card-chips {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-chip {
+  font-size: 9.5px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 100px;
+  background: #f0faf0;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  white-space: nowrap;
+}
+
+/* Arrow CTA */
+.card-cta {
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.cta-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg-cream);
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--green-dark);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.country-card:hover .cta-icon {
+  background: var(--green-dark);
+  color: #fff;
+  border-color: var(--green-dark);
+  transform: translateX(3px);
+}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────── */
+@media (max-width: 575px) {
+  .partner-hero {
+    padding: 110px 0 56px;
+  }
+  .partner-body {
+    padding: 44px 0 70px;
+  }
+  .countries-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .card-flag {
+    height: 180px;
+  }
+  .card-country {
+    font-size: 20px;
+  }
+  .card-desc {
+    font-size: 13px;
+  }
+  .partner-strip {
+    padding: 36px 22px;
+  }
+  .strip-stat {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+  .hero-stats {
+    gap: 20px;
+  }
+  .hero-stat-num {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .partner-strip {
+    padding: 36px 22px;
+  }
+  .strip-stat {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+}

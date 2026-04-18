@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - Staff</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="//assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/sections.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/menu/staff-detail.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/partner negara/partner.html "
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Staf</a></li>
+                <li><a class="dropdown-item" href="/mitra.html">Mitra</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="/index.html"
+        >
+          <img src="/assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="/assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/partner negara/partner.html "
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li><a class="dropdown-item" href="/mitra.html">Mitra</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════
+         HERO MINI
+    ══════════════════════════════ -->
+    <section class="hero-staf">
+      <div class="container hero-staf-dalam">
+        <h1 data-aos="fade-up"><em>Administrative</em><br />Staff AICAT</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Tim administrasi yang berdedikasi mengelola operasional AICAT setiap
+          hari demi kelancaran program internasional.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         4 MENU LINGKARAN
+         Admin aktif — lainnya nonaktif
+    ══════════════════════════════ -->
+    <div class="menu-lingkaran-wrapper">
+      <div class="container">
+        <div class="menu-lingkaran-grid">
+          <!-- 1. Admin — AKTIF di halaman ini -->
+          <a
+            href="/staff-detail/administrasi-staff.html"
+            class="menu-lingkaran-item aktif"
+          >
+            <div class="lingkaran lingkaran-admin">
+              <div class="lingkaran-ikon"><i class="bi bi-building"></i></div>
+              <div class="lingkaran-teks">Administrative<br />Staff</div>
+            </div>
+            <div class="lingkaran-label">Staf Administrasi</div>
+          </a>
+
+          <!-- 2. Dosen — nonaktif -->
+          <a href="/staff-detail/lectures.html  " class="menu-lingkaran-item">
+            <div class="lingkaran lingkaran-dosen">
+              <div class="lingkaran-ikon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <div class="lingkaran-teks">Lecturers</div>
+            </div>
+            <div class="lingkaran-label">Dosen & Pengajar</div>
+          </a>
+
+          <!-- 3. Supervisor — nonaktif -->
+          <a href="/staff-detail/supervisors.html" class="menu-lingkaran-item">
+            <div class="lingkaran lingkaran-supervisor">
+              <div class="lingkaran-ikon"><i class="bi bi-eye-fill"></i></div>
+              <div class="lingkaran-teks">Supervisors</div>
+            </div>
+            <div class="lingkaran-label">Supervisor</div>
+          </a>
+
+          <!-- 4. Pemimpin — nonaktif -->
+          <a
+            href="/staff-detail/group-leaders.html"
+            class="menu-lingkaran-item"
+          >
+            <div class="lingkaran lingkaran-pemimpin">
+              <div class="lingkaran-ikon"><i class="bi bi-star-fill"></i></div>
+              <div class="lingkaran-teks">Group<br />Leaders</div>
+            </div>
+            <div class="lingkaran-label">Pemimpin Grup</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+         KONTEN UTAMA — Grid 5 Foto
+    ══════════════════════════════ -->
+    <section class="konten-staf">
+      <div class="container">
+        <div class="judul-seksi" data-aos="fade-up">
+          <div class="garis-dekorasi"></div>
+          <span class="label-seksi">Administrative Staff</span>
+          <h2>Tim Administrasi AICAT</h2>
+          <p>
+            Klik foto untuk membaca biografi singkat setiap anggota tim
+            administrasi.
+          </p>
+        </div>
+
+        <div class="grid-foto-staf">
+          <!-- ── Staf 1 ── -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-nama="Hanni Arnon"
+            data-jabatan="Co-Founder & Educational Leader"
+            data-asal="Israel"
+            data-bergabung="2008"
+            data-foto="/assets/images/staff/administratif staff/staff_2.jpg"
+            data-bio="<b>Posisi</b><br>
+              Co-Founder & Educational Leader<br><br>
+
+              <b>Biografi Singkat</b><br>
+              Lahir dan besar di Yerusalem, sejak awal memiliki panggilan sebagai pendidik. Pindah ke Moshav Idan bersama suami, membangun pertanian sukses, dan menjadi pemimpin komunitas. Pada 1994, mendirikan AICAT bersama Gilad Livni. Percaya bahwa pendidikan adalah jembatan yang menghubungkan berbagai latar belakang, agama, dan kebangsaan.<br><br>
+
+              <b>Pendidikan</b><br>
+              Sarjana (S1) Pendidikan"
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/administratif staff/staff_2.jpg"
+                alt="Hanni Arnon"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Hanni Arnon</div>
+              <div class="jabatan-staf">Co-Founder & Educational Leader</div>
+            </div>
+          </div>
+
+          <!-- ── Staf 2 ── -->
+          <div
+            class="kartu-staf"
+            data-nama="Dr. Sharon Ravitz-Wyngaard"
+            data-jabatan="Academic Director"
+            data-asal="Israel"
+            data-bergabung="2006"
+            data-foto="/assets/images/staff/administratif staff/staff_1.jpg"
+            data-bio="• Direktur Akademik AICAT sejak 2006<br>
+            • Menikah dan memiliki 3 anak<br>
+            • Tinggal di Hazeva sejak usia 5 tahun<br>
+            • Guru bahasa Inggris di sekolah dasar<br>
+            • S1 Ilmu Perilaku – Ben Gurion University<br>
+            • S2 Administrasi & Kebijakan Publik<br>
+            • PhD Sustainability & Food Security<br>
+            • Fokus: Ekologi & Ketahanan Pangan"
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/administratif staff/staff_1.jpg"
+                alt="Miriam Levy"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Dr. Sharon Ravitz-Wyngaard</div>
+              <div class="jabatan-staf">Academic Director</div>
+            </div>
+          </div>
+
+          <!-- ── Staf 3 ── -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="120"
+            data-nama="Ilana Ninio"
+            data-jabatan="office manager"
+            data-asal="Israel"
+            data-bergabung="2010"
+            data-foto="/assets/images/staff/administratif staff/staff_3.jpg"
+            data-bio="<b>Posisi</b><br>
+            Office Manager di AICAT<br>
+            Bekerja sama dengan kantor tenaga kerja di Moshav<br>
+            Mengelola staf AICAT: pengajar, supervisor, ketua grup, dan pekerja umum<br>
+            Bertanggung jawab atas kurikulum bulanan, transportasi, tur, gaji, serta acara khusus seperti Open Day dan wisuda<br><br>
+
+            <b>Biografi Singkat</b><br>
+            Menikah dan memiliki 2 anak<br>
+            Tinggal di Moshav Hatzeva<br>
+            Menjalankan usaha pertanian keluarga<br><br>
+
+            <b>Pendidikan</b><br>
+            S1 Kriminologi – Ariel University"
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/administratif staff/staff_3.jpg"
+                alt="Ilana Ninio"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Ilana Ninio</div>
+              <div class="jabatan-staf">office manager</div>
+            </div>
+          </div>
+
+          <!-- ── Staf 4 ── -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="180"
+            data-nama="Judith Avraham"
+            data-jabatan="Website and Social Media Manager"
+            data-asal="Israel"
+            data-bergabung="2016"
+            data-foto="/assets/images/staff/administratif staff/staf_4.jpg"
+            data-bio="<b>Posisi</b><br>
+            Website dan Social Media Manager<br>
+            Bertanggung jawab atas pengembangan dan pemeliharaan kehadiran AICAT di internet, baik melalui website maupun platform media sosial<br><br>
+
+            <b>Biografi Singkat</b><br>
+            Mengelola dan mengembangkan platform digital AICAT untuk memastikan informasi tersampaikan dengan baik kepada publik dan peserta program<br><br>"
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/administratif staff/staf_4.jpg"
+                alt="Judith Avraham"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Judith Avraham</div>
+              <div class="jabatan-staf">Website and Social Media Manager</div>
+            </div>
+          </div>
+
+          <!-- ── Staf 5 ── -->
+          <div
+            class="kartu-staf"
+            data-aos="fade-up"
+            data-aos-delay="240"
+            data-nama="Elinor Garubi"
+            data-jabatan="USF (Univerity-Student- Farmer) Coordinator "
+            data-asal="Israel"
+            data-bergabung="2014"
+            data-foto="/assets/images/staff/administratif staff/co-ordination.jpg"
+            data-bio="<b>Posisi</b><br>
+            USF (University-Student-Farmer) Coordinator<br>
+            Bertanggung jawab atas koordinasi antara universitas, mahasiswa, petani, dan AICAT. Meliputi wawancara mahasiswa di negara asal, pendampingan selama berada di Israel, menangani situasi khusus, kondisi kerja, masalah pribadi, dan disiplin. Terus memperbarui universitas dan menjaga komunikasi dengan petani lokal.<br><br>
+
+            <b>Biografi Singkat</b><br>
+            Mengelola seluruh koordinasi USF untuk memastikan mahasiswa mendapat pengalaman optimal selama program, serta menjaga hubungan baik dengan pihak universitas dan petani.<br><br>"
+            onclick="bukaBio(this)"
+          >
+            <div class="foto-staf-wrap">
+              <img
+                src="/assets/images/staff/administratif staff/co-ordination.jpg"
+                alt="Elinor Garubi"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="overlay-klik">
+                <span
+                  ><i class="bi bi-person-lines-fill"></i> Lihat Biografi</span
+                >
+              </div>
+            </div>
+            <div class="info-staf">
+              <div class="nama-staf">Elinor Garubi</div>
+              <div class="jabatan-staf">
+                USF (Univerity-Student- Farmer) Coordinator
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /grid-foto-staf -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         POPUP BIO
+    ══════════════════════════════ -->
+    <div class="overlay-bio" id="overlayBio">
+      <div class="kotak-bio" id="kotakBio">
+        <div class="bio-header">
+          <img class="bio-foto" id="bioFoto" src="" alt="" />
+          <div class="bio-header-info">
+            <div class="bio-jabatan" id="bioJabatan"></div>
+            <div class="bio-nama" id="bioNama"></div>
+            <div class="bio-tag">
+              <i class="bi bi-geo-alt-fill" style="font-size: 11px"></i>
+              <span id="bioAsal"></span>
+            </div>
+          </div>
+          <button class="tombol-tutup" id="tombolTutup" aria-label="Tutup">
+            &#x2715;
+          </button>
+        </div>
+
+        <div class="bio-isi">
+          <div class="bio-label">Biografi Singkat</div>
+          <p class="bio-teks" id="bioTeks"></p>
+
+          <div class="bio-fakta">
+            <div class="fakta-item">
+              <div class="fakta-label">Asal Negara</div>
+              <div class="fakta-nilai" id="faktaAsal"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Bergabung Sejak</div>
+              <div class="fakta-nilai" id="faktaBergabung"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Divisi</div>
+              <div class="fakta-nilai" id="faktaDivisi"></div>
+            </div>
+            <div class="fakta-item">
+              <div class="fakta-label">Lokasi</div>
+              <div class="fakta-nilai" id="faktaLokasi">Sapir, Arava</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="/assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="/assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="/pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      (function () {
+        /* ── Referensi elemen popup ── */
+        var overlayBio = document.getElementById("overlayBio");
+        var tombolTutup = document.getElementById("tombolTutup");
+
+        var elBioFoto = document.getElementById("bioFoto");
+        var elBioNama = document.getElementById("bioNama");
+        var elBioJabatan = document.getElementById("bioJabatan");
+        var elBioAsal = document.getElementById("bioAsal");
+        var elBioTeks = document.getElementById("bioTeks");
+        var elFaktaAsal = document.getElementById("faktaAsal");
+        var elFaktaBergabung = document.getElementById("faktaBergabung");
+        var elFaktaDivisi = document.getElementById("faktaDivisi");
+
+        /* ── Buka popup bio ── */
+        window.bukaBio = function (kartu) {
+          // Isi popup utama
+          elBioFoto.src = kartu.getAttribute("data-foto");
+          elBioFoto.alt = kartu.getAttribute("data-nama");
+          elBioNama.textContent = kartu.getAttribute("data-nama");
+          elBioJabatan.textContent = kartu.getAttribute("data-jabatan");
+          elBioAsal.textContent = kartu.getAttribute("data-asal");
+
+          // Bio text (HTML)
+          elBioTeks.innerHTML = kartu.getAttribute("data-bio");
+
+          // Fakta tambahan
+          elFaktaAsal.textContent = kartu.getAttribute("data-asal");
+          elFaktaBergabung.textContent = kartu.getAttribute("data-bergabung");
+          elFaktaDivisi.textContent = kartu.getAttribute("data-jabatan");
+
+          // Tampilkan popup
+          overlayBio.classList.add("tampil");
+          document.body.style.overflow = "hidden";
+        };
+
+        /* ── Tutup popup ── */
+        function tutupBio() {
+          overlayBio.classList.remove("tampil");
+          document.body.style.overflow = "";
+        }
+
+        tombolTutup.addEventListener("click", tutupBio);
+
+        /* Klik di luar kotak → tutup */
+        overlayBio.addEventListener("click", function (e) {
+          if (e.target === overlayBio) tutupBio();
+        });
+
+        /* Tekan Escape → tutup */
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") tutupBio();
+        });
+      })();
+    </script>
+  </body>
+</html>

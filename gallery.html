@@ -1,0 +1,1813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - pendaftaran</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/pendaftaran.css" />
+    <link rel="stylesheet" href="assets/css/menu/gallery.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Informasi Program</a></li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Mitra</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Informasi Program</a></li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero-galeri">
+      <div class="container hero-dalam-galeri">
+        <div class="label-atas-hero" data-aos="fade-up">
+          <i class="bi bi-images"></i>
+          Galeri AICAT
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="80">
+          Momen <em>Berharga</em> di<br />Kampus AICAT
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="160">
+          Koleksi foto dari berbagai kegiatan, program, dan kenangan indah
+          selama perjalanan AICAT bersama ribuan peserta dari seluruh penjuru
+          dunia.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SEKSI GALERI UTAMA
+    ══════════════════════════════════════════ -->
+    <section class="seksi-galeri-utama">
+      <div class="container">
+        <!-- Tab Navigasi Kategori -->
+        <div class="wrapper-tab-kategori" data-aos="fade-up">
+          <button class="tombol-kategori" data-target="dalam-kelas">
+            <i class="bi bi-easel-fill"></i>
+            Di Dalam Kelas
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori aktif" data-target="kehidupan-kampus">
+            <i class="bi bi-houses-fill"></i>
+            Kehidupan Kampus
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="pertanian">
+            <i class="bi bi-tree-fill"></i>
+            Pertanian
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="alumni">
+            <i class="bi bi-people-fill"></i>
+            Alumni
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="wisuda-2022">
+            <i class="bi bi-mortarboard-fill"></i>
+            Wisuda 2022
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="pemimpin-kelompok-2021">
+            <i class="bi bi-star-fill"></i>
+            Pemimpin Kelompok 2021
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="natal-2020">
+            <i class="bi bi-balloon-heart-fill"></i>
+            Natal 2020
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="alumni-bulan-ini">
+            <i class="bi bi-calendar-heart-fill"></i>
+            Alumni Bulan Ini
+            <span class="jumlah-foto">10</span>
+          </button>
+
+          <button class="tombol-kategori" data-target="tanaman-unggul">
+            <i class="bi bi-flower1"></i>
+            Tanaman Unggul
+            <span class="jumlah-foto">10</span>
+          </button>
+        </div>
+        <!-- /wrapper-tab-kategori -->
+
+        <!-- ═══════════════════════════════
+             PANEL 1: Kehidupan Kampus
+        ═══════════════════════════════ -->
+        <div class="panel-galeri tampil" id="kehidupan-kampus">
+          <div class="judul-panel-galeri" data-aos="fade-up">
+            <h2>Kehidupan Kampus</h2>
+            <p>
+              Keseharian yang penuh semangat di lingkungan kampus AICAT — dari
+              pagi hingga malam.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="kehidupan-kampus">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-1.jpg"
+                alt="Kehidupan Kampus 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-2.jpg"
+                alt="Kehidupan Kampus 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-3.jpg"
+                alt="Kehidupan Kampus 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-4.jpg"
+                alt="Kehidupan Kampus 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-5.jpg"
+                alt="Kehidupan Kampus 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-6.jpg"
+                alt="Kehidupan Kampus 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-7.jpg"
+                alt="Kehidupan Kampus 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-8.jpg"
+                alt="Kehidupan Kampus 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-9.jpg"
+                alt="Kehidupan Kampus 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/kehidupan-kampus/foto-10.jpg"
+                alt="Kehidupan Kampus 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 2: Pertanian
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="pertanian">
+          <div class="judul-panel-galeri">
+            <h2>Pertanian</h2>
+            <p>
+              Praktik pertanian modern yang menjadi inti pembelajaran di AICAT —
+              dari lahan hingga teknologi irigasi.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="pertanian">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/pertanian/foto-1.jpg"
+                alt="Pertanian 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/pertanian/foto-2.jpg"
+                alt="Pertanian 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/pertanian/foto-3.jpg"
+                alt="Pertanian 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/pertanian/foto-4.jpg"
+                alt="Pertanian 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/pertanian/foto-5.jpg"
+                alt="Pertanian 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/pertanian/foto-6.jpg"
+                alt="Pertanian 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/pertanian/foto-7.jpg"
+                alt="Pertanian 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/pertanian/foto-8.jpg"
+                alt="Pertanian 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/pertanian/foto-9.jpg"
+                alt="Pertanian 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/pertanian/foto-10.jpg"
+                alt="Pertanian 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 3: Alumni
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="alumni">
+          <div class="judul-panel-galeri">
+            <h2>Alumni</h2>
+            <p>
+              Para alumni AICAT yang kini menjadi pemimpin pertanian di negara
+              masing-masing.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="alumni">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/alumni/foto-1.jpg"
+                alt="Alumni 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/alumni/foto-2.jpg"
+                alt="Alumni 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/alumni/foto-3.jpg"
+                alt="Alumni 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/alumni/foto-4.jpg"
+                alt="Alumni 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/alumni/foto-5.jpg"
+                alt="Alumni 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/alumni/foto-6.jpg"
+                alt="Alumni 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/alumni/foto-7.jpg"
+                alt="Alumni 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/alumni/foto-8.jpg"
+                alt="Alumni 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/alumni/foto-9.jpg"
+                alt="Alumni 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/alumni/foto-10.jpg"
+                alt="Alumni 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 4: Wisuda 2022
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="wisuda-2022">
+          <div class="judul-panel-galeri">
+            <h2>Wisuda 2022</h2>
+            <p>
+              Perayaan kelulusan bersejarah angkatan 2022 — momen penuh
+              kebanggaan dan keharuan.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="wisuda-2022">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-1.jpg"
+                alt="Wisuda 2022 - 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-2.jpg"
+                alt="Wisuda 2022 - 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-3.jpg"
+                alt="Wisuda 2022 - 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-4.jpg"
+                alt="Wisuda 2022 - 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-5.jpg"
+                alt="Wisuda 2022 - 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-6.jpg"
+                alt="Wisuda 2022 - 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-7.jpg"
+                alt="Wisuda 2022 - 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-8.jpg"
+                alt="Wisuda 2022 - 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-9.jpg"
+                alt="Wisuda 2022 - 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/wisuda-2022/foto-10.jpg"
+                alt="Wisuda 2022 - 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 5: Di Dalam Kelas
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="dalam-kelas">
+          <div class="judul-panel-galeri">
+            <h2>Di Dalam Kelas</h2>
+            <p>
+              Suasana belajar yang interaktif dan penuh diskusi di ruang kelas
+              modern kampus AICAT.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="dalam-kelas">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-1.jpg"
+                alt="Dalam Kelas 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-2.jpg"
+                alt="Dalam Kelas 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-3.jpg"
+                alt="Dalam Kelas 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-4.jpg"
+                alt="Dalam Kelas 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-5.jpg"
+                alt="Dalam Kelas 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-6.jpg"
+                alt="Dalam Kelas 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-7.jpg"
+                alt="Dalam Kelas 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-8.jpg"
+                alt="Dalam Kelas 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-9.jpg"
+                alt="Dalam Kelas 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/dalam-kelas/foto-10.jpg"
+                alt="Dalam Kelas 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 6: Pemimpin Kelompok 2021
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="pemimpin-kelompok-2021">
+          <div class="judul-panel-galeri">
+            <h2>Pemimpin Kelompok 2021</h2>
+            <p>
+              Para pemimpin kelompok angkatan 2021 yang menginspirasi
+              rekan-rekannya selama program berlangsung.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="pemimpin-kelompok-2021">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-1.jpg"
+                alt="Pemimpin Kelompok 2021 - 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-2.jpg"
+                alt="Pemimpin Kelompok 2021 - 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-3.jpg"
+                alt="Pemimpin Kelompok 2021 - 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-4.jpg"
+                alt="Pemimpin Kelompok 2021 - 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-5.jpg"
+                alt="Pemimpin Kelompok 2021 - 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-6.jpg"
+                alt="Pemimpin Kelompok 2021 - 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-7.jpg"
+                alt="Pemimpin Kelompok 2021 - 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-8.jpg"
+                alt="Pemimpin Kelompok 2021 - 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-9.jpg"
+                alt="Pemimpin Kelompok 2021 - 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/pemimpin-kelompok-2021/foto-10.jpg"
+                alt="Pemimpin Kelompok 2021 - 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 7: Natal 2020
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="natal-2020">
+          <div class="judul-panel-galeri">
+            <h2>Natal 2020</h2>
+            <p>
+              Perayaan Natal 2020 bersama keluarga besar AICAT yang penuh
+              kebersamaan dan kehangatan.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="natal-2020">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/natal-2020/foto-1.jpg"
+                alt="Natal 2020 - 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/natal-2020/foto-2.jpg"
+                alt="Natal 2020 - 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/natal-2020/foto-3.jpg"
+                alt="Natal 2020 - 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/natal-2020/foto-4.jpg"
+                alt="Natal 2020 - 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/natal-2020/foto-5.jpg"
+                alt="Natal 2020 - 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/natal-2020/foto-6.jpg"
+                alt="Natal 2020 - 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/natal-2020/foto-7.jpg"
+                alt="Natal 2020 - 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/natal-2020/foto-8.jpg"
+                alt="Natal 2020 - 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/natal-2020/foto-9.jpg"
+                alt="Natal 2020 - 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/natal-2020/foto-10.jpg"
+                alt="Natal 2020 - 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 8: Alumni Bulan Ini
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="alumni-bulan-ini">
+          <div class="judul-panel-galeri">
+            <h2>Alumni Bulan Ini</h2>
+            <p>
+              Sorotan alumni terbaru yang terus berkarya dan memberi dampak
+              nyata di bidang pertanian dunia.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="alumni-bulan-ini">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-1.jpg"
+                alt="Alumni Bulan Ini - 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-2.jpg"
+                alt="Alumni Bulan Ini - 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-3.jpg"
+                alt="Alumni Bulan Ini - 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-4.jpg"
+                alt="Alumni Bulan Ini - 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-5.jpg"
+                alt="Alumni Bulan Ini - 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-6.jpg"
+                alt="Alumni Bulan Ini - 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-7.jpg"
+                alt="Alumni Bulan Ini - 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-8.jpg"
+                alt="Alumni Bulan Ini - 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-9.jpg"
+                alt="Alumni Bulan Ini - 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-10.jpg"
+                alt="Alumni Bulan Ini - 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════
+             PANEL 9: Tanaman Unggul
+        ═══════════════════════════════ -->
+        <div class="panel-galeri" id="tanaman-unggul">
+          <div class="judul-panel-galeri">
+            <h2>Tanaman Unggul</h2>
+            <p>
+              Sorotan alumni terbaru yang terus berkarya dan memberi dampak
+              nyata di bidang pertanian dunia.
+            </p>
+          </div>
+          <div class="grid-foto-galeri" data-kategori="alumni-bulan-ini">
+            <div class="item-foto-galeri" data-indeks="0">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-1.jpg"
+                alt="Alumni Bulan Ini - 1"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">01</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="1">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-2.jpg"
+                alt="Alumni Bulan Ini - 2"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">02</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="2">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-3.jpg"
+                alt="Alumni Bulan Ini - 3"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">03</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="3">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-4.jpg"
+                alt="Alumni Bulan Ini - 4"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">04</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="4">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-5.jpg"
+                alt="Alumni Bulan Ini - 5"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">05</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="5">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-6.jpg"
+                alt="Alumni Bulan Ini - 6"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">06</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="6">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-7.jpg"
+                alt="Alumni Bulan Ini - 7"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">07</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="7">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-8.jpg"
+                alt="Alumni Bulan Ini - 8"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">08</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="8">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-9.jpg"
+                alt="Alumni Bulan Ini - 9"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">09</span>
+            </div>
+            <div class="item-foto-galeri" data-indeks="9">
+              <img
+                src="assets/images/gallery/alumni-bulan-ini/foto-10.jpg"
+                alt="Alumni Bulan Ini - 10"
+                loading="lazy"
+              />
+              <div class="lapisan-hover-foto">
+                <i class="bi bi-zoom-in"></i>
+              </div>
+              <span class="nomor-foto">10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         LIGHTBOX
+    ══════════════════════════════════════════ -->
+    <div
+      class="kotak-lightbox"
+      id="kotak-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Lightbox gambar"
+    >
+      <!-- Klik latar untuk tutup -->
+      <div class="latar-lightbox" id="latar-lightbox"></div>
+
+      <!-- Tombol tutup -->
+      <button
+        class="tombol-tutup-lightbox"
+        id="tombol-tutup-lightbox"
+        aria-label="Tutup lightbox"
+      >
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <!-- Panah kiri -->
+      <button
+        class="tombol-panah panah-kiri"
+        id="panah-kiri"
+        aria-label="Foto sebelumnya"
+      >
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- Gambar utama -->
+      <div class="isi-lightbox">
+        <img class="gambar-lightbox" id="gambar-lightbox" src="" alt="" />
+        <div class="keterangan-lightbox">
+          <strong id="judul-lightbox"></strong>
+          <span id="penanda-lightbox" class="penanda-lightbox"></span>
+        </div>
+      </div>
+
+      <!-- Panah kanan -->
+      <button
+        class="tombol-panah panah-kanan"
+        id="panah-kanan"
+        aria-label="Foto berikutnya"
+      >
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+      <!-- Strip thumbnail bawah -->
+      <div class="strip-thumbnail" id="strip-thumbnail"></div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="cara-daftar.html">Cara Daftar</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      /* ═══════════════════════════════════════════════════
+        INISIALISASI AOS
+      ═══════════════════════════════════════════════════ */
+      AOS.init({ once: true, duration: 680, easing: "ease-out-cubic" });
+
+      /* ═══════════════════════════════════════════════════
+        TAB KATEGORI
+      ═══════════════════════════════════════════════════ */
+      const tombolKategori = document.querySelectorAll(".tombol-kategori");
+      const semuaPanel = document.querySelectorAll(".panel-galeri");
+
+      tombolKategori.forEach((tombol) => {
+        tombol.addEventListener("click", () => {
+          // Reset semua tombol & panel
+          tombolKategori.forEach((t) => t.classList.remove("aktif"));
+          semuaPanel.forEach((p) => p.classList.remove("tampil"));
+
+          // Aktifkan tombol & panel yang dipilih
+          tombol.classList.add("aktif");
+          const targetId = tombol.dataset.target;
+          document.getElementById(targetId).classList.add("tampil");
+        });
+      });
+
+      /* ═══════════════════════════════════════════════════
+         LIGHTBOX
+      ═══════════════════════════════════════════════════ */
+      const kotakLightbox = document.getElementById("kotak-lightbox");
+      const gambarLightbox = document.getElementById("gambar-lightbox");
+      const judulLightbox = document.getElementById("judul-lightbox");
+      const penandaLightbox = document.getElementById("penanda-lightbox");
+      const stripThumbnail = document.getElementById("strip-thumbnail");
+
+      let daftarFotoAktif = []; // array { src, alt }
+      let indeksAktif = 0;
+
+      /* Buka lightbox */
+      function bukaLightbox(items, indeks) {
+        daftarFotoAktif = items;
+        indeksAktif = indeks;
+        renderLightbox();
+        kotakLightbox.classList.add("terbuka");
+        document.body.style.overflow = "hidden";
+        bangunStripThumbnail();
+      }
+
+      /* Render gambar aktif */
+      function renderLightbox() {
+        const item = daftarFotoAktif[indeksAktif];
+
+        // Animasi fade
+        gambarLightbox.classList.add("memudar");
+        setTimeout(() => {
+          gambarLightbox.src = item.src;
+          gambarLightbox.alt = item.alt;
+          judulLightbox.textContent = item.alt;
+          penandaLightbox.textContent = `${indeksAktif + 1} / ${daftarFotoAktif.length}`;
+          gambarLightbox.classList.remove("memudar");
+        }, 180);
+
+        // Sinkronisasi thumbnail
+        document.querySelectorAll(".thumb-item").forEach((th, i) => {
+          th.classList.toggle("aktif-thumb", i === indeksAktif);
+          if (i === indeksAktif) {
+            th.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center",
+            });
+          }
+        });
+      }
+
+      /* Bangun strip thumbnail */
+      function bangunStripThumbnail() {
+        stripThumbnail.innerHTML = "";
+        daftarFotoAktif.forEach((item, i) => {
+          const div = document.createElement("div");
+          div.className =
+            "thumb-item" + (i === indeksAktif ? " aktif-thumb" : "");
+          div.innerHTML = `<img src="${item.src}" alt="${item.alt}" loading="lazy" />`;
+          div.addEventListener("click", () => {
+            indeksAktif = i;
+            renderLightbox();
+          });
+          stripThumbnail.appendChild(div);
+        });
+      }
+
+      /* Tutup lightbox */
+      function tutupLightbox() {
+        kotakLightbox.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      }
+
+      /* Navigasi */
+      function fotoBerikutnya() {
+        indeksAktif = (indeksAktif + 1) % daftarFotoAktif.length;
+        renderLightbox();
+      }
+
+      function fotoSebelumnya() {
+        indeksAktif =
+          (indeksAktif - 1 + daftarFotoAktif.length) % daftarFotoAktif.length;
+        renderLightbox();
+      }
+
+      /* Event listeners lightbox */
+      document
+        .getElementById("latar-lightbox")
+        .addEventListener("click", tutupLightbox);
+      document
+        .getElementById("tombol-tutup-lightbox")
+        .addEventListener("click", tutupLightbox);
+      document
+        .getElementById("panah-kanan")
+        .addEventListener("click", fotoBerikutnya);
+      document
+        .getElementById("panah-kiri")
+        .addEventListener("click", fotoSebelumnya);
+
+      /* Keyboard */
+      document.addEventListener("keydown", (e) => {
+        if (!kotakLightbox.classList.contains("terbuka")) return;
+        if (e.key === "ArrowRight") fotoBerikutnya();
+        if (e.key === "ArrowLeft") fotoSebelumnya();
+        if (e.key === "Escape") tutupLightbox();
+      });
+
+      /* Touch swipe */
+      let posisiSentuhX = null;
+
+      kotakLightbox.addEventListener("touchstart", (e) => {
+        posisiSentuhX = e.changedTouches[0].clientX;
+      });
+
+      kotakLightbox.addEventListener("touchend", (e) => {
+        if (posisiSentuhX === null) return;
+        const selisih = posisiSentuhX - e.changedTouches[0].clientX;
+        if (Math.abs(selisih) > 50) {
+          selisih > 0 ? fotoBerikutnya() : fotoSebelumnya();
+        }
+        posisiSentuhX = null;
+      });
+
+      /* Klik item foto — kumpulkan semua foto dalam panel aktif */
+      document.querySelectorAll(".item-foto-galeri").forEach((item) => {
+        item.addEventListener("click", () => {
+          // Grid induk (panel aktif)
+          const grid = item.closest(".grid-foto-galeri");
+          const semuaItem = Array.from(
+            grid.querySelectorAll(".item-foto-galeri"),
+          );
+
+          const daftarFoto = semuaItem.map((el) => {
+            const img = el.querySelector("img");
+            return { src: img.src, alt: img.alt };
+          });
+
+          const indeks = parseInt(item.dataset.indeks, 10);
+          bukaLightbox(daftarFoto, indeks);
+        });
+      });
+    </script>
+  </body>
+</html>

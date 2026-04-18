@@ -1,0 +1,1486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - pendaftaran</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/caradaftar.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Hak Peserta</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Cara Daftar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Mitra</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Cara Daftar</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero-cara-daftar">
+      <div class="container hero-dalam">
+        <div class="label-hero" data-aos="fade-up">
+          <i class="bi bi-clipboard2-check-fill"></i> Proses Registrasi AICAT
+          2024–2025
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="80">
+          Panduan Lengkap<br /><em>Cara Daftar</em> ke AICAT
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="140">
+          Ikuti 6 tahap registrasi secara berurutan mulai dari pendaftaran, tes
+          fisik, training bahasa Inggris, syarat & ketentuan, folder dokumen,
+          hingga proses visa. Baca dan pahami semua informasi sebelum mendaftar.
+        </p>
+        <div class="hero-tahapan" data-aos="fade-up" data-aos-delay="200">
+          <div class="pill-tahap">
+            <i class="bi bi-1-circle-fill"></i> Tahap 1: Daftar
+          </div>
+          <div class="pill-tahap">
+            <i class="bi bi-2-circle-fill"></i> Tahap 2: Tes Fisik
+          </div>
+          <div class="pill-tahap">
+            <i class="bi bi-3-circle-fill"></i> Tahap 3: Training B. Inggris
+          </div>
+          <div class="pill-tahap">
+            <i class="bi bi-4-circle-fill"></i> Tahap 4: Syarat & Ketentuan
+          </div>
+          <div class="pill-tahap">
+            <i class="bi bi-5-circle-fill"></i> Tahap 5: Folder Dokumen
+          </div>
+          <div class="pill-tahap">
+            <i class="bi bi-6-circle-fill"></i> Tahap 6: Proses Visa
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         KONTEN UTAMA
+    ══════════════════════════════════════════ -->
+    <div class="container">
+      <div class="layout-utama">
+        <!-- ── SIDEBAR ── -->
+        <aside class="sidebar-caradaftar" data-aos="fade-right">
+          <div class="sidebar-kepala">
+            <i class="bi bi-list-ul"></i> Navigasi Panduan
+          </div>
+          <ul class="daftar-sidebar">
+            <li>
+              <a href="#syarat-kandidat">
+                <i class="bi bi-person-check-fill"></i> Syarat Kandidat
+              </a>
+            </li>
+
+            <li>
+              <a href="#overview-tahapan">
+                <i class="bi bi-diagram-3-fill"></i> 6 Tahap Registrasi
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 1 -->
+            <li>
+              <a href="#tahap-1">
+                <i class="bi bi-pencil-square"></i> Tahap 1 : Daftar
+                <span class="badge-tahap-sidebar badge-1">1</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 2 -->
+            <li>
+              <a href="#tahap-2">
+                <i class="bi bi-heart-pulse-fill"></i> Tahap 2 : Tes Fisik &
+                Kesehatan
+                <span class="badge-tahap-sidebar badge-2">2</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 3 -->
+            <li>
+              <a href="#tahap-3">
+                <i class="bi bi-translate"></i> Tahap 3 : Training B. Inggris
+                <span class="badge-tahap-sidebar badge-3">3</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 4 -->
+            <li>
+              <a href="#tahap-4">
+                <i class="bi bi-file-earmark-text-fill"></i> Tahap 4 : Syarat &
+                Ketentuan
+                <span class="badge-tahap-sidebar badge-4">4</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 5 -->
+            <li>
+              <a href="#tahap-5">
+                <i class="bi bi-folder-fill"></i> Tahap 5 : Folder Dokumen
+                <span class="badge-tahap-sidebar badge-5">5</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <!-- Tahap 6 -->
+            <li>
+              <a href="#tahap-6">
+                <i class="bi bi-passport-fill"></i> Tahap 6 : Proses Visa
+                <span class="badge-tahap-sidebar badge-6">6</span>
+              </a>
+            </li>
+
+            <div class="pemisah-sidebar"></div>
+
+            <li>
+              <a href="#penerbangan">
+                <i class="bi bi-airplane-fill"></i> Penerbangan ke Israel
+              </a>
+            </li>
+
+            <li>
+              <a href="#pengingat">
+                <i class="bi bi-bell-fill"></i> Pengingat Penting
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-cta-bawah">
+            <a href="pendaftaran.html"
+              ><i class="bi bi-pencil-fill"></i> Mulai Daftar Sekarang</a
+            >
+          </div>
+        </aside>
+
+        <!-- ── KONTEN ── -->
+        <main class="area-konten">
+          <!-- ══ SYARAT KANDIDAT ══ -->
+          <div class="kartu-seksi" id="syarat-kandidat" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-hijau">
+                <i class="bi bi-person-check-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Persyaratan Awal</div>
+                <h2>Syarat Kandidat yang Mendaftar</h2>
+              </div>
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Dalam rangka mempersiapkan tahun mendatang, berikut adalah
+                persyaratan bagi kandidat untuk bergabung dengan program AICAT
+                2024–2025.
+                <strong
+                  >Pastikan seluruh kandidat memenuhi semua syarat di bawah
+                  sebelum mendaftar.</strong
+                >
+              </p>
+
+              <div class="grid-2">
+                <div class="kotak-sub">
+                  <h4><i class="bi bi-calendar-check-fill"></i> Usia</h4>
+                  <p
+                    style="font-size: 13.5px; color: #374151; line-height: 1.6"
+                  >
+                    Berusia antara <strong>19 – 28 tahun</strong> saat program
+                    dimulai.
+                  </p>
+                </div>
+                <div class="kotak-sub">
+                  <h4><i class="bi bi-heart-pulse-fill"></i> Kesehatan</h4>
+                  <p
+                    style="font-size: 13.5px; color: #374151; line-height: 1.6"
+                  >
+                    <strong>Sehat secara jasmani dan rohani</strong> :wajib
+                    menyertakan sertifikat medis.
+                  </p>
+                </div>
+                <div class="kotak-sub">
+                  <h4><i class="bi bi-translate"></i> Bahasa Inggris</h4>
+                  <p
+                    style="font-size: 13.5px; color: #374151; line-height: 1.6"
+                  >
+                    Penguasaan <strong>bahasa Inggris</strong> seluruh
+                    perkuliahan dalam bahasa Inggris.
+                  </p>
+                </div>
+                <div class="kotak-sub">
+                  <h4><i class="bi bi-mortarboard-fill"></i> Latar Belakang</h4>
+                  <p
+                    style="font-size: 13.5px; color: #374151; line-height: 1.6"
+                  >
+                    Memiliki
+                    <strong
+                      >latar belakang akademis di bidang pertanian atau memiliki
+                      bakat dalam pertanian dan punya minat dan ketertarikan
+                      dalam bidang pertanian </strong
+                    >.
+                  </p>
+                </div>
+              </div>
+
+              <div class="kotak-info info-kuning" style="margin-top: 16px">
+                <i class="bi bi-passport-fill"></i>
+                <div class="isi-info">
+                  <strong
+                    >Paspor berlaku setidaknya 5 tahun dari
+                    keberangkatan</strong
+                  >
+                  <p>
+                    Seluruh kandidat wajib memiliki paspor yang masih berlaku
+                    minimal 5 tahun sejak tanggal keberangkatan, sesuai dengan
+                    persyaratan pengajuan visa Israel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ OVERVIEW 6 TAHAP ══ -->
+          <div class="kartu-seksi" id="overview-tahapan" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-biru">
+                <i class="bi bi-diagram-3-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Alur Registrasi</div>
+                <h2>6 Tahap Proses Pendaftaran</h2>
+              </div>
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Proses registrasi AICAT dilakukan dalam
+                <strong>enam tahap berurutan</strong>. Setiap tahap memiliki
+                persyaratan dan informasi berbeda. Pastikan semua tahap dilalui
+                dengan lengkap dan tepat waktu.
+              </p>
+              <div class="grid-tiga-tahap">
+                <div class="kartu-tahap t1">
+                  <div class="nomor-tahap-besar">1</div>
+                  <div class="judul-tahap">Daftar</div>
+                  <div class="sub-tahap">
+                    Bayar biaya pendaftaran, lampirkan dokumen diri & surat
+                    pernyataan
+                  </div>
+                </div>
+                <div class="kartu-tahap t2">
+                  <div class="nomor-tahap-besar">2</div>
+                  <div class="judul-tahap">Tes Fisik</div>
+                  <div class="sub-tahap">
+                    Tes fisik umum dan tes kesehatan yang disesuaikan oleh AICAT
+                  </div>
+                </div>
+                <div class="kartu-tahap t3">
+                  <div class="nomor-tahap-besar">3</div>
+                  <div class="judul-tahap">Training B. Inggris</div>
+                  <div class="sub-tahap">
+                    Pelatihan bahasa Inggris untuk persiapan program di Israel
+                  </div>
+                </div>
+                <div class="kartu-tahap t1">
+                  <div class="nomor-tahap-besar">4</div>
+                  <div class="judul-tahap">Syarat & Ketentuan</div>
+                  <div class="sub-tahap">
+                    Formulir online: hak mahasiswa, preferensi belajar, dan
+                    tanda tangan digital
+                  </div>
+                </div>
+                <div class="kartu-tahap t2">
+                  <div class="nomor-tahap-besar">5</div>
+                  <div class="judul-tahap">Folder Dokumen</div>
+                  <div class="sub-tahap">
+                    Folder lengkap per kandidat berisi paspor, foto, transkrip,
+                    dan sertifikat medis
+                  </div>
+                </div>
+                <div class="kartu-tahap t3">
+                  <div class="nomor-tahap-besar">6</div>
+                  <div class="judul-tahap">Proses Visa</div>
+                  <div class="sub-tahap">
+                    File Excel + Salinan paspor kandidat untuk keperluan
+                    pengajuan visa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 1 ══ -->
+          <div class="kartu-seksi" id="tahap-1" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-hijau">
+                <i class="bi bi-1-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Pertama</div>
+                <h2>Tahap 1 : Daftar</h2>
+              </div>
+              <span class="lencana lencana-hijau"
+                ><i class="bi bi-pencil-fill"></i> Pendaftaran Awal</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Tahap pertama adalah proses pendaftaran awal. Lengkapi semua
+                persyaratan di bawah ini sebelum melanjutkan ke tahap
+                berikutnya.
+              </p>
+
+              <!-- Biaya Pendaftaran -->
+              <div class="kotak-info info-hijau">
+                <i class="bi bi-cash-coin"></i>
+                <div class="isi-info">
+                  <strong>Biaya Pendaftaran</strong>
+                  <p>
+                    Bayar biaya pendaftaran sebesar <b>Rp 75.000</b> sebagai
+                    syarat awal pendaftaran program AICAT.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Dokumen yang Diperlukan -->
+              <div style="margin-top: 16px">
+                <div class="sub-judul">
+                  <i class="bi bi-folder2-open" style="color: #1f6b3a"></i>
+                  Dokumen yang Harus Dilampirkan
+                </div>
+                <ul class="list-checklist">
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Ijazah Terakhir</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Lampirkan fotokopi atau scan ijazah pendidikan
+                        terakhir</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>KTP (Kartu Tanda Penduduk)</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Fotokopi atau scan KTP yang masih berlaku</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Kartu Keluarga</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Fotokopi atau scan Kartu Keluarga</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong
+                        >Surat Formulir Pernyataan Bersedia Atas Kehendak
+                        Sendiri</strong
+                      >
+                      <span class="teks-dokumen-kecil"
+                        >Surat pernyataan bahwa pendaftaran dilakukan atas
+                        kemauan sendiri tanpa paksaan</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong
+                        >Surat Keterangan Sehat dari Rumah Sakit
+                        Terdekat</strong
+                      >
+                      <span class="teks-dokumen-kecil"
+                        >Surat sehat resmi yang dikeluarkan oleh rumah sakit
+                        terdekat</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="kotak-info info-kuning" style="margin-top: 16px">
+                <i class="bi bi-info-circle-fill"></i>
+                <div class="isi-info">
+                  <strong>Pastikan Semua Dokumen Lengkap</strong>
+                  <p>
+                    Pendaftaran hanya akan diproses jika seluruh dokumen di atas
+                    telah dilengkapi dengan benar. Dokumen yang tidak lengkap
+                    tidak akan diproses lebih lanjut.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 2 ══ -->
+          <div class="kartu-seksi" id="tahap-2" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-biru">
+                <i class="bi bi-2-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Kedua</div>
+                <h2>Tahap 2 : Tes Fisik & Kesehatan</h2>
+              </div>
+              <span class="lencana lencana-emas"
+                ><i class="bi bi-heart-pulse-fill"></i> Wajib Lulus</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Pada tahap ini, setiap kandidat akan menjalani serangkaian
+                <strong>tes fisik dan kesehatan</strong>. Tes ini bertujuan
+                untuk memastikan kesiapan fisik kandidat ketika bekerja di
+                ladang nantinya. Kandidat yang lolos tes fisik akan dilanjutkan
+                ke tahap berikutnya.
+              </p>
+
+              <!-- Tes Fisik Umum -->
+              <div class="kotak-info info-biru" style="margin-top: 8px">
+                <i class="bi bi-person-arms-up"></i>
+                <div class="isi-info">
+                  <strong>Tes Fisik Umum</strong>
+                  <p>
+                    Beberapa tes fisik umum yang akan dilakukan antara lain:
+                    <b>push up, lari, berenang</b>, dan tes fisik lainnya.
+                    Tes-tes ini sangat penting untuk menguatkan fisik para
+                    kandidat ketika bertugas di ladang nantinya.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tes Kesehatan -->
+              <div style="margin-top: 16px">
+                <div class="sub-judul">
+                  <i class="bi bi-heart-pulse-fill" style="color: #1f3c88"></i>
+                  Tes Kesehatan
+                </div>
+                <ul class="list-checklist">
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Tes Kesehatan Lengkap</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Disesuaikan dengan standar dan ketentuan yang
+                        ditetapkan oleh AICAT</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="kotak-info info-kuning" style="margin-top: 16px">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div class="isi-info">
+                  <strong>Persiapkan Fisik Sejak Dini</strong>
+                  <p>
+                    Tes fisik merupakan bagian penting dari seleksi. Kandidat
+                    diharapkan mempersiapkan kondisi fisik sejak awal agar dapat
+                    melewati semua tahapan tes dengan baik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 3 ══ -->
+          <div class="kartu-seksi" id="tahap-3" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-emas">
+                <i class="bi bi-3-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Ketiga</div>
+                <h2>Tahap 3 : Training Bahasa Inggris</h2>
+              </div>
+              <span class="lencana lencana-emas"
+                ><i class="bi bi-translate"></i> Wajib Diikuti</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Seluruh kandidat yang lolos tes fisik wajib mengikuti
+                <strong>pelatihan Bahasa Inggris</strong>. Pelatihan ini
+                bertujuan mempersiapkan kandidat agar mampu berkomunikasi dan
+                mengikuti program perkuliahan di Israel yang seluruhnya
+                dilaksanakan dalam Bahasa Inggris.
+              </p>
+
+              <div class="kotak-info info-hijau">
+                <i class="bi bi-book-fill"></i>
+                <div class="isi-info">
+                  <strong>Mengapa Training Bahasa Inggris Penting?</strong>
+                  <p>
+                    Seluruh kegiatan akademik dan pelatihan di AICAT Israel
+                    dilaksanakan dalam Bahasa Inggris. Penguasaan bahasa Inggris
+                    yang baik akan sangat membantu kelancaran belajar dan
+                    komunikasi sehari-hari di sana.
+                  </p>
+                </div>
+              </div>
+
+              <div class="kotak-info info-kuning" style="margin-top: 14px">
+                <i class="bi bi-info-circle-fill"></i>
+                <div class="isi-info">
+                  <strong>Informasi Jadwal Training</strong>
+                  <p>
+                    Jadwal dan detail pelaksanaan training Bahasa Inggris akan
+                    diinformasikan lebih lanjut oleh tim AICAT setelah kandidat
+                    dinyatakan lolos tahap tes fisik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 4 ══ -->
+          <div class="kartu-seksi" id="tahap-4" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-emas">
+                <i class="bi bi-4-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Keempat</div>
+                <h2>Tahap 4 : Syarat & Ketentuan Online</h2>
+              </div>
+              <span class="lencana lencana-hijau"
+                ><i class="bi bi-check-circle-fill"></i> Wajib Semua
+                Mahasiswa</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Setiap mahasiswa yang diterima wajib mengisi formulir online
+                AICAT yang berisi
+                <strong
+                  >Syarat & Ketentuan, Hak Mahasiswa, dan Preferensi
+                  Belajar</strong
+                >. Formulir ini bersifat digital dan wajib diselesaikan sebelum
+                menerima persetujuan visa.
+              </p>
+
+              <!-- Isi formulir -->
+              <div class="kotak-info info-hijau">
+                <i class="bi bi-file-earmark-check-fill"></i>
+                <div class="isi-info">
+                  <strong>Apa yang Ada dalam Formulir Online?</strong>
+                  <p>
+                    Syarat & Ketentuan AICAT · Hak mahasiswa sebagai pelajar
+                    pertanian di Israel · Preferensi belajar dan penempatan
+                    pertanian
+                  </p>
+                </div>
+              </div>
+
+              <!-- Checklist wajib -->
+              <div class="sub-judul">
+                <i class="bi bi-list-check"></i> Pastikan Mahasiswa Kamu:
+              </div>
+              <ul class="list-checklist">
+                <li>
+                  <div class="cek"><i class="bi bi-check-lg"></i></div>
+                  <div>
+                    Telah membaca salinan terjemahan berkas syarat dan ketentuan
+                    serta <strong>memahami apa yang mereka tandatangani</strong>
+                  </div>
+                </li>
+                <li>
+                  <div class="cek"><i class="bi bi-check-lg"></i></div>
+                  <div>
+                    Membaca dan
+                    <strong>menandatangani secara digital</strong> Syarat dan
+                    Ketentuan AICAT melalui formulir online
+                  </div>
+                </li>
+                <li>
+                  <div class="cek"><i class="bi bi-check-lg"></i></div>
+                  <div>
+                    Menandatangani secara digital bahwa mereka telah menerima
+                    informasi tentang
+                    <strong
+                      >hak-hak sebagai mahasiswa pertanian di Israel</strong
+                    >
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Formulir online -->
+              <div id="formulir-online">
+                <div class="sub-judul" style="margin-top: 22px">
+                  <i class="bi bi-globe"></i> Link Formulir Online
+                </div>
+                <div class="kartu-link-formulir">
+                  <div class="ikon-formulir">
+                    <i class="bi bi-laptop-fill"></i>
+                  </div>
+                  <div class="isi-formulir">
+                    <div class="label-f">Formulir Resmi AICAT</div>
+                    <div class="url-f">www.aicat.co.il/tac-2</div>
+                    <div class="sub-f">
+                      Setelah mengisi formulir, mahasiswa akan menerima salinan
+                      PDF melalui email secara otomatis
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.aicat.co.il/tac-2"
+                    target="_blank"
+                    rel="noopener"
+                    class="tombol-buka"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Buka Formulir
+                  </a>
+                </div>
+              </div>
+
+              <div class="kotak-info info-merah" style="margin-top: 16px">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div class="isi-info">
+                  <strong>INI WAJIB UNTUK SETIAP MAHASISWA!</strong>
+                  <p>
+                    Formulir ini wajib diisi oleh
+                    <b>semua mahasiswa yang diterima</b> sebelum mereka menerima
+                    persetujuan visa. Mahasiswa wajib menandatangani dokumen
+                    sebelum menerima visa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 5 ══ -->
+          <div class="kartu-seksi" id="tahap-5" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-biru">
+                <i class="bi bi-5-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Kelima</div>
+                <h2>Tahap 5 : Folder Dokumen Kandidat</h2>
+              </div>
+              <span class="lencana lencana-emas"
+                ><i class="bi bi-clock-fill"></i> 1 Agustus 2024</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Buat satu folder terpisah untuk setiap kandidat. Folder diberi
+                nama berdasarkan <strong>nomor paspor</strong> kandidat
+                masing-masing.
+              </p>
+
+              <!-- Isi folder -->
+              <div id="isi-folder">
+                <div class="sub-judul">
+                  <i class="bi bi-folder-fill" style="color: #1f3c88"></i> Isi
+                  Setiap Folder Kandidat
+                </div>
+                <p class="teks-p" style="margin-bottom: 12px">
+                  Tidak ada persyaratan khusus untuk penamaan file di dalam
+                  folder. Yang penting semua dokumen berikut tersedia:
+                </p>
+                <ul class="list-checklist">
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Pindai Paspor (.pdf)</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Harus sangat jelas dan berwarna penuh :kualitas
+                        tinggi</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Foto Paspor (.jpg)</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Foto berwarna resmi :background polos, wajah
+                        jelas</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong
+                        >Transkrip Akademik atau Sertifikat Terbaru</strong
+                      >
+                      <span class="teks-dokumen-kecil"
+                        >Dokumen akademis yang menunjukkan latar belakang
+                        pendidikan pertanian</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Sertifikat Pemeriksaan Medis</strong>
+                      <span class="teks-dokumen-kecil"
+                        >Lihat catatan khusus pemeriksaan medis di bawah</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Kirim folder -->
+              <div id="kirim-folder-5" style="margin-top: 8px">
+                <div class="sub-judul">
+                  <i class="bi bi-send-fill" style="color: #1f3c88"></i> Cara
+                  Mengirim Folder
+                </div>
+                <p class="teks-p">
+                  Setelah setiap folder kandidat berisi semua dokumen yang
+                  diminta, folder tersebut harus
+                  <strong>dikompres menjadi satu file</strong> sebelum dikirim.
+                </p>
+                <div class="grid-2">
+                  <div class="kotak-sub">
+                    <h4>
+                      <i class="bi bi-cloud-upload-fill"></i> Via JUMBOmail
+                    </h4>
+                    <p
+                      style="font-size: 13px; color: #374151; line-height: 1.6"
+                    >
+                      Gunakan layanan JUMBOmail untuk file berukuran besar yang
+                      tidak bisa dikirim via email biasa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deadline tahap 5 -->
+              <div class="kotak-deadline" style="margin-top: 18px">
+                <div class="ikon-deadline">
+                  <i class="bi bi-calendar2-x-fill"></i>
+                </div>
+                <div class="teks-deadline">
+                  <div class="label">⚠️ Batas Waktu Pengiriman :TAHAP 5</div>
+                  <div class="tanggal">Sebelum 1 Agustus 2024</div>
+                  <div class="keterangan">
+                    Folder HARUS dikirim sebelum konfirmasi visa diterbitkan
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dokumen Medis -->
+              <div id="dokumen-medis-5" style="margin-top: 20px">
+                <div class="sub-judul">
+                  <i class="bi bi-heart-pulse-fill" style="color: #c0392b"></i>
+                  Catatan Khusus: Pemeriksaan Medis
+                </div>
+
+                <div class="kotak-info info-merah">
+                  <i class="bi bi-hospital-fill"></i>
+                  <div class="isi-info">
+                    <strong
+                      >Wajib Dilakukan oleh Dokter Berlisensi di Rumah Sakit
+                      yang Diakui</strong
+                    >
+                    <p>
+                      Setiap kandidat wajib menjalani pemeriksaan kesehatan
+                      lengkap. Dokumen harus memuat informasi yang benar dan
+                      terkini tentang kesehatan fisik dan mental kandidat.
+                    </p>
+                  </div>
+                </div>
+
+                <ul class="list-isi" style="margin-top: 12px">
+                  <li>
+                    Dilakukan
+                    <strong
+                      >tidak lebih dari 45 hari sebelum berangkat ke
+                      Israel</strong
+                    >
+                  </li>
+                  <li>
+                    Mencakup kondisi kesehatan fisik dan mental kandidat secara
+                    lengkap
+                  </li>
+                  <li>
+                    Termasuk informasi mengenai penyakit kronis, alergi, atau
+                    obat-obatan yang dibutuhkan
+                  </li>
+                  <li>
+                    Tes buta warna dan tes lain yang dibutuhkan harus disertakan
+                  </li>
+                  <li>
+                    Gunakan Formulir Pemeriksaan Medis AICAT atau formulir
+                    serupa yang ditandatangani dokter berlisensi
+                  </li>
+                </ul>
+
+                <div class="kotak-info info-merah" style="margin-top: 14px">
+                  <i class="bi bi-ban"></i>
+                  <div class="isi-info">
+                    <strong>Kandidat yang TIDAK Dapat Bergabung</strong>
+                    <p>
+                      Kandidat yang menderita buta warna, penyakit menular, dan
+                      penyakit kronis tidak dapat bergabung dalam program ini.
+                      AICAT berhak menolak penerimaan mahasiswa yang tidak lulus
+                      ujian kedokteran.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ TAHAP 6 ══ -->
+          <div class="kartu-seksi" id="tahap-6" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-hijau">
+                <i class="bi bi-6-circle-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Tahap Keenam</div>
+                <h2>Tahap 6 : Proses Visa</h2>
+              </div>
+              <span class="lencana lencana-hijau"
+                ><i class="bi bi-clock-fill"></i> 30 Juni 2024</span
+              >
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                Pada tahap terakhir ini, kamu perlu mengirimkan rincian lengkap
+                kandidat untuk keperluan proses pengajuan visa ke Israel.
+                Terdiri dari dua dokumen utama yang harus dikirimkan bersamaan.
+              </p>
+
+              <!-- Berkas Excel -->
+              <div id="berkas-excel-6">
+                <div class="sub-judul">
+                  <i
+                    class="bi bi-file-earmark-excel-fill"
+                    style="color: #1f6b3a"
+                  ></i>
+                  1. Berkas Excel :Disediakan oleh AICAT
+                </div>
+                <div class="kotak-info info-hijau">
+                  <i class="bi bi-info-circle-fill"></i>
+                  <div class="isi-info">
+                    <strong>Berkas Excel Template dari AICAT</strong>
+                    <p>
+                      Berisi detail lengkap setiap kandidat sesuai yang diminta
+                      dalam berkas. Semua informasi harus
+                      <b>mutakhir, benar, dan akurat!</b> Gunakan template yang
+                      disediakan oleh AICAT.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Salinan Paspor -->
+              <div id="salinan-paspor-6" style="margin-top: 8px">
+                <div class="sub-judul">
+                  <i class="bi bi-passport-fill" style="color: #1f4d36"></i> 2.
+                  Salinan Paspor Hasil Pemindaian
+                </div>
+                <ul class="list-checklist">
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Format PDF</strong> :berisi 10 paspor dalam satu
+                      file per kelompok<span class="teks-dokumen-kecil"
+                        >Gabungkan 10 paspor menjadi satu file PDF</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Kualitas tinggi</strong> :hasil pindai harus tajam
+                      dan jelas<span class="teks-dokumen-kecil"
+                        >Tidak ada persyaratan khusus untuk penamaan file
+                        PDF</span
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cek"><i class="bi bi-check-lg"></i></div>
+                    <div>
+                      <strong>Berwarna</strong> :gambar hasil pindai harus
+                      berwarna penuh, bukan hitam-putih<span
+                        class="teks-dokumen-kecil"
+                        >Foto hitam-putih atau buram tidak akan diterima</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Deadline -->
+              <div class="kotak-deadline">
+                <div class="ikon-deadline">
+                  <i class="bi bi-calendar2-x-fill"></i>
+                </div>
+                <div class="teks-deadline">
+                  <div class="label">⚠️ Batas Waktu Pengiriman :TAHAP 6</div>
+                  <div class="tanggal">Paling Lambat 30 Juni 2024</div>
+                  <div class="keterangan">
+                    File Excel dan salinan paspor HARUS dikirim sebelum tanggal
+                    ini
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="kotak-kirim">
+                <div class="ikon-kirim">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="teks-kirim">
+                  <div class="label-kirim">Kirim ke Email</div>
+                  <div class="email-besar">aicat_del@del.ac.id</div>
+                  <div class="keterangan-kirim">
+                    Sertakan File Excel + PDF paspor dalam satu email
+                  </div>
+                </div>
+                <button
+                  class="tombol-salin"
+                  onclick="salinEmail('aicat_del@del.ac.id', this)"
+                >
+                  <i class="bi bi-clipboard"></i> Salin Email
+                </button>
+              </div>
+
+              <div class="kotak-info info-merah" style="margin-top: 16px">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <div class="isi-info">
+                  <strong>Penting :Masa Berlaku Paspor</strong>
+                  <p>
+                    Semua paspor HARUS berlaku minimal dua tahun saat pengajuan
+                    setidaknya hingga <b>Juli 2026</b>. Paspor yang masa
+                    berlakunya kurang dari itu tidak akan diproses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ PENERBANGAN ══ -->
+          <div class="kartu-seksi" id="penerbangan" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-biru">
+                <i class="bi bi-airplane-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Perjalanan</div>
+                <h2>Pemesanan Penerbangan ke Israel</h2>
+              </div>
+            </div>
+            <div class="badan-kartu">
+              <p class="teks-p">
+                AICAT menginginkan agar kedatangan para mahasiswa di Israel
+                berjalan semulus mungkin. Oleh karena itu, ada beberapa aturan
+                penting yang harus diperhatikan sebelum memesan tiket
+                penerbangan.
+              </p>
+
+              <div class="kartu-penerbangan">
+                <div class="kepala">
+                  <i class="bi bi-airplane-engines-fill"></i>
+                  <div>
+                    <h3>Aturan Penerbangan ke Israel</h3>
+                    <p>
+                      Peraturan resmi dari AICAT :wajib dipatuhi tanpa
+                      pengecualian
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-aturan-penerbangan">
+                  <div class="item-aturan-penerbangan wajib">
+                    <i class="bi bi-x-circle-fill"></i>
+                    <div>
+                      <strong>DILARANG</strong>
+                      <p>
+                        Jangan pesan tiket tanpa mendapat persetujuan terlebih
+                        dahulu dari AICAT
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-aturan-penerbangan wajib">
+                    <i class="bi bi-x-circle-fill"></i>
+                    <div>
+                      <strong>LARANGAN HARI</strong>
+                      <p>
+                        Penerbangan TIDAK boleh tiba di Israel mulai Jumat siang
+                        hingga Minggu pagi
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-aturan-penerbangan oke">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                      <strong>MINIMAL 15 KANDIDAT</strong>
+                      <p>
+                        Kandidat harus datang berkelompok :minimal 15 kandidat
+                        atau lebih dalam satu penerbangan
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-aturan-penerbangan oke">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                      <strong>KONFIRMASI VISA DULU</strong>
+                      <p>
+                        Dapatkan konfirmasi dari kantor AICAT bahwa visa sedang
+                        diproses sebelum memesan penerbangan
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="kotak-info info-kuning" style="margin-top: 16px">
+                <i class="bi bi-clock-history"></i>
+                <div class="isi-info">
+                  <strong>Proses Visa Memakan Waktu</strong>
+                  <p>
+                    Ingat bahwa proses visa bisa memakan waktu cukup lama. Kami
+                    menyarankan untuk mendapatkan konfirmasi dari kantor AICAT
+                    terlebih dahulu sebelum memesan tiket penerbangan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ PENGINGAT PENTING ══ -->
+          <div class="kartu-seksi" id="pengingat" data-aos="fade-up">
+            <div class="kepala-kartu">
+              <div class="ikon-kartu ikon-merah">
+                <i class="bi bi-bell-fill"></i>
+              </div>
+              <div class="meta-kepala-kartu">
+                <div class="label-kecil-kartu">Ringkasan Wajib</div>
+                <h2>Pengingat Penting Sebelum Berangkat</h2>
+              </div>
+            </div>
+            <div class="badan-kartu">
+              <div class="peringatan-besar">
+                <div class="kepala-peringatan">
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                  <h3>Baca & Pastikan Semua Poin Ini Terpenuhi</h3>
+                </div>
+                <ul>
+                  <li>
+                    Paspor semua kandidat HARUS berlaku paling lambat hingga
+                    Juli 2026 karena persyaratan visa
+                  </li>
+                  <li>
+                    AICAT hanya akan menerima kandidat yang telah mengirimkan
+                    semua dokumen dengan benar dan lengkap
+                  </li>
+                  <li>
+                    Semua mahasiswa yang diterima wajib mengisi syarat dan
+                    ketentuan online sebelum menerima persetujuan visa
+                  </li>
+                  <li>
+                    Asuransi kesehatan mahasiswa di Israel TIDAK mencakup
+                    perawatan gigi. Lakukan perawatan gigi sebelum berangkat ke
+                    Israel karena biayanya sangat tinggi di sana
+                  </li>
+                  <li>
+                    Tiket pesawat untuk mahasiswa TIDAK boleh dibeli sebelum
+                    mendapat persetujuan dari AICAT
+                  </li>
+                  <li>
+                    Semua opsi penerbangan harus dikirim ke AICAT terlebih
+                    dahulu sebelum pemesanan dilakukan
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ CTA BAWAH ══ -->
+          <div class="kartu-cta-bawah" data-aos="fade-up">
+            <h2>Sudah Siap untuk <em>Mendaftar?</em></h2>
+            <p>
+              Kamu sudah membaca semua panduan registrasi AICAT. Pastikan kamu
+              memenuhi semua syarat dan siapkan dokumen yang dibutuhkan. Selamat
+              mendaftar!
+            </p>
+            <a href="pendaftaran.html" class="tombol-cta-emas">
+              <i class="bi bi-pencil-fill"></i> Mulai Proses Pendaftaran
+            </a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

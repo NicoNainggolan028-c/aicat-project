@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - pendaftaran</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/hak-peserta.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Hak Peserta</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Mitra</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero-hak">
+      <div class="container">
+        <div class="hero-hak-dalam" data-aos="fade-up">
+          <div class="label-hero-hak">
+            <i class="bi bi-shield-check-fill"></i>
+            Informasi Resmi · Kementerian Luar Negeri Israel
+          </div>
+          <h1>Hak-Hak <em>Peserta Pelatihan</em><br />di Sektor Pertanian</h1>
+          <p class="sub-hero">
+            Ketahui hak-hak Anda sebagai peserta pelatihan asing berdasarkan
+            hukum ketenagakerjaan Israel sebelum berangkat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ KONTEN UTAMA ══════════════════ -->
+    <div class="container layout-hak">
+      <!-- Kotak pengantar -->
+      <div class="kotak-info kotak-hijau" data-aos="fade-up">
+        <i class="bi bi-info-circle-fill"></i>
+        <p>
+          <strong>Informasi Penting</strong>
+          Sesuai hukum Israel, terdapat hubungan kerja antara Anda dan pertanian
+          yang membimbing Anda. Hak-hak berikut adalah
+          <b>hak minimal</b> tidak ada halangan bagi para pihak untuk
+          menyepakati hak yang lebih menguntungkan. Brosur ini bukan pengganti
+          nasihat hukum.
+        </p>
+      </div>
+
+      <!-- ═══ 1. UPAH & PEMBAYARAN ═══ -->
+      <div class="seksi-konten" id="upah" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-hijau">
+            <i class="bi bi-cash-coin"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 01</div>
+            <h2>Upah & Pembayaran</h2>
+          </div>
+          <span class="badge-termasuk badge-hijau">Hak Utama</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="grid-angka-hak">
+            <div class="kartu-angka">
+              <div class="angka">Rp 25.200.000</div>
+              <div class="keterangan">
+                Upah minimum per bulan<br /><small style="color: #aaa"
+                  >(per 1 April 2024)</small
+                >
+              </div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka">Rp 139.000</div>
+              <div class="keterangan">Upah minimum per jam</div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka emas">Tgl. 9</div>
+              <div class="keterangan">Batas pembayaran upah setiap bulan</div>
+            </div>
+          </div>
+
+          <div class="sub-judul-konten" style="margin-top: 22px">
+            <i class="bi bi-scissors"></i> Potongan yang Diizinkan
+          </div>
+          <ul class="list-konten merah">
+            <li>
+              Pajak penghasilan dan asuransi nasional sesuai tingkat upah
+              pekerja
+            </li>
+            <li>
+              Keikutsertaan asuransi kesehatan hingga
+              <strong>Rp 536.000</strong>
+            </li>
+            <li>
+              Akomodasi dan biaya terkait (listrik, air, pajak daerah) hingga
+              <strong>Rp 2.510.000</strong>
+            </li>
+            <li>
+              Hutang tetap yang disepakati sebelumnya secara tertulis antara
+              majikan dan pekerja
+            </li>
+          </ul>
+
+          <div
+            class="kotak-info kotak-merah"
+            style="margin-top: 18px; margin-bottom: 0"
+          >
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <p>
+              Potongan yang boleh diambil
+              <b>tidak boleh melebihi 25%</b>
+              dari upah kotor bulanan pekerja. Pemberi kerja
+              <b>tidak diperbolehkan</b> memotong pungutan atau biaya di luar
+              yang ditetapkan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ 2. JAM KERJA & LEMBUR ═══ -->
+      <div class="seksi-konten" id="jam-kerja" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-biru">
+            <i class="bi bi-clock-fill"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 02</div>
+            <h2>Jam Kerja & Lembur</h2>
+          </div>
+          <span class="badge-termasuk badge-hijau">Diatur Hukum</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="sub-judul-konten">
+            <i class="bi bi-calendar-week"></i> Jam Kerja Normal
+          </div>
+          <div class="wrapper-tabel-hak">
+            <table class="tabel-hak">
+              <thead>
+                <tr>
+                  <th>Ketentuan</th>
+                  <th>Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hari kerja biasa</td>
+                  <td>
+                    4 hari × hingga 8,6 jam + 1 hari dipersingkat hingga 7,6 jam
+                  </td>
+                </tr>
+                <tr>
+                  <td>Maks. jam/minggu</td>
+                  <td>42 jam kerja reguler per minggu (182 jam per bulan)</td>
+                </tr>
+                <tr>
+                  <td>Musim panas (Jul–Sep)</td>
+                  <td>Maks. 40 jam/minggu, maks. 8 jam/hari</td>
+                </tr>
+                <tr>
+                  <td>Istirahat harian</td>
+                  <td>
+                    45 menit per hari kerja (min. 30 menit berturut-turut)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-lightning-fill"></i> Lembur
+          </div>
+          <div class="grid-angka-hak">
+            <div class="kartu-angka">
+              <div class="angka">125%</div>
+              <div class="keterangan">2 jam pertama lembur per hari</div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka emas">150%</div>
+              <div class="keterangan">Setiap jam lembur berikutnya</div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka merah">Max 16</div>
+              <div class="keterangan">Jam lembur per minggu</div>
+            </div>
+          </div>
+
+          <div
+            class="kotak-info kotak-kuning"
+            style="margin-top: 18px; margin-bottom: 0"
+          >
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <p>
+              Hari kerja <b>tidak boleh melebihi 12 jam</b> (termasuk lembur).
+              Minggu kerja tidak boleh melebihi <b>58 jam</b> termasuk lembur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ 3. ISTIRAHAT & HARI LIBUR ═══ -->
+      <div class="seksi-konten" id="libur" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-emas">
+            <i class="bi bi-calendar-heart-fill"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 03</div>
+            <h2>Istirahat, Cuti & Hari Libur</h2>
+          </div>
+          <span class="badge-termasuk badge-emas">Hak Wajib</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="wrapper-tabel-hak">
+            <table class="tabel-hak">
+              <thead>
+                <tr>
+                  <th>Jenis</th>
+                  <th>Ketentuan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Istirahat mingguan</td>
+                  <td>
+                    Minimal 36 jam per minggu, mencakup Jumat, Sabtu, atau
+                    Minggu sesuai pilihan pekerja
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hari libur keagamaan</td>
+                  <td>
+                    10 hari libur keagamaan dibayar penuh per tahun (hari raya
+                    Yahudi atau agama peserta)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bekerja di hari libur</td>
+                  <td>
+                    Upah 175% dari upah per jam reguler. Dilarang kecuali ada
+                    izin khusus.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cuti tahunan</td>
+                  <td>
+                    12 hari cuti aktual (tidak termasuk hari istirahat
+                    mingguan). Sisa cuti diuangkan saat akhir masa kerja.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cuti pemulihan</td>
+                  <td>
+                    7 hari per tahun dengan tarif 378 NIS/hari (≈
+                    Rp1.630.000/hari) Total: 2.646 NIS (≈ Rp11.380.000)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cuti sakit</td>
+                  <td>
+                    30 hari per tahun. Hari 1 tidak dibayar. Hari 2–3: 50% upah.
+                    Hari berikutnya: upah penuh.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kerja malam</td>
+                  <td>
+                    Bila 2 jam di antara jam 22:00–06:00 → max 7 jam/hari. Tidak
+                    boleh kerja malam lebih dari 7 hari per 14 hari.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div
+            class="kotak-info kotak-biru"
+            style="margin-top: 18px; margin-bottom: 0"
+          >
+            <i class="bi bi-info-circle-fill"></i>
+            <p>
+              Pekerja wajib memberitahukan hari istirahat mingguan pilihannya
+              kepada pemberi kerja pada awal masa kerja. Demikian pula untuk
+              pemilihan hari libur keagamaan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ 4. TUNJANGAN & PESANGON ═══ -->
+      <div class="seksi-konten" id="tunjangan" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-oranye">
+            <i class="bi bi-piggy-bank-fill"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 04</div>
+            <h2>Tunjangan, Bonus & Pesangon</h2>
+          </div>
+          <span class="badge-termasuk badge-hijau">Hak Finansial</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="grid-angka-hak">
+            <div class="kartu-angka">
+              <div class="angka">Rp 430.000</div>
+              <div class="keterangan">
+                Tunjangan subsisten per bulan (uang saku)
+              </div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka emas">½ Gaji</div>
+              <div class="keterangan">
+                Bonus tahunan (dibayar 2 kali setahun)
+              </div>
+            </div>
+            <div class="kartu-angka">
+              <div class="angka biru">12,5%</div>
+              <div class="keterangan">
+                Tunjangan tambahan + pesangon (mulai bulan ke-7)
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-judul-konten" style="margin-top: 22px">
+            <i class="bi bi-bank"></i> Kewajiban Penyisihan Tunjangan
+          </div>
+          <ul class="list-konten emas">
+            <li>
+              <strong>6%</strong> dari gaji bruto bulanan terhitung sejak awal
+              masa kerja hingga akhir 6 bulan pertama
+            </li>
+            <li>
+              <strong>12,5%</strong> (6,5% tunjangan pemberi kerja + 6%
+              pesangon) mulai bulan ketujuh hingga akhir masa kerja
+            </li>
+            <li>
+              Dapat dibayarkan secara bulanan atau sekaligus di akhir masa kerja
+            </li>
+          </ul>
+
+          <div
+            class="kotak-info kotak-hijau"
+            style="margin-top: 18px; margin-bottom: 0"
+          >
+            <i class="bi bi-check-circle-fill"></i>
+            <p>
+              Pada akhir masa pelatihan, pemberi kerja wajib membayar tunjangan
+              tambahan dan pesangon sesuai
+              <b>Undang-Undang Pesangon, 5723-1963</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ 5. AKOMODASI & FASILITAS ═══ -->
+      <div class="seksi-konten" id="akomodasi" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-ungu">
+            <i class="bi bi-house-heart-fill"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 05</div>
+            <h2>Akomodasi, Asuransi & Makanan</h2>
+          </div>
+          <span class="badge-termasuk badge-hijau"
+            >Ditanggung Pemberi Kerja</span
+          >
+        </div>
+        <div class="isi-seksi">
+          <div class="sub-judul-konten">
+            <i class="bi bi-house-fill"></i> Akomodasi
+          </div>
+          <ul class="list-konten">
+            <li>
+              Pemberi kerja wajib menyediakan akomodasi layak selama masa
+              pelatihan dan hingga <b>7 hari</b> setelah berakhirnya masa kerja
+            </li>
+            <li>
+              Jika peserta cedera/sakit/cacat dan tidak dapat bekerja, pemberi
+              kerja wajib menyediakan tempat tinggal yang aman dan higienis
+              selama minimal 30 hari setelah penghentian pekerjaan
+            </li>
+          </ul>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-heart-pulse-fill"></i> Asuransi Kesehatan
+          </div>
+          <ul class="list-konten">
+            <li>
+              Pemberi kerja wajib menyediakan asuransi kesehatan selama masa
+              berlakunya perjanjian kerja, termasuk hari libur dan cuti di
+              Israel
+            </li>
+            <li>
+              Ringkasan polis asuransi wajib diberikan dalam bahasa yang
+              dipahami peserta pelatihan
+            </li>
+          </ul>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-egg-fried"></i> Makanan
+          </div>
+          <p class="paragraf-konten">
+            Peserta dapat menyepakati secara tertulis untuk menerima sebagian
+            gaji dalam bentuk makanan dan minuman non-alkohol di tempat kerja.
+            Nilai makanan tersebut tidak boleh melebihi
+            <strong>10% dari upah minimum bruto bulanan</strong> di Israel.
+          </p>
+        </div>
+      </div>
+
+      <!-- ═══ 6. ADMINISTRASI & PERLINDUNGAN ═══ -->
+      <div class="seksi-konten" id="administrasi" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-abu">
+            <i class="bi bi-file-earmark-text-fill"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Hak 06</div>
+            <h2>Administrasi & Perlindungan Hukum</h2>
+          </div>
+          <span class="badge-termasuk badge-emas">Dilindungi Hukum</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="sub-judul-konten">
+            <i class="bi bi-receipt"></i> Slip Gaji
+          </div>
+          <p class="paragraf-konten">
+            Pemberi kerja wajib memberikan slip gaji bulanan paling lambat
+            <strong>tanggal 9</strong> setiap bulan. Slip gaji harus merinci
+            semua komponen upah, saldo cuti dan sakit, potongan, dan cara
+            pembayaran.
+          </p>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-file-earmark-lock2-fill"></i> Kontrak Kerja
+          </div>
+          <p class="paragraf-konten">
+            Pemberi kerja wajib membuat kontrak kerja tertulis dalam bahasa yang
+            dipahami peserta, sesuai Undang-Undang Pekerja Asing, 5751-1991.
+            Kontrak mencakup: rincian pemberi kerja dan karyawan, deskripsi
+            pekerjaan, tingkat upah, daftar potongan, jam kerja, dan rincian
+            Komisioner Hak Pekerja Asing.
+          </p>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-door-open-fill"></i> Pemberitahuan Pemutusan Kerja
+          </div>
+          <ul class="list-konten biru">
+            <li>
+              <strong>6 bulan pertama:</strong> 1 hari untuk setiap bulan masa
+              kerja
+            </li>
+            <li>
+              <strong>Bulan ke-7 hingga akhir tahun pertama:</strong> 6 hari +
+              2,5 hari untuk setiap bulan masa kerja
+            </li>
+          </ul>
+
+          <div class="sub-judul-konten">
+            <i class="bi bi-shield-exclamation"></i> Perlindungan dari Pelecehan
+            Seksual
+          </div>
+          <div class="kotak-info kotak-merah" style="margin-bottom: 0">
+            <i class="bi bi-exclamation-octagon-fill"></i>
+            <p>
+              <strong
+                >Hukum Israel melarang pelecehan seksual di tempat
+                kerja.</strong
+              >
+              Pemberi kerja wajib membuat pengaturan pencegahan. Pekerja yang
+              mengalami pelecehan seksual (ancaman pemecatan jika menolak,
+              tindakan tidak senonoh, atau ajakan seksual) dapat mencari bantuan
+              dari pusat layanan atau Komisioner Hak-Hak Pekerja Asing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ CONTOH SLIP GAJI ═══ -->
+      <div class="seksi-konten" id="slip-gaji" data-aos="fade-up">
+        <div class="header-seksi">
+          <div class="ikon-seksi warna-emas">
+            <i class="bi bi-receipt-cutoff"></i>
+          </div>
+          <div class="info-header-seksi">
+            <div class="nomor-seksi">Referensi</div>
+            <h2>Contoh Slip Gaji</h2>
+          </div>
+          <span class="badge-termasuk badge-emas">Dokumen Resmi</span>
+        </div>
+        <div class="isi-seksi">
+          <div class="kotak-info kotak-hijau" style="margin-bottom: 20px">
+            <i class="bi bi-info-circle-fill"></i>
+            <p>
+              Berikut adalah contoh slip gaji resmi yang akan Anda terima setiap
+              bulan. Pastikan semua komponen di bawah ini tercantum dengan benar
+              di slip gaji Anda.
+            </p>
+          </div>
+
+          <!-- Wrapper gambar dengan modal preview -->
+          <div class="slip-preview-wrap">
+            <img
+              src="assets/images/backgorund/contoh-slip-gaji.jpg"
+              alt="Contoh Slip Gaji Peserta Pelatihan AICAT"
+              class="slip-img"
+              onclick="bukaModal(this.src)"
+            />
+            <div
+              class="slip-overlay"
+              onclick="
+                bukaModal('assets/images/backgorund/contoh-slip-gaji.jpg')
+              "
+            >
+              <i class="bi bi-zoom-in"></i>
+              <span>Klik untuk perbesar</span>
+            </div>
+          </div>
+
+          <div class="slip-aksi">
+            <a
+              href="assets/images/backgorund/contoh-slip-gaji.jpg"
+              download="contoh-slip-gaji-aicat.jpg"
+              class="tombol-slip-download"
+            >
+              <i class="bi bi-download"></i> Unduh Gambar
+            </a>
+            <span class="slip-catatan">
+              <i class="bi bi-shield-check"></i>
+              Sumber: Kementerian Luar Negeri Israel
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Preview Slip Gaji -->
+      <div class="modal-slip" id="modalSlip" onclick="tutupModal()">
+        <div class="modal-slip-dalam" onclick="event.stopPropagation()">
+          <button class="modal-slip-tutup" onclick="tutupModal()">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <img id="modalSlipGambar" src="" alt="Slip Gaji" />
+        </div>
+      </div>
+
+      <!-- ═══ KONTAK DARURAT ═══ -->
+      <div class="seksi-kontak" data-aos="fade-up">
+        <div style="position: relative; z-index: 1">
+          <h3>Butuh Bantuan? Hubungi <em>Komisioner Hak Pekerja Asing</em></h3>
+          <p class="sub-kontak">
+            Jangan ragu menghubungi jika ada pertanyaan tentang hak-hak
+            ketenagakerjaan Anda sebagai peserta pelatihan.
+          </p>
+          <div class="grid-kontak">
+            <a
+              href="https://wa.me/9720506290758"
+              class="item-kontak"
+              target="_blank"
+            >
+              <div class="ikon-kontak"><i class="bi bi-whatsapp"></i></div>
+              <div class="info-kontak">
+                <div class="label-k">WhatsApp</div>
+                <div class="nilai-k">0506290758</div>
+              </div>
+            </a>
+            <a href="mailto:foreignr@labor.gov.il" class="item-kontak">
+              <div class="ikon-kontak"><i class="bi bi-envelope-fill"></i></div>
+              <div class="info-kontak">
+                <div class="label-k">Email</div>
+                <div class="nilai-k">foreignr@labor.gov.il</div>
+              </div>
+            </a>
+            <a href="tel:074-7691611" class="item-kontak">
+              <div class="ikon-kontak">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div class="info-kontak">
+                <div class="label-k">Telepon Komisioner</div>
+                <div class="nilai-k">074-7691611</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /layout-hak -->
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="cara-daftar.html">Cara Daftar</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      AOS.init({ duration: 700, once: true, offset: 50 });
+
+      // Load navbar
+      fetch("navbar.html")
+        .then((r) => r.text())
+        .then((html) => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+        })
+        .catch(() => console.warn("navbar.html tidak ditemukan"));
+    </script>
+
+    <script>
+      function bukaModal(src) {
+        document.getElementById("modalSlipGambar").src = src;
+        document.getElementById("modalSlip").classList.add("aktif");
+        document.body.style.overflow = "hidden";
+      }
+
+      function tutupModal() {
+        document.getElementById("modalSlip").classList.remove("aktif");
+        document.body.style.overflow = "";
+      }
+
+      // Tutup modal dengan tombol ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") tutupModal();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+/* ══════════════════════════════════════
+         CSS VARIABLES (selaras palet AICAT)
+      ══════════════════════════════════════ */
+:root {
+  --green-dark: #1f4d36;
+  --green-mid: #2e7d32;
+  --green-light: #1fbf8f;
+  --gold: #d4af37;
+  --navy: #1f3c88;
+  --bg-cream: #f6f8f4;
+  --bg-white: #ffffff;
+  --text-dark: #111;
+  --text-muted: #6b7280;
+  --border: rgba(31, 77, 54, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Override global style yang memblokir scroll */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-cream);
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
+/* ── PAGE HERO ── */
+.lokasi-hero {
+  color: #fff;
+  position: relative;
+  height: 72vh;
+  min-height: 460px;
+  background:
+    linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
+    url("/assets/images/backgorund/lokasi.jpg") center/cover no-repeat;
+  display: flex;
+  padding: 580px 0 80px;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+/* grid dots decorative */
+.lokasi-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.lokasi-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  background: rgba(31, 191, 143, 0.12);
+  border: 1px solid rgba(31, 191, 143, 0.3);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.lokasi-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.lokasi-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.lokasi-hero p.lead {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 540px;
+  line-height: 1.8;
+}
+
+/* scroll cue */
+.scroll-cue {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+.scroll-cue-line {
+  width: 40px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ── MAIN CONTENT ── */
+.lokasi-body {
+  padding: 80px 0 100px;
+}
+
+/* section label */
+.section-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  color: var(--text-dark);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+/* ─────────────────────────────────────────────
+   MAP WRAP — card pembungkus peta
+───────────────────────────────────────────── */
+.map-wrap {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(31, 77, 54, 0.1);
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.08);
+}
+
+/* ─────────────────────────────────────────────
+   MAP HEADER — bar judul di atas peta
+───────────────────────────────────────────── */
+.map-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(31, 77, 54, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.map-header-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f4d36;
+  display: flex;
+  align-items: center;
+}
+
+.map-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #1fbf8f;
+  background: rgba(31, 191, 143, 0.1);
+  border: 1px solid rgba(31, 191, 143, 0.25);
+  border-radius: 100px;
+  padding: 4px 12px;
+}
+
+/* ─────────────────────────────────────────────
+   MAP CONTAINER — area gambar
+───────────────────────────────────────────── */
+.map-container {
+  background: #f0f4ee;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .map-container {
+    padding: 14px;
+  }
+}
+
+/* ── KOMUNITAS CARDS ── */
+.komunitas-card {
+  background: var(--bg-white);
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.komunitas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(31, 77, 54, 0.1);
+  border-color: rgba(31, 191, 143, 0.3);
+}
+
+.komunitas-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--green-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.komunitas-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+
+.komunitas-type {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.komunitas-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-light);
+  flex-shrink: 0;
+}
+
+/* ── INFO BOXES ── */
+.info-box {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  height: 100%;
+}
+
+.info-box-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--green-dark), var(--green-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.info-box h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 14px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  color: #444;
+  line-height: 1.6;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-light);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* ── HIGHLIGHT STRIP ── */
+.highlight-strip {
+  background: linear-gradient(
+    135deg,
+    var(--green-dark) 0%,
+    #2a6b4a 60%,
+    var(--navy) 100%
+  );
+  border-radius: 24px;
+  padding: 56px 48px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+.highlight-strip .container {
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-strip h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 3vw, 34px);
+  margin-bottom: 14px;
+}
+
+.highlight-strip p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.hl-stat {
+  text-align: center;
+  padding: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hl-stat-num {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.hl-stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 6px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .lokasi-hero {
+    padding: 500px 0 60px;
+  }
+
+  .lokasi-hero h1 {
+    font-size: 40px;
+  }
+
+  .lokasi-hero p.lead {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 300px;
+    line-height: 1.8;
+  }
+
+  .stat-pill + .stat-pill {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .highlight-strip {
+    padding: 40px 24px;
+  }
+
+  .hl-stat {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .map-container {
+    padding: 14px;
+  }
+}

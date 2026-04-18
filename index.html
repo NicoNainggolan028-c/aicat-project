@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- ================================== Selamat Datang Aicat =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div id="intro-screen">
+      <div class="intro-top"></div>
+
+      <div class="intro-center">
+        <div class="intro-identity">
+          <!-- Logo geser dari tengah ke kiri -->
+          <div class="intro-logo-wrap" id="introLogo">
+            <img
+              src="assets/images/icons/AICAT_logo.png"
+              alt="AICAT"
+              class="intro-logo"
+            />
+          </div>
+
+          <div class="intro-divider"></div>
+          <!-- ← garis pemisah -->
+
+          <!-- Teks rata kiri, muncul setelah logo geser -->
+          <div class="intro-text-wrap">
+            <h2 class="intro-welcome">Welcome To</h2>
+            <h1 class="intro-brand">A I C A T</h1>
+            <p class="intro-tagline">
+              <span id="typewriter"></span><span class="cursor">|</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Tombol -->
+        <button class="intro-btn" id="introBtn" onclick="dismissIntro()">
+          <span>Masuk</span>
+          <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li><a class="dropdown-item" href="mitra.html">Mitra</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="#hero-main"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+            <li><a class="dropdown-item" href="mitra.html">Mitra</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Main Content =================================================== -->
+    <!-- ========================================================================================================== -->
+    <section id="hero-main" class="hero-main">
+      <!-- ========================================= Background Slides ============================================ -->
+      <div
+        class="hero-bg"
+        style="background-image: url(assets/images/backgorund/labu\ bg.png)"
+      ></div>
+      <div
+        class="hero-bg active"
+        style="background-image: url(assets/images/backgorund/kurma\ bg.png)"
+      ></div>
+      <div
+        class="hero-bg"
+        style="background-image: url(assets/images/backgorund/cabai\ bg.png)"
+      ></div>
+
+      <div
+        class="hero-bg"
+        style="background-image: url(assets/images/backgorund/kurmabg2.png)"
+      ></div>
+      <div
+        class="hero-bg active"
+        style="background-image: url(assets/images/flag/image.png)"
+      ></div>
+      <div
+        class="hero-bg"
+        style="background-image: url(assets/images/backgorund/bg12.jpg)"
+      ></div>
+      <div
+        class="hero-bg"
+        style="background-image: url(assets/images/about/image.png)"
+      ></div>
+      <div
+        class="hero-bg"
+        style="
+          background-image: url(assets/images/backgorund/WhatsApp\ Image\ 2020-12-10\ at\ 07_09_27.jpeg);
+        "
+      ></div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="row">
+          <!-- LEFT TEXT -->
+          <div class="col-lg-7 hero-left">
+            <h1 id="heroTitle">Membangun Pertanian Modern</h1>
+            <p id="heroDesc">
+              AICAT menghadirkan pelatihan pertanian berbasis teknologi dan
+              inovasi.
+            </p>
+
+            <!-- Progress Bars -->
+            <div class="hero-bars">
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+              <div class="bar"><span></span></div>
+            </div>
+          </div>
+
+          <!-- RIGHT CARD -->
+          <div class="col-lg-5 hero-right">
+            <div class="hero-card">
+              <div class="hero-card-badge">
+                <span class="badge-dot"></span>
+                Program Unggulan
+              </div>
+
+              <h4 class="hero-card-title">Diploma & Short Course</h4>
+
+              <p class="hero-card-desc">
+                Pelajari terlebih dahulu sistem pembelajaran, kurikulum, serta
+                pengalaman yang akan kamu dapatkan di AICAT sebelum melakukan
+                pendaftaran.
+              </p>
+
+              <div class="hero-card-divider"></div>
+
+              <a href="#pendaftaran" class="btn-card-cta">
+                <span>Daftar Sekarang</span>
+                <div class="btn-card-icon">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </a>
+
+              <a href="#program" class="btn-card-secondary">
+                Lihat Program <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll -->
+      <div class="scroll-wrapper">
+        <div class="scroll-down" id="scrollToPartner">
+          <i class="bi bi-arrow-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= About Aicat ==================================================== -->
+    <!-- ========================================================================================================== -->
+    <section id="about-aicat" class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT IMAGE -->
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+            <div class="about-image-wrapper">
+              <img
+                src="assets/images/about/image.png"
+                alt="Kegiatan Pelatihan AICAT"
+                class="about-image"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="about-content">
+              <span class="section-subtitle">Tentang AICAT</span>
+
+              <h2 class="section-title">
+                Membangun Pertanian Global Melalui Inovasi dan Teknologi
+              </h2>
+
+              <p>
+                AICAT merupakan pusat pelatihan pertania6n internasional yang
+                berfokus pada penerapan teknologi modern, inovasi berkelanjutan,
+                serta kolaborasi global dalam sektor agrikultur.
+              </p>
+
+              <p>
+                Melalui pendekatan praktik langsung di lapangan dan pendampingan
+                dari para ahli, AICAT mempersiapkan generasi pemimpin pertanian
+                masa depan yang mampu memberikan dampak nyata bagi masyarakat
+                dan pembangunan berkelanjutan.
+              </p>
+
+              <!-- Vision & Mission Highlight -->
+              <div class="vision-mission">
+                <div class="vm-item">
+                  <i class="bi bi-eye-fill"></i>
+                  <span>
+                    Visi: Mendorong kemajuan pertanian berkelanjutan di tingkat
+                    global
+                  </span>
+                </div>
+
+                <div class="vm-item">
+                  <i class="bi bi-bullseye"></i>
+                  <span>
+                    Misi: Menyelenggarakan pendidikan dan pelatihan pertanian
+                    yang inovatif dan aplikatif
+                  </span>
+                </div>
+              </div>
+
+              <a href="tentang-aicat.html" class="btn-about">
+                <span>Selengkapnya</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                  <polygon
+                    points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"
+                  ></polygon>
+                  <polygon
+                    points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"
+                  ></polygon>
+                  <polygon
+                    points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"
+                  ></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ Tentang Singkat =========== -->
+    <!-- ========================================= -->
+    <section class="tentang-singkat">
+      <div class="container">
+        <div class="section-header">
+          <h2
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            Tentang <span>Program</span>
+          </h2>
+          <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+            Program pelatihan pertanian modern berbasis pengalaman langsung.
+          </p>
+          <div
+            class="title-line"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          ></div>
+        </div>
+
+        <div
+          class="cards-about"
+          class="title-line"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <div class="card-item-about">
+            <div class="icon-about">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3>Learning by Doing</h3>
+            <p>
+              Belajar langsung di farm modern dengan teknologi pertanian
+              mutakhir.
+            </p>
+          </div>
+
+          <div class="card-item-about">
+            <div class="icon-about">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Pengalaman Internasional</h3>
+            <p>
+              Berinteraksi dan membangun jaringan dengan peserta dari berbagai
+              negara.
+            </p>
+          </div>
+
+          <div class="card-item-about">
+            <div class="icon-about">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3>Penghasilan Selama Pelatihan</h3>
+            <p>
+              Peserta memperoleh uang saku sesuai ketentuan program yang
+              berlaku.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ SECTION ALUR PROGRAM ======= -->
+    <!-- ========================================= -->
+    <section class="alur-program">
+      <div class="container">
+        <div class="section-header" data-aos="fade-right">
+          <h2>Alur <span>Program</span></h2>
+          <p>Tahapan proses mengikuti program pelatihan pertanian modern.</p>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="timeline-wrapper" data-aos="fade-right">
+          <div class="timeline-line"></div>
+
+          <!-- STEP 1 -->
+          <div class="timeline-item" onclick="showDetail(1)">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <div class="timeline-text">
+              <h4>Seleksi</h4>
+              <div class="tooltip-card">
+                Tahap administrasi dan wawancara untuk memastikan kesiapan
+                peserta.
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="timeline-item" onclick="showDetail(2)">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="timeline-text">
+              <h4>Pembekalan</h4>
+              <div class="tooltip-card">
+                Pelatihan dasar bahasa, budaya, dan teknis sebelum
+                keberangkatan.
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="timeline-item" onclick="showDetail(3)">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <div class="timeline-text">
+              <h4>Visa</h4>
+              <div class="tooltip-card">
+                Pengurusan dokumen resmi dan izin tinggal di negara tujuan.
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="timeline-item" onclick="showDetail(4)">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-tractor"></i>
+            </div>
+            <div class="timeline-text">
+              <h4>Training 10 Bulan</h4>
+              <div class="tooltip-card">
+                Pelatihan langsung di farm modern dengan sistem pertanian
+                canggih.
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="timeline-item" onclick="showDetail(5)">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-plane-arrival"></i>
+            </div>
+            <div class="timeline-text">
+              <h4>Kepulangan & Dampak</h4>
+              <div class="tooltip-card">
+                Peserta kembali dan menerapkan ilmu untuk membangun daerah asal.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE AICAT -->
+    <section class="why-aicat">
+      <div class="container-card">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+          Mengapa Memilih <span class="highlight">AICAT?</span>
+        </h1>
+        <p
+          class="why-desc"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          Kami hadir dengan pendekatan berbeda untuk mencetak generasi petani
+          modern Indonesia.
+        </p>
+
+        <div class="accordion">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" onclick="toggleAccordion(1)">
+              <div class="card-header-left">
+                <span class="card-num">01</span>
+                <h2>Program Pelatihan Berstandar Internasional</h2>
+              </div>
+              <span class="card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+            <div class="card-content" id="content-1">
+              <p>
+                AICAT menyelenggarakan program pelatihan pertanian yang selaras
+                dengan standar internasional, mengintegrasikan teknologi
+                pertanian modern, metode berbasis riset, serta praktik terbaik
+                global untuk mempersiapkan peserta menghadapi tantangan nyata di
+                sektor pertanian.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="150">
+            <div class="card-header" onclick="toggleAccordion(2)">
+              <div class="card-header-left">
+                <span class="card-num">02</span>
+                <h2>Praktik Lapangan dan Pengalaman Nyata</h2>
+              </div>
+              <span class="card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+            <div class="card-content" id="content-2">
+              <p>
+                Kami menekankan implementasi langsung di lapangan melalui
+                pelatihan terarah, lahan demonstrasi, serta sistem pertanian
+                berbasis teknologi untuk memastikan peserta memperoleh
+                keterampilan yang aplikatif dan terukur.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header" onclick="toggleAccordion(3)">
+              <div class="card-header-left">
+                <span class="card-num">03</span>
+                <h2>Mentor Ahli dan Kolaborasi Global</h2>
+              </div>
+              <span class="card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+            <div class="card-content" id="content-3">
+              <p>
+                AICAT bekerja sama dengan para ahli pertanian berpengalaman,
+                peneliti, serta mitra internasional guna menghadirkan pertukaran
+                pengetahuan yang komprehensif dan perspektif global dalam
+                pengembangan pertanian.
+              </p>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-up" data-aos-delay="250">
+            <div class="card-header" onclick="toggleAccordion(4)">
+              <div class="card-header-left">
+                <span class="card-num">04</span>
+                <h2>Komitmen terhadap Keberlanjutan dan Inovasi</h2>
+              </div>
+              <span class="card-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+            <div class="card-content" id="content-4">
+              <p>
+                Keberlanjutan menjadi fondasi utama AICAT. Kami mendorong
+                praktik pertanian yang ramah lingkungan, solusi berbasis
+                inovasi, serta strategi pengembangan pertanian jangka panjang
+                yang berkelanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Stats Section =============================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="stats-section">
+      <div class="stats-overlay"></div>
+
+      <div class="container stats-content">
+        <div class="row justify-content-center text-center">
+          <!-- Partner Countries -->
+          <div class="col-md-4 col-12 stat-item" data-aos="fade-up">
+            <div class="stat-icon">
+              <i class="bi bi-globe2"></i>
+            </div>
+            <h1>10+</h1>
+            <p>Partner Countries</p>
+          </div>
+
+          <!-- Alumni -->
+          <div
+            class="col-md-4 col-12 stat-item"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="stat-icon">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h1>1000+</h1>
+            <p>Alumni</p>
+          </div>
+
+          <!-- Experience -->
+          <div
+            class="col-md-4 col-12 stat-item"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="stat-icon">
+              <i class="bi bi-tree-fill"></i>
+            </div>
+            <h1>20+</h1>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Partner Countries =============================================== -->
+    <!-- ========================================================================================================== -->
+    <section class="partner-section" id="partner">
+      <div class="container">
+        <h2
+          class="partner-title"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          Partner <span>Countries</span>
+        </h2>
+        <div
+          class="title-line-partner"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        ></div>
+        <div
+          class="partner-slider"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <div class="partner-track">
+            <!-- ITEM -->
+            <a href="partner-azerbaijan.html" class="partner-item">
+              <img src="assets/images/flag/azerbaijan.png" alt="Azerbaijan" />
+              <p>Azerbaijan</p>
+            </a>
+
+            <a href="partner-cambodia.html" class="partner-item">
+              <img src="assets/images/flag/cambodia.png" alt="Cambodia" />
+              <p>Cambodia</p>
+            </a>
+
+            <a href="partner-ind.html" class="partner-item">
+              <img src="assets/images/flag/indonesia.png" alt="Indonesia" />
+              <p>Indonesia</p>
+            </a>
+
+            <a href="partner-laos.html" class="partner-item">
+              <img src="assets/images/flag/flag_Laos.jpg" alt="Laos" />
+              <p>Laos</p>
+            </a>
+
+            <a href="partner-thegambia.html" class="partner-item">
+              <img src="assets/images/flag/gambia.png" alt="Laos" />
+              <p>The Gambia</p>
+            </a>
+
+            <a href="partner-thailand.html" class="partner-item">
+              <img src="assets/images/flag/flag_Thailand.jpg" alt="Thailand" />
+              <p>Thailand</p>
+            </a>
+
+            <a href="partner-tanzania.html" class="partner-item">
+              <img
+                src="assets/images/flag/Flag_of_Tanzania.jpg"
+                alt="Tanzania"
+              />
+              <p>Tanzania</p>
+            </a>
+
+            <a href="partner-vanuatu.html" class="partner-item">
+              <img src="assets/images/flag/vanuatu.jpg" alt="Vanuatu" />
+              <p>Vanuatu</p>
+            </a>
+
+            <!-- DUPLICATE UNTUK LOOPING -->
+            <a href="partner-azerbaijan.html" class="partner-item">
+              <img src="assets/images/flag/azerbaijan.png" alt="Azerbaijan" />
+              <p>Azerbaijan</p>
+            </a>
+
+            <a href="partner-cambodia.html" class="partner-item">
+              <img src="assets/images/flag/cambodia.png" alt="Cambodia" />
+              <p>Cambodia</p>
+            </a>
+
+            <a href="partner-ind.html" class="partner-item">
+              <img src="assets/images/flag/indonesia.png" alt="Indonesia" />
+              <p>Indonesia</p>
+            </a>
+
+            <a href="partner-laos.html" class="partner-item">
+              <img src="assets/images/flag/flag_Laos.jpg" alt="Laos" />
+              <p>Laos</p>
+            </a>
+
+            <a href="partner-thailand.html" class="partner-item">
+              <img src="assets/images/flag/flag_Thailand.jpg" alt="Thailand" />
+              <p>Thailand</p>
+            </a>
+
+            <a href="partner-tanzania.html" class="partner-item">
+              <img
+                src="assets/images/flag/Flag_of_Tanzania.jpg"
+                alt="Tanzania"
+              />
+              <p>Tanzania</p>
+            </a>
+
+            <a href="partner-vanuatu.html" class="partner-item">
+              <img src="assets/images/flag/vanuatu.jpg" alt="Vanuatu" />
+              <p>Vanuatu</p>
+            </a>
+
+            <a href="partner-kenya.html" class="partner-item">
+              <img src="assets/images/flag/Flag_of_Kenya.png" alt="Vanuatu" />
+              <p>Kenya</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ TESTIMONIAL SECTION ======== -->
+    <!-- ========================================= -->
+    <div class="testimonial-wrapper">
+      <section
+        class="testimonial-section"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        <!-- CTA Text -->
+        <div
+          class="cta-header"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <h1
+            class="cta-title"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            Apa <span>Kata Alumni?</span>
+          </h1>
+          <p class="cta-subtitle">Mari kita lihat pengalaman mereka</p>
+          <div class="title-line"></div>
+        </div>
+
+        <!-- Decorative floating cards -->
+        <div class="deco deco-1"></div>
+        <div class="deco deco-2"></div>
+        <div class="deco deco-3"></div>
+        <div class="deco deco-4"></div>
+        <div class="deco deco-5"></div>
+        <div class="deco deco-6"></div>
+
+        <div class="inner">
+          <div class="avatar-wrap">
+            <img id="avatarEl" src="" alt="avatar" />
+          </div>
+
+          <div class="content">
+            <span class="quote-mark">"</span>
+            <p class="testimonial-text" id="testimonialText"></p>
+            <p class="author" id="authorText"></p>
+            <div class="nav-buttons">
+              <button class="nav-btn" id="prevBtn" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button class="nav-btn" id="nextBtn" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="9 6 15 12 9 18" />
+                </svg>
+              </button>
+              <div class="dots" id="dotsContainer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

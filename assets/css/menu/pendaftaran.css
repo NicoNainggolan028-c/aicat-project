@@ -1,0 +1,909 @@
+:root {
+  --hijau-tua: #1f4d36;
+  --hijau-tengah: #2e7d32;
+  --hijau-muda: #1fbf8f;
+  --emas: #d4af37;
+  --navy: #1f3c88;
+  --krem: #f6f8f4;
+  --putih: #ffffff;
+  --teks-gelap: #111;
+  --teks-redup: #6b7280;
+  --batas: rgba(31, 77, 54, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-cream);
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
+/* ══════════════════════════════════════════
+         HERO
+      ══════════════════════════════════════════ */
+.hero-daftar {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
+    url("/assets/images/backgorund/bg1.jpeg") center/cover no-repeat;
+  padding: 140px 0 90px;
+  display: flex;
+  justify-content: center; /* tengah horizontal */
+  align-items: center; /* tengah vertical */
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-daftar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 18% 55%,
+      rgba(31, 191, 143, 0.14) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(212, 175, 55, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.lencana-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--hijau-muda);
+  background: rgba(31, 191, 143, 0.12);
+  border: 1px solid rgba(31, 191, 143, 0.28);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.hero-daftar-lingkup {
+  margin-top: 100px;
+}
+
+.hero-daftar h1 {
+  font-family: "Poppins", serif;
+  font-size: clamp(90px, 5vw, 60px);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero-daftar h1 em {
+  font-style: italic;
+  color: var(--emas);
+}
+
+.hero-daftar p.teks-lead {
+  position: relative;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 600px;
+  line-height: 1.85;
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+
+/* Tombol utama daftar di hero */
+.grup-tombol-hero {
+  display: flex;
+  justify-content: center; /* 🔥 INI KUNCINYA */
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.tombol-daftar-utama {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--emas);
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 8px 28px rgba(212, 175, 55, 0.4);
+  font-family: "Poppins", sans-serif;
+}
+
+.tombol-daftar-utama:hover {
+  background: #e8c040;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(212, 175, 55, 0.5);
+  color: #111;
+  text-decoration: none;
+}
+
+.tombol-daftar-utama:active {
+  transform: scale(0.98);
+}
+
+.tombol-info-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.tombol-info-hero:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Pesan kecil di bawah tombol */
+.catatan-gform {
+  display: flex;
+  justify-content: center; /* 🔥 INI KUNCINYA */
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ══════════════════════════════════════════
+KONTEN UTAMA
+══════════════════════════════════════════ */
+.konten-daftar {
+  padding: 80px 0 100px;
+  background: var(--krem);
+}
+
+.konten-daftar h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: var(--teks-gelap);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+/* ── Label seksi ── */
+.label-seksi {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--hijau-tengah);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.garis-dekorasi {
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--hijau-tua), var(--hijau-muda));
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+/* ══════════════════════════════════════════
+         KARTU PROGRAM — 3 jenis
+      ══════════════════════════════════════════ */
+.grid-program {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.kartu-program {
+  background: var(--putih);
+  border-radius: 22px;
+  border: 1px solid var(--batas);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.kartu-program:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.09);
+  border-color: rgba(31, 191, 143, 0.3);
+}
+
+/* Warna atas kartu */
+.banner-program {
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.banner-diploma {
+  background: linear-gradient(90deg, var(--hijau-tua), var(--hijau-muda));
+}
+.banner-kursus {
+  background: linear-gradient(90deg, var(--navy), #4a6fa5);
+}
+.banner-spesial {
+  background: linear-gradient(90deg, #c85a1a, var(--emas));
+}
+
+/* Isi kartu */
+.isi-kartu-program {
+  padding: 28px 26px 26px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ikon program */
+.ikon-program {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+
+.ikon-diploma {
+  background: rgba(31, 77, 54, 0.08);
+  color: var(--hijau-tua);
+}
+.ikon-kursus {
+  background: rgba(31, 60, 136, 0.08);
+  color: var(--navy);
+}
+.ikon-spesial {
+  background: rgba(200, 90, 26, 0.08);
+  color: #c85a1a;
+}
+
+.nomor-program {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.nomor-diploma {
+  color: var(--hijau-muda);
+}
+.nomor-kursus {
+  color: #4a6fa5;
+}
+.nomor-spesial {
+  color: #c85a1a;
+}
+
+.nama-program {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--teks-gelap);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.deskripsi-program {
+  font-size: 13px;
+  color: var(--teks-redup);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Detail info program */
+.detail-program {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+  padding: 14px;
+  background: var(--krem);
+  border-radius: 12px;
+}
+
+.detail-baris {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--teks-gelap);
+}
+
+.detail-baris i {
+  font-size: 13px;
+  color: var(--hijau-muda);
+  flex-shrink: 0;
+  width: 16px;
+}
+
+/* Tombol daftar per program */
+.tombol-daftar-program {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--hijau-tua);
+  color: var(--hijau-tua);
+  background: transparent;
+  transition: all 0.25s ease;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tombol-daftar-program:hover {
+  background: var(--hijau-tua);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ══════════════════════════════════════════
+         TOMBOL BESAR TENGAH — Google Form
+      ══════════════════════════════════════════ */
+.blok-tombol-utama {
+  background: var(--putih);
+  border-radius: 24px;
+  border: 1px solid var(--batas);
+  padding: 56px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* Dekorasi latar */
+.blok-tombol-utama::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(31, 191, 143, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.blok-tombol-utama::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(31, 60, 136, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.blok-tombol-utama .container-dalam {
+  position: relative;
+  z-index: 1;
+}
+
+.ikon-gform {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, var(--hijau-tua), var(--hijau-muda));
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 auto 24px;
+  box-shadow: 0 10px 30px rgba(31, 77, 54, 0.25);
+}
+
+.blok-tombol-utama h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  color: var(--teks-gelap);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.blok-tombol-utama h3 em {
+  font-style: italic;
+  color: var(--hijau-tua);
+}
+
+.blok-tombol-utama p {
+  font-size: 15px;
+  color: var(--teks-redup);
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.75;
+}
+
+/* Tombol GForm besar */
+.tombol-gform-besar {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--hijau-tua), #2a6b4a);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+  box-shadow: 0 10px 32px rgba(31, 77, 54, 0.35);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer effect */
+.tombol-gform-besar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.tombol-gform-besar:hover::before {
+  left: 100%;
+}
+
+.tombol-gform-besar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 48px rgba(31, 77, 54, 0.45);
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #2a6b4a, var(--hijau-tua));
+}
+
+.tombol-gform-besar:active {
+  transform: scale(0.98);
+}
+
+/* Panah animasi di dalam tombol */
+.tombol-gform-besar .ikon-panah {
+  transition: transform 0.25s ease;
+}
+
+.tombol-gform-besar:hover .ikon-panah {
+  transform: translateX(4px);
+}
+
+/* Catatan bawah tombol */
+.catatan-bawah-tombol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.poin-catatan {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--teks-redup);
+}
+
+.poin-catatan i {
+  color: var(--hijau-muda);
+  font-size: 13px;
+}
+
+/* ══════════════════════════════════════════
+         LANGKAH PENDAFTARAN
+      ══════════════════════════════════════════ */
+.judul-langkah {
+  margin-bottom: 40px;
+}
+
+.judul-langkah h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: var(--teks-gelap);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.judul-langkah p {
+  font-size: 15px;
+  color: var(--teks-redup);
+  max-width: 480px;
+}
+
+/* Grid langkah */
+.grid-langkah {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 72px;
+  position: relative;
+}
+
+/* Garis penghubung antar langkah */
+.grid-langkah::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: calc(12.5% + 20px);
+  right: calc(12.5% + 20px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--hijau-muda), var(--navy));
+  z-index: 0;
+  opacity: 0.25;
+}
+
+/* Kartu langkah */
+.kartu-langkah {
+  background: var(--putih);
+  border-radius: 18px;
+  border: 1px solid var(--batas);
+  padding: 24px 20px 22px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.kartu-langkah:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Nomor langkah */
+.nomor-langkah {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--hijau-tua), var(--hijau-muda));
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 6px 20px rgba(31, 77, 54, 0.25);
+}
+
+.judul-langkah-item {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--teks-gelap);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.deskripsi-langkah {
+  font-size: 12.5px;
+  color: var(--teks-redup);
+  line-height: 1.65;
+}
+
+/* ══════════════════════════════════════════
+         SYARAT PENDAFTARAN — accordion sederhana
+      ══════════════════════════════════════════ */
+.blok-syarat {
+  background: var(--putih);
+  border-radius: 22px;
+  border: 1px solid var(--batas);
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.syarat-header {
+  padding: 28px 32px 24px;
+  border-bottom: 1px solid var(--batas);
+}
+
+.syarat-header h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: var(--teks-gelap);
+  margin-bottom: 6px;
+}
+
+.syarat-header p {
+  font-size: 14px;
+  color: var(--teks-redup);
+}
+
+.grid-syarat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.kolom-syarat {
+  padding: 28px 32px;
+}
+
+.kolom-syarat + .kolom-syarat {
+  border-left: 1px solid var(--batas);
+}
+
+.judul-kolom-syarat {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hijau-tua);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.daftar-syarat {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daftar-syarat li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.daftar-syarat li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hijau-muda);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* ══════════════════════════════════════════
+         STRIP AJAKAN AKHIR
+      ══════════════════════════════════════════ */
+.strip-akhir {
+  background: linear-gradient(
+    135deg,
+    var(--hijau-tua) 0%,
+    #2a6b4a 55%,
+    var(--navy) 100%
+  );
+  border-radius: 24px;
+  padding: 56px 48px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.strip-akhir::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.strip-akhir .isi-strip {
+  position: relative;
+  z-index: 1;
+}
+
+.strip-akhir h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 3.5vw, 38px);
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+
+.strip-akhir h3 em {
+  font-style: italic;
+  color: var(--emas);
+}
+
+.strip-akhir p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+/* Tombol strip */
+.grup-tombol-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tombol-strip-utama {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--emas);
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+  font-family: "Poppins", sans-serif;
+}
+
+.tombol-strip-utama:hover {
+  background: #e8c040;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(212, 175, 55, 0.5);
+  color: #111;
+  text-decoration: none;
+}
+
+.tombol-strip-kontak {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition:
+    border-color 0.25s,
+    color 0.25s,
+    background 0.25s;
+  font-family: "Poppins", sans-serif;
+}
+
+.tombol-strip-kontak:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/* ══════════════════════════════════════════
+RESPONSIVE
+══════════════════════════════════════════ */
+@media (max-width: 991px) {
+  .grid-program {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .grid-langkah {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .grid-langkah::before {
+    display: none;
+  }
+  .hero-daftar {
+    padding: 110px 0 60px;
+  }
+  .blok-tombol-utama {
+    padding: 40px 28px;
+  }
+  .strip-akhir {
+    padding: 44px 28px;
+  }
+  .grid-syarat {
+    grid-template-columns: 1fr;
+  }
+  .kolom-syarat + .kolom-syarat {
+    border-left: none;
+    border-top: 1px solid var(--batas);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-program {
+    grid-template-columns: 1fr;
+  }
+  .grid-langkah {
+    grid-template-columns: 1fr;
+  }
+  .konten-daftar {
+    padding: 52px 0 72px;
+  }
+  .blok-tombol-utama {
+    padding: 36px 22px;
+  }
+  .strip-akhir {
+    padding: 36px 20px;
+    border-radius: 18px;
+  }
+  .tombol-gform-besar {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+  .syarat-header,
+  .kolom-syarat {
+    padding: 22px 22px;
+  }
+  .grup-tombol-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

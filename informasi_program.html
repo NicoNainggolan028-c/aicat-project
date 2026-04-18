@@ -1,0 +1,1638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Aicat - pendaftaran</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/Informasi_program.css" />
+  </head>
+  <body>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Informasi Program</a></li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Mitra</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Informasi Program</a></li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero-infoprog">
+      <div class="container hero-dalam">
+        <div class="label-hero">
+          <i class="bi bi-book-fill"></i> Program AICAT
+        </div>
+        <h1>Informasi <em>Program</em><br />Studi Pertanian Lanjutan</h1>
+        <p>
+          Semua yang perlu kamu ketahui sebelum mendaftar kurikulum, hak
+          mahasiswa, biaya, aturan kampus, hingga pernyataan keikutsertaan
+          program AICAT.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <div class="container">
+      <div class="layout-infoprog">
+        <!-- 4 Tab -->
+        <div class="wrapper-tab-halaman" id="wrapper-tab">
+          <button
+            class="tab-halaman aktif-tab"
+            data-halaman="0"
+            onclick="pindahHalaman(0)"
+          >
+            <span class="tab-nomor">Halaman 1 / 4</span>
+            <span class="tab-judul">Akademik & Kurikulum</span>
+            <span class="tab-sub"
+              >Studi teoritis, kurikulum, penelitian, bisnis plan</span
+            >
+          </button>
+          <button
+            class="tab-halaman"
+            data-halaman="1"
+            onclick="pindahHalaman(1)"
+          >
+            <span class="tab-nomor">Halaman 2 / 4</span>
+            <span class="tab-judul">Tur & Biaya</span>
+            <span class="tab-sub"
+              >Tur profesional, budaya, ekstra, biaya kuliah</span
+            >
+          </button>
+          <button
+            class="tab-halaman"
+            data-halaman="2"
+            onclick="pindahHalaman(2)"
+          >
+            <span class="tab-nomor">Halaman 3 / 4</span>
+            <span class="tab-judul">Hak & Aturan</span>
+            <span class="tab-sub"
+              >Asuransi, hak mahasiswa, kode etik, larangan</span
+            >
+          </button>
+          <button
+            class="tab-halaman"
+            data-halaman="3"
+            onclick="pindahHalaman(3)"
+          >
+            <span class="tab-nomor">Halaman 4 / 4</span>
+            <span class="tab-judul">Pernyataan & Biaya</span>
+            <span class="tab-sub"
+              >Praktikum, pernyataan, pengeluaran di Israel</span
+            >
+          </button>
+        </div>
+
+        <!-- ═══════════════════════════
+             HALAMAN 1: Akademik & Kurikulum
+        ═══════════════════════════ -->
+        <div class="halaman-konten aktif-halaman" id="halaman-0">
+          <div class="label-topik-halaman">
+            <i class="bi bi-mortarboard-fill"></i> Akademik & Kurikulum
+          </div>
+
+          <!-- ========================== Studi Teoritis ========================== -->
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-hijau">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">01 · Akademik</div>
+                <h2>Studi Teoritis</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kotak-info kotak-hijau">
+                <i class="bi bi-info-circle-fill"></i>
+                <p>
+                  Kegiatan belajar mengajar berlangsung di Kampus AICAT di Sapir
+                  Siswa belajar dalam kelompok hingga 50 orang dengan satu
+                  pemimpin kelompok. Transportasi kampus ditanggung penuh oleh
+                  AICAT.
+                </p>
+              </div>
+              <p class="paragraf-konten">
+                Program teori AICAT terdiri dari lima komponen utama:
+              </p>
+              <ul class="list-konten">
+                <li>
+                  Studi Pertanian — teknik budidaya dan teknologi pertanian
+                  modern
+                </li>
+                <li>
+                  Agribisnis — kewirausahaan dan pengelolaan usaha pertanian
+                </li>
+                <li>
+                  Manajemen dan Ketahanan Pangan — strategi ketahanan pangan
+                  global
+                </li>
+                <li>
+                  Tur Profesional — kunjungan langsung ke pusat pertanian
+                  terkemuka Israel
+                </li>
+                <li>
+                  Tur Budaya Israel — pengenalan sejarah, budaya, dan lingkungan
+                  Israel
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ======================= Contoh Kurikulum Tahun Ajaran 2023–2024 ============================= -->
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-biru">
+                <i class="bi bi-table"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">02 · Kurikulum</div>
+                <h2>Contoh Kurikulum</h2>
+              </div>
+              <span class="badge-termasuk badge-hijau"
+                ><i class="bi bi-award"></i> Studi Lanjutan</span
+              >
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Daftar mata kuliah dalam program
+                <em>Advanced Agriculture Studies</em>. Setiap kredit setara
+                dengan <strong>9 jam akademik</strong>.
+              </p>
+              <div class="wrapper-tabel-kurikulum">
+                <table class="tabel-kurikulum">
+                  <thead>
+                    <tr>
+                      <th>Mata Kuliah</th>
+                      <th style="width: 70px; text-align: center">
+                        Jumlah SKS
+                      </th>
+                      <th>Mata Kuliah</th>
+                      <th style="width: 70px; text-align: center">
+                        Jumlah SKS
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="baris-kategori">
+                      <td colspan="4">🌱 PERTANIAN</td>
+                    </tr>
+                    <tr>
+                      <td>Perlindungan Tanaman & Pengendalian Hama</td>
+                      <td>3</td>
+                      <td>Biologi dan Fisiologi Tumbuhan</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Ilmu Tanah, Pemupukan, dan Irigasi Modern</td>
+                      <td>3</td>
+                      <td>Akuakultur</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Bioteknologi</td>
+                      <td>1</td>
+                      <td>Kebun dan Pemeliharaan tanaman anggur</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Produksi tanaman jamur</td>
+                      <td>1</td>
+                      <td>Peternakan</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Pemupukan</td>
+                      <td>1</td>
+                      <td>Mikrobiologi</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Inovasi di Bidang Pertanian</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="baris-kategori">
+                      <td colspan="4">📊 PENGELOLAAN</td>
+                    </tr>
+                    <tr>
+                      <td>Kewirausahaan Pertanian</td>
+                      <td>3</td>
+                      <td>Analisis Keuangan</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Perubahan Implementasi</td>
+                      <td>1</td>
+                      <td>Pemasaran</td>
+                      <td>1</td>
+                    </tr>
+                    <tr class="baris-kategori">
+                      <td colspan="4">🛡️ KETAHANAN PANGAN</td>
+                    </tr>
+                    <tr>
+                      <td>Pengantar Ketahanan Pangan</td>
+                      <td>1</td>
+                      <td>Pertanian Berkelanjutan Modern</td>
+                      <td>1</td>
+                    </tr>
+                    <tr class="baris-kategori">
+                      <td colspan="4">🔬 PROYEK PENELITIAN ILMIAH</td>
+                    </tr>
+                    <tr>
+                      <td>Metodologi Penelitian</td>
+                      <td>1</td>
+                      <td>Proyek Lapangan</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Presentasi Penelitian</td>
+                      <td>1</td>
+                      <td>Pelatihan Kerja (On the Job Training)</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Aplikasi Komputer</td>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="baris-kategori">
+                      <td colspan="4">🇮🇱 ISRAEL</td>
+                    </tr>
+                    <tr>
+                      <td>Pengenalan israel</td>
+                      <td>0.5</td>
+                      <td>Tur Edukasi</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Kesehatan & Keselamatan Kerja di Gurun</td>
+                      <td>0.5</td>
+                      <td>Wisata Budaya</td>
+                      <td>4</td>
+                    </tr>
+                    <tr class="baris-total">
+                      <td colspan="3">
+                        <strong>Total Keseluruhan Kredit</strong>
+                      </td>
+                      <td><strong>38</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="catatan-tabel">
+                <i class="bi bi-info-circle"></i> Setiap kredit setara 9 jam
+                akademik. Kurikulum dapat berubah sewaktu-waktu.
+              </p>
+            </div>
+          </div>
+
+          <!-- =============================== Penelitian ================================= -->
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-biru">
+                <i class="bi bi-search"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">03 · Penelitian</div>
+                <h2>Proyek Penelitian Ilmiah</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Setiap mahasiswa wajib berpartisipasi dalam
+                <strong>proyek penelitian ilmiah</strong> yang dibimbing oleh
+                koordinator penelitian AICAT bersama petani mitra.
+              </p>
+              <div class="grid-2-kolom">
+                <div class="kartu-sub">
+                  <h4><i class="bi bi-people-fill"></i> Kelompok Penelitian</h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>
+                      Kelompok kecil 2–4 mahasiswa dari pertanian yang sama
+                    </li>
+                    <li>Topik dipilih bersama petani dan pembimbing proyek</li>
+                  </ul>
+                </div>
+                <div class="kartu-sub">
+                  <h4>
+                    <i class="bi bi-person-badge-fill"></i> Peran Pembimbing
+                  </h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>2–3 pertemuan bimbingan per bulan</li>
+                    <li>Mendampingi hingga presentasi akhir penelitian</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="kotak-info kotak-biru" style="margin-top: 16px">
+                <i class="bi bi-tools"></i>
+                <p>
+                  Petani menyediakan
+                  <b>lahan dan seluruh peralatan</b> tanpa biaya tambahan bagi
+                  mahasiswa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============================== Kewirausahaan ============================= -->
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-emas">
+                <i class="bi bi-briefcase-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">04 · Kewirausahaan</div>
+                <h2>Rencana Bisnis (Business Plan)</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kotak-info kotak-kuning">
+                <i class="bi bi-lightbulb-fill"></i>
+                <p>
+                  <strong>Persiapan Nyata untuk Dunia Bisnis</strong>Setiap
+                  mahasiswa belajar merancang, menulis, dan mempresentasikan
+                  rencana bisnis lengkap saat lulus mereka sudah siap mengelola
+                  bisnis sendiri.
+                </p>
+              </div>
+              <ul class="list-konten emas">
+                <li>Merencanakan konsep bisnis pertanian yang feasible</li>
+                <li>
+                  Menyusun dokumen rencana bisnis secara tertulis dan
+                  terstruktur
+                </li>
+                <li>Melakukan analisis keuangan dan proyeksi pendapatan</li>
+                <li>Presentasi di hadapan dosen dan sesama mahasiswa</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigasi-bawah">
+            <button class="tombol-nav tombol-prev" disabled>
+              <i class="bi bi-arrow-left"></i> Sebelumnya
+            </button>
+            <div class="info-halaman-tengah">
+              <span class="teks-halaman">Halaman 1 dari 4</span>
+              <div class="dot-wrapper">
+                <button
+                  class="dot-indikator aktif-dot"
+                  onclick="pindahHalaman(0)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(1)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(2)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(3)"
+                ></button>
+              </div>
+            </div>
+            <button class="tombol-nav tombol-next" onclick="pindahHalaman(1)">
+              Selanjutnya <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════
+             HALAMAN 2: Tur & Biaya
+        ═══════════════════════════ -->
+        <div class="halaman-konten" id="halaman-1">
+          <div class="label-topik-halaman">
+            <i class="bi bi-map-fill"></i> Tur & Biaya Program
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-hijau">
+                <i class="bi bi-map-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">05 · Tur</div>
+                <h2>Tur Profesional - TERMASUK DALAM BIAYA KULIAH</h2>
+              </div>
+              <span class="badge-termasuk badge-hijau"
+                ><i class="bi bi-check-circle-fill"></i> Termasuk Biaya
+                Kuliah</span
+              >
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Setiap mahasiswa berpartisipasi dalam
+                <strong>minimal tiga tur edukasi profesional</strong>. Semua
+                biaya sudah termasuk dalam biaya kuliah.
+              </p>
+              <ul class="list-konten">
+                <li>Tur budidaya perikanan di tambak ikan hias</li>
+                <li>
+                  Kunjungan Studi Perlindungan Tanaman ke Pusat Kendali Lalat
+                  Buah Mediterania
+                </li>
+                <li>Tur kebun anggur dan mangga</li>
+                <li>
+                  Pusat Litbang - tur ke lahan percobaan tanaman dan
+                  laboratorium penelitian.
+                </li>
+                <li>
+                  Tur dan lokakarya pertanian berkelanjutan di Kibbutz Lotan,
+                  Arava Selatan
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-biru">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">06 · Budaya</div>
+                <h2>Wisata Kebudayaan Israel - TERMASUK DALAM BIAYA KULIAH</h2>
+              </div>
+              <span class="badge-termasuk badge-hijau"
+                ><i class="bi bi-check-circle-fill"></i> Termasuk Biaya
+                Kuliah</span
+              >
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Semua tur dipandu oleh
+                <strong>pemandu wisata profesional bersertifikat</strong> dan
+                sudah termasuk dalam biaya kuliah.
+              </p>
+              <ul class="list-konten biru">
+                <li>
+                  Tur satu hari ke <strong>Yerusalem</strong> yang bersejarah
+                </li>
+                <li>
+                  Tur dua hari ke <strong>Israel Utara</strong> dan situs-situs
+                  bersejarahnya
+                </li>
+                <li>Tur satu hari di kawasan <strong>Laut Mati</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-emas">
+                <i class="bi bi-stars"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">07 · Tambahan</div>
+                <h2>Tur Ekstra (Pilihan)</h2>
+              </div>
+              <span class="badge-termasuk badge-emas"
+                ><i class="bi bi-wallet2"></i> Biaya Sendiri</span
+              >
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Mahasiswa bisa memilih berpartisipasi dalam tur tambahan di luar
+                program resmi. Biaya tidak termasuk dalam biaya kuliah.
+              </p>
+              <ul class="list-konten emas">
+                <li>Tur melihat salju di wilayah utara Israel</li>
+                <li>Kunjungan ke Betlehem</li>
+                <li>Tur profesional tambahan lainnya sesuai minat</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-emas">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">08 · Biaya</div>
+                <h2>Biaya Kuliah & Tiket Pesawat Pulang Pergi</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kartu-biaya">
+                <h4>Biaya Sekolah (termasuk PPN)</h4>
+                <div class="angka-biaya">
+                  Rp 47.945.000 <span>per program</span>
+                </div>
+                <div class="catatan-biaya">
+                  <i class="bi bi-exclamation-circle"></i> Biaya dapat berubah.
+                  Konfirmasi via info@aicat.org
+                </div>
+              </div>
+              <div class="kotak-info kotak-kuning" style="margin-top: 16px">
+                <i class="bi bi-airplane-fill"></i>
+                <p>
+                  <strong>Tiket Pesawat Pulang Pergi</strong>Menjadi tanggung
+                  jawab mahasiswa, dibayar secara angsuran bulanan bersama biaya
+                  kuliah.
+                </p>
+              </div>
+              <div class="kotak-info kotak-hijau">
+                <i class="bi bi-calendar-check-fill"></i>
+                <p>
+                  <strong>Sistem Angsuran Bulanan</strong>Biaya kuliah dan tiket
+                  dicicil selama program berlangsung (Agustus – Juni).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigasi-bawah">
+            <button class="tombol-nav tombol-prev" onclick="pindahHalaman(0)">
+              <i class="bi bi-arrow-left"></i> Sebelumnya
+            </button>
+            <div class="info-halaman-tengah">
+              <span class="teks-halaman">Halaman 2 dari 4</span>
+              <div class="dot-wrapper">
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(0)"
+                ></button>
+                <button
+                  class="dot-indikator aktif-dot"
+                  onclick="pindahHalaman(1)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(2)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(3)"
+                ></button>
+              </div>
+            </div>
+            <button class="tombol-nav tombol-next" onclick="pindahHalaman(2)">
+              Selanjutnya <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════
+             HALAMAN 3: Hak & Aturan
+        ═══════════════════════════ -->
+        <div class="halaman-konten" id="halaman-2">
+          <div class="label-topik-halaman">
+            <i class="bi bi-shield-check"></i> Hak Mahasiswa & Aturan
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-hijau">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">09 · Hak</div>
+                <h2>Hak Mahasiswa</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="grid-2-kolom">
+                <div class="kartu-sub">
+                  <h4><i class="bi bi-bus-front-fill"></i> Transportasi</h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>
+                      Transportasi kampus pergi-pulang ditanggung penuh AICAT
+                    </li>
+                  </ul>
+                </div>
+                <div class="kartu-sub">
+                  <h4><i class="bi bi-person-workspace"></i> Bimbingan</h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>
+                      Pemimpin kelompok sebagai penghubung dengan kantor AICAT
+                    </li>
+                  </ul>
+                </div>
+                <div class="kartu-sub">
+                  <h4><i class="bi bi-house-fill"></i> Akomodasi</h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>
+                      Tempat tinggal disediakan petani dengan semua fasilitas
+                      yang dibutuhkan
+                    </li>
+                  </ul>
+                </div>
+                <div class="kartu-sub">
+                  <h4><i class="bi bi-wallet-fill"></i> Gaji Bulanan</h4>
+                  <ul class="list-konten" style="margin-top: 0">
+                    <li>
+                      Gaji ditransfer ke "Dompet Digital" paling lambat tanggal
+                      10 setiap bulan
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-merah">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">10 · Kesehatan</div>
+                <h2>Asuransi Kesehatan</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kotak-info kotak-hijau">
+                <i class="bi bi-shield-fill-check"></i>
+                <p>
+                  Semua mahasiswa dilindungi asuransi kesehatan dari tanggal
+                  kedatangan hingga akhir program Mahasiswa membayar 1/3 biaya
+                  (dipotong gaji bulanan), sisanya ditanggung petani.
+                </p>
+              </div>
+              <div class="sub-judul-konten">
+                <i class="bi bi-check-circle-fill" style="color: #1fbf8f"></i>
+                Ditanggung Asuransi
+              </div>
+              <ul class="list-konten">
+                <li>Perawatan darurat</li>
+                <li>
+                  Semua perawatan rawat jalan — kunjungan dokter dan perawatan
+                  yang dibutuhkan
+                </li>
+                <li>Rawat inap jika dirujuk oleh dokter</li>
+                <li>Obat-obatan bersubsidi sesuai ketentuan Israel</li>
+              </ul>
+              <div class="sub-judul-konten" style="margin-top: 20px">
+                <i class="bi bi-x-circle-fill" style="color: #c0392b"></i> TIDAK
+                Ditanggung
+              </div>
+              <ul class="list-konten list-tidak">
+                <li>Perawatan gigi · Kehamilan · Kacamata</li>
+                <li>Penyakit bawaan · Perawatan spesialis tidak mendesak</li>
+              </ul>
+              <div class="kotak-info kotak-merah" style="margin-top: 16px">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <p>
+                  <strong>Syarat Wajib</strong>Mahasiswa harus sehat saat tiba
+                  dan wajib menyerahkan sertifikat kesehatan. AICAT berhak
+                  menolak peserta yang tidak lulus pemeriksaan medis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-merah">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">11 · Penting</div>
+                <h2>Penghentian Program Sebelum Selesai</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <p>
+                AICAT berhak untuk memberikan peringatan resmi dan kemudian
+                mengakhiri partisipasi siswa dalam program tersebut sebagai
+                akibat dari hal-hal berikut:
+              </p>
+              <ul class="list-konten merah">
+                <li>Pelanggaran hukum yang berlaku di Israel</li>
+                <li>Pelanggaran berat terhadap kode etik mahasiswa</li>
+                <li>
+                  Sering absen dari kegiatan sekolah atau pekerjaan di pertanian
+                </li>
+                <li>
+                  Kekerasan, perjudian, mabuk-mabukan, atau penggunaan narkoba
+                </li>
+                <li>
+                  Ketidakhadiran 48 jam dari pertanian tanpa penjelasan yang
+                  memuaskan
+                </li>
+              </ul>
+              <div class="kotak-info kotak-merah" style="margin-top: 14px">
+                <i class="bi bi-cash-stack"></i>
+                <p>
+                  <strong>Konsekuensi Finansial</strong>Mahasiswa wajib membayar
+                  sisa biaya kuliah dan tiket pesawat pulang pergi kepada AICAT.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-ungu">
+                <i class="bi bi-clipboard2-check-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">12 · Aturan</div>
+                <h2>Kode Etik Mahasiswa</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="sub-judul-konten">
+                <i class="bi bi-book-fill"></i> Studi
+              </div>
+              <ul class="list-konten">
+                <li>
+                  Setiap siswa akan ditugaskan ke sebuah kelompok dan pemimpin
+                  kelompok selama program berlangsung.
+                </li>
+                <li>
+                  Peran ketua kelompok adalah untuk berkoordinasi antara
+                  mahasiswa dan kantor AICAT. Mereka adalah pihak yang langsung
+                  dihubungi untuk semua kebutuhan, pertanyaan, atau masalah
+                  mahasiswa, dan akan melapor kepada koordinator mahasiswa
+                  AICAT, yang bertanggung jawab atas kesejahteraan mahasiswa.
+                </li>
+                <li>
+                  Hari sekolah: pukul <strong>08.30 – 16.00</strong>, makan
+                  siang <strong>12.00–13.00</strong>
+                </li>
+                <li>
+                  Mahasiswa wajib hadir di kelas dan menyelesaikan semua tugas
+                </li>
+                <li>
+                  Untuk sertifikat kelulusan, tingkat kehadiran minimal
+                  <strong>90%</strong>
+                </li>
+              </ul>
+              <div class="sub-judul-konten">
+                <i class="bi bi-building-fill"></i> Kampus
+              </div>
+              <ul class="list-konten">
+                <li>
+                  Jaga kebersihan dan kerapian ruang kelas dan pusat mahasiswa
+                </li>
+                <li>
+                  Dilarang merokok di dalam gedung kampus dan dilarang makan di
+                  kelas
+                </li>
+              </ul>
+              <div class="sub-judul-konten">
+                <i class="bi bi-bus-front-fill"></i> Transportasi
+              </div>
+              <ul class="list-konten">
+                <li>
+                  Transportasi menuju dan dari kampus ditanggung oleh AICAT
+                </li>
+                <li>Wajib menaiki bus tepat waktu sesuai jadwal</li>
+                <li>Perilaku sopan di dalam bus wajib</li>
+                <li>Dilarang merokok di dalam bus</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-merah">
+                <i class="bi bi-slash-circle-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">13 · Larangan</div>
+                <h2>Perjudian, Narkoba, Alkohol & Alat Merokok</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kotak-info kotak-merah">
+                <i class="bi bi-ban"></i>
+                <p>
+                  <strong>Larangan Keras — Berlaku Tanpa Pengecualian.</strong>
+                  Pelanggaran mengakibatkan penghentian program dan pemulangan
+                  ke negara asal.
+                </p>
+              </div>
+              <ul class="list-konten merah">
+                <li>
+                  <strong>Alkohol & alat merokok</strong> — kepemilikan,
+                  konsumsi, pembuatan, penjualan dilarang keras
+                </li>
+                <li>
+                  <strong>Narkoba</strong> — dalam bentuk apa pun dilarang
+                  sepenuhnya
+                </li>
+                <li>
+                  <strong>Perjudian</strong> — sangat dilarang tanpa
+                  pengecualian
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigasi-bawah">
+            <button class="tombol-nav tombol-prev" onclick="pindahHalaman(1)">
+              <i class="bi bi-arrow-left"></i> Sebelumnya
+            </button>
+            <div class="info-halaman-tengah">
+              <span class="teks-halaman">Halaman 3 dari 4</span>
+              <div class="dot-wrapper">
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(0)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(1)"
+                ></button>
+                <button
+                  class="dot-indikator aktif-dot"
+                  onclick="pindahHalaman(2)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(3)"
+                ></button>
+              </div>
+            </div>
+            <button class="tombol-nav tombol-next" onclick="pindahHalaman(3)">
+              Selanjutnya <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════
+             HALAMAN 4: Praktikum & Pernyataan
+        ═══════════════════════════ -->
+        <div class="halaman-konten" id="halaman-3">
+          <div class="label-topik-halaman">
+            <i class="bi bi-person-check-fill"></i> Praktikum & Pernyataan
+            Keikutsertaan
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-hijau">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">14 · Praktik</div>
+                <h2>Praktikum</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kotak-info kotak-kuning">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <p>
+                  <strong>Pembatasan Pekerjaan</strong>Masa tinggal mahasiswa di
+                  Israel dibatasi untuk pelatihan pertanian sesuai penempatan
+                  AICAT. Pekerjaan lain apa pun termasuk selama masa liburan
+                  <b>dilarang keras</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-hijau">
+                <i class="bi bi-tree-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">15 · Lapangan</div>
+                <h2>Di Pertanian</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <ul class="list-konten">
+                <li>
+                  Wajib mengikuti prosedur dan peraturan pertanian sebagaimana
+                  disampaikan petani
+                </li>
+                <li>
+                  Semua prosedur kerja harus mengikuti hukum dan peraturan
+                  keselamatan
+                </li>
+                <li>
+                  Setiap pertanian memiliki jadwal kerja harian — wajib diikuti
+                </li>
+                <li>
+                  <strong
+                    >Gaji ditransfer ke "Dompet Digital" paling lambat tanggal
+                    10 setiap bulan</strong
+                  >
+                </li>
+                <li>
+                  Cuti kerja harus dikoordinasikan terlebih dahulu dengan petani
+                </li>
+                <li>
+                  Wajib memberitahu ketua kelompok jika berencana meninggalkan
+                  Arava
+                </li>
+                <li>
+                  Segala penyakit harus segera dilaporkan kepada petani.
+                  Mintalah janji temu dengan dokter atau klinik kepada petani.
+                  Beri tahu ketua kelompok Anda dan mintalah bantuan jika ada
+                  kesulitan berkomunikasi dengan petani.
+                </li>
+                <li>
+                  Semua peralatan dikembalikan dalam kondisi baik setelah proyek
+                  berakhir
+                </li>
+                <li>
+                  Menjual atau memberikan hasil pertanian maupun peralatan tidak
+                  diperbolehkan
+                </li>
+                <li>
+                  Jika Anda menghadapi masalah apa pun di pertanian (pekerjaan,
+                  keuangan, sosial), silakan hubungi ketua kelompok Anda untuk
+                  meminta saran atau koordinator mahasiswa AICAT di kantor
+                  AICAT.
+                </li>
+                <li>
+                  Perpindahan antar mentor harus mendapat persetujuan dari
+                  pusat, direktur, dan Kementerian Luar Negeri Israel
+                </li>
+                <li>
+                  Mahasiswa bertanggung jawab atas barang miliknya tidak
+                  disarankan menyimpan uang tunai di kamar
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-abu">
+                <i class="bi bi-person-check-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">16 & 17 · Pernyataan</div>
+                <h2>Pernyataan Mahasiswa</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <p class="paragraf-konten">
+                Setiap mahasiswa wajib mengisi dan menandatangani pernyataan
+                ini. Berlaku untuk Program Studi Pertanian Lanjutan AICAT
+                2024–2025.
+              </p>
+              <div class="kotak-pernyataan">
+                <p
+                  style="
+                    font-size: 13.5px;
+                    font-weight: 600;
+                    color: #1f4d36;
+                    margin-bottom: 14px;
+                  "
+                >
+                  Data Mahasiswa
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 14px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: #6b7280;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Nama Lengkap
+                    </div>
+                    <div
+                      style="
+                        height: 2px;
+                        background: rgba(31, 77, 54, 0.2);
+                        border-radius: 2px;
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: #6b7280;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Nomor Paspor
+                    </div>
+                    <div
+                      style="
+                        height: 2px;
+                        background: rgba(31, 77, 54, 0.2);
+                        border-radius: 2px;
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: #6b7280;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Tempat Belajar / Pertanian
+                    </div>
+                    <div
+                      style="
+                        height: 2px;
+                        background: rgba(31, 77, 54, 0.2);
+                        border-radius: 2px;
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: #6b7280;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Tanggal
+                    </div>
+                    <div
+                      style="
+                        height: 2px;
+                        background: rgba(31, 77, 54, 0.2);
+                        border-radius: 2px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+                <p
+                  style="
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #111;
+                    margin-bottom: 12px;
+                  "
+                >
+                  SAYA DENGAN INI MENYATAKAN BAHWA:
+                </p>
+                <ul class="list-konten">
+                  <li>
+                    Program berlangsung satu (1) musim pertanian (Agustus –
+                    Juni), setelah itu saya berjanji meninggalkan Israel dan
+                    kembali ke negara saya
+                  </li>
+                  <li>
+                    Saya belum pernah berpartisipasi dalam program serupa di
+                    Israel sebelumnya
+                  </li>
+                  <li>
+                    Saya berkomitmen berperilaku sesuai peraturan program dan
+                    kode etik mahasiswa
+                  </li>
+                  <li>
+                    Semua detail biaya — biaya di negara asal, biaya AICAT, dan
+                    tiket pesawat — telah dijelaskan dan saya menerimanya
+                  </li>
+                </ul>
+                <div class="form-tanda-tangan">
+                  <div class="kolom-ttd">
+                    <label>Nama</label>
+                    <div class="garis-ttd"></div>
+                  </div>
+                  <div class="kolom-ttd">
+                    <label>Tanda Tangan</label>
+                    <div class="garis-ttd"></div>
+                  </div>
+                  <div class="kolom-ttd">
+                    <label>Tanggal</label>
+                    <div class="garis-ttd"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-emas">
+                <i class="bi bi-airplane-fill"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">18 · Biaya</div>
+                <h2>Biaya Sebelum Keberangkatan</h2>
+              </div>
+              <span class="badge-termasuk badge-merah"
+                ><i class="bi bi-person-fill"></i> Tanggung Jawab
+                Mahasiswa</span
+              >
+            </div>
+            <div class="isi-seksi">
+              <ul class="list-konten emas">
+                <li>Tiket pesawat sekali jalan dari negara asal ke Israel</li>
+                <li>Pengurusan paspor (jika belum memiliki)</li>
+                <li>
+                  Pemeriksaan kesehatan lengkap dari lembaga medis yang diakui
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seksi-konten">
+            <div class="header-seksi">
+              <div class="ikon-seksi warna-biru">
+                <i class="bi bi-currency-exchange"></i>
+              </div>
+              <div class="info-header-seksi">
+                <div class="nomor-seksi">19 · Biaya</div>
+                <h2>Pengeluaran di Israel</h2>
+              </div>
+            </div>
+            <div class="isi-seksi">
+              <div class="kartu-biaya">
+                <h4>Biaya Sekolah (termasuk PPN)</h4>
+                <div class="angka-biaya">
+                  Rp 47.945.000 <span>· dapat berubah</span>
+                </div>
+                <div class="catatan-biaya">
+                  Dibayar angsuran bulanan selama masa program (Agustus – Juni)
+                </div>
+              </div>
+              <div class="kotak-info kotak-biru" style="margin-top: 16px">
+                <i class="bi bi-airplane-fill"></i>
+                <p>
+                  <strong>Tiket Pesawat Pulang Pergi</strong>Dibayar angsuran
+                  bulanan bersama biaya kuliah. Nominal disesuaikan rute
+                  penerbangan masing-masing negara asal.
+                </p>
+              </div>
+              <div class="kotak-info kotak-kuning" style="margin-top: 0">
+                <i class="bi bi-info-circle-fill"></i>
+                <p>
+                  Informasi biaya terbaru: <b>info@aicat.org</b> atau
+                  <b>adc-aicat@arava.co.il</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigasi-bawah">
+            <button class="tombol-nav tombol-prev" onclick="pindahHalaman(2)">
+              <i class="bi bi-arrow-left"></i> Sebelumnya
+            </button>
+            <div class="info-halaman-tengah">
+              <span class="teks-halaman">Halaman 4 dari 4 — Selesai</span>
+              <div class="dot-wrapper">
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(0)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(1)"
+                ></button>
+                <button
+                  class="dot-indikator"
+                  onclick="pindahHalaman(2)"
+                ></button>
+                <button
+                  class="dot-indikator aktif-dot"
+                  onclick="pindahHalaman(3)"
+                ></button>
+              </div>
+            </div>
+            <div class="grup-tombol-kanan">
+              <a
+                href="assets/document/AICAT (Arafa International Center for Agricultural Training).pdf"
+                download
+                class="tombol-nav tombol-daftar-final-download"
+              >
+                <i class="bi bi-download"></i> Download Informasi
+              </a>
+              <a href="pendaftaran.html" class="tombol-nav tombol-daftar-final">
+                <i class="bi bi-pencil-fill"></i> Daftar Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper">
+      <!-- CTA CARD -->
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/backgorund/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="#">Diploma Program</a></li>
+                <li><a href="#">Short Course</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : info@aicat.org</p>
+              <p>Phone : +62 812345678</p>
+
+              <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2025 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      const TOTAL_HALAMAN = 4;
+      const LABEL_HALAMAN = [
+        "Akademik & Kurikulum",
+        "Tur & Biaya Program",
+        "Hak Mahasiswa & Aturan",
+        "Praktikum & Pernyataan",
+      ];
+      const PROGRES = [25, 50, 75, 100];
+      let halamanSaatIni = 0;
+
+      function pindahHalaman(nomor) {
+        if (nomor < 0 || nomor >= TOTAL_HALAMAN) return;
+        document
+          .querySelectorAll(".halaman-konten")
+          .forEach((el) => el.classList.remove("aktif-halaman"));
+        document
+          .getElementById("halaman-" + nomor)
+          .classList.add("aktif-halaman");
+        document
+          .querySelectorAll(".tab-halaman")
+          .forEach((tab, i) => tab.classList.toggle("aktif-tab", i === nomor));
+        document.getElementById("garis-progres").style.width =
+          PROGRES[nomor] + "%";
+        document.getElementById("label-halaman-aktif").textContent =
+          LABEL_HALAMAN[nomor];
+        const wrapper = document.querySelector(".wrapper-tab-halaman");
+        if (wrapper) {
+          const offsetTop =
+            wrapper.getBoundingClientRect().top + window.scrollY - 140;
+          window.scrollTo({ top: offsetTop, behavior: "smooth" });
+        }
+        halamanSaatIni = nomor;
+      }
+
+      // Keyboard navigasi
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") pindahHalaman(halamanSaatIni + 1);
+        if (e.key === "ArrowLeft") pindahHalaman(halamanSaatIni - 1);
+      });
+
+      // Swipe mobile
+      let awalSentuh = null;
+      document.addEventListener(
+        "touchstart",
+        (e) => {
+          awalSentuh = e.changedTouches[0].clientX;
+        },
+        { passive: true },
+      );
+      document.addEventListener(
+        "touchend",
+        (e) => {
+          if (awalSentuh === null) return;
+          const selisih = awalSentuh - e.changedTouches[0].clientX;
+          if (Math.abs(selisih) > 60)
+            selisih > 0
+              ? pindahHalaman(halamanSaatIni + 1)
+              : pindahHalaman(halamanSaatIni - 1);
+          awalSentuh = null;
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>
