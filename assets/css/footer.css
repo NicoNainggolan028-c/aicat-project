@@ -35,7 +35,7 @@
 .cta-left img {
   position: absolute;
   width: 400px;
-  left: 20px;
+  left: 10px;
   bottom: -100px;
   transform: scale(1.1);
   pointer-events: none;
@@ -63,6 +63,10 @@
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.cta-right {
+  margin-left: 420px;
 }
 
 .cta-right p {
