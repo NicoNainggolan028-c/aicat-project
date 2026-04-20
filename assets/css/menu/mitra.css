@@ -40,7 +40,7 @@ body {
   min-height: 460px;
   background:
     linear-gradient(135deg, rgba(16, 94, 60, 0.88), rgba(30, 58, 110, 0.92)),
-    url("/assets/images/backgorund/mitra.jpg") center/cover no-repeat;
+    url("/assets/images/background/mitra.jpg") center/cover no-repeat;
   display: flex;
   align-items: flex-end;
   overflow: hidden;

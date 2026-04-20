@@ -33,7 +33,7 @@ body {
   position: relative;
   background:
     linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
-    url("/assets/images/backgorund/bg1.jpeg") center/cover no-repeat;
+    url("/assets/images/background/bg1.jpeg") center/cover no-repeat;
   padding: 140px 0 90px;
   display: flex;
   justify-content: center; /* tengah horizontal */
