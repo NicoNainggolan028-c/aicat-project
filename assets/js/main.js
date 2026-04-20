@@ -289,32 +289,32 @@ const testimonials = [
   {
     text: "Program MSc Plant Biology dari AICAT dan Tel Aviv University memberi saya banyak pengalaman berharga. Meski menghadapi berbagai tantangan, termasuk cuaca ekstrem, kami berhasil lulus dan mendapatkan ilmu yang sangat berguna untuk masa depan.",
     name: "Tran Hoai Thanh – Nong Lam University HCMC",
-    image: "/assets/images/testimonial/thanh.jpg",
+    image: "assets/images/testimonial/thanh.jpg",
   },
   {
     text: "Saya belajar banyak dari program AICAT di Israel. Setelah kembali ke Thailand, saya bersama para alumni mendirikan Arava Farm Company dan menerapkan teknik pertanian modern seperti drip irrigation untuk budidaya jagung manis yang memiliki permintaan tinggi di pasar.",
     name: "Wirin Anthakhaek – Thailand",
-    image: "/assets/images/testimonial/wirin1.jpg",
+    image: "assets/images/testimonial/wirin1.jpg",
   },
   {
     text: "Program MSc di AICAT dan Tel Aviv University adalah perjalanan yang sangat berarti bagi hidup saya. Selain ilmu akademik, saya menjadi lebih percaya diri, lebih matang, dan belajar berpikir “out of the box”. Program ini benar-benar mengubah hidup saya.",
     name: "Hung – Vietnam",
-    image: "/assets/images/testimonial/Hung MSc2(1).jpg",
+    image: "assets/images/testimonial/Hung MSc2(1).jpg",
   },
   {
     text: "Saya sangat menghargai pengalaman belajar di AICAT dengan metode “learning by doing”. Setelah lulus, saya mendapatkan posisi manajemen di bidang pertanian di Myanmar dan dapat langsung menerapkan ilmu yang saya pelajari.",
     name: "Thida Win – Myanmar",
-    image: "/assets/images/testimonial/Thida Win – Myanmar.jpg",
+    image: "assets/images/testimonial/Thida Win – Myanmar.jpg",
   },
   {
     text: "Kami bangga atas pencapaian Vu, Tuan, dan Thanh yang berhasil meraih gelar MSc di bidang Plant Biology dari Tel Aviv University. Dedikasi dan kerja keras mereka telah membuka jalan bagi mahasiswa berikutnya dalam program ini.",
     name: "Prof. Ohad Nir – Tel Aviv University",
-    image: "/assets/images/testimonial/Ohad.jpg",
+    image: "assets/images/testimonial/Ohad.jpg",
   },
   {
     text: "Program AICAT memberi saya pengalaman luar biasa dengan pendekatan “learning by doing”. Saya mendapatkan ilmu teori dari Tel Aviv University sekaligus pengalaman langsung bekerja dengan petani dan peneliti, yang mempersiapkan saya untuk berkontribusi pada ketahanan pangan di masa depan.",
     name: "Endurance P. Ojo – Nigeria",
-    image: "/assets/images/testimonial/P-ojo.jpg",
+    image: "assets/images/testimonial/P-ojo.jpg",
   },
 ];
 
