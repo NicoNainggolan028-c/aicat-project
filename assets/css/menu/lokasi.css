@@ -39,7 +39,7 @@ body {
   min-height: 460px;
   background:
     linear-gradient(135deg, rgba(16, 94, 60, 0.9), rgba(25, 55, 109, 0.9)),
-    url("/assets/images/background/lokasi.jpg") center/cover no-repeat;
+    url("../../images/backgorund/lokasi.jpg") center/cover no-repeat;
   display: flex;
   padding: 580px 0 80px;
   align-items: flex-end;
