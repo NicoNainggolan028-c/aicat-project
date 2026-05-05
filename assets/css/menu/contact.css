@@ -1,0 +1,838 @@
+/* ══════════════════════════════════════
+VARIABEL
+══════════════════════════════════════ */
+:root {
+  --hijau-tua: #1f4d36;
+  --hijau-mid: #2e7d32;
+  --hijau-muda: #1fbf8f;
+  --emas: #d4af37;
+  --navy: #1f3c88;
+  --latar: #f6f8f4;
+  --teks: #111827;
+  --redup: #6b7280;
+  --batas: rgba(31, 77, 54, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--latar);
+  overflow-x: hidden;
+  height: auto !important;
+  overflow-y: auto !important;
+}
+
+/* ══════════════════════════════════════
+         HERO — full split layout
+      ══════════════════════════════════════ */
+.hero-contact {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+/* Sisi kiri — teks */
+.hero-kiri {
+  background: linear-gradient(
+    160deg,
+    #0d2b1e 0%,
+    var(--hijau-tua) 50%,
+    #162f4a 100%
+  );
+  padding: 140px 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dot pattern dekoratif */
+.hero-kiri::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.04) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+/* Lingkaran blur besar */
+.hero-kiri::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(31, 191, 143, 0.15),
+    transparent 70%
+  );
+  bottom: -100px;
+  right: -80px;
+  pointer-events: none;
+}
+
+.hero-kiri-dalam {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+.label-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(31, 191, 143, 0.15);
+  border: 1px solid rgba(31, 191, 143, 0.35);
+  color: var(--hijau-muda);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+
+.hero-kiri h1 {
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.hero-kiri h1 em {
+  font-style: italic;
+  color: var(--emas);
+}
+
+.hero-kiri > .hero-kiri-dalam > p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.85;
+  margin-bottom: 40px;
+  max-width: 960px;
+}
+
+/* Kontak info cards di hero kiri */
+.info-kontak-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-kontak-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px 18px;
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.25s,
+    transform 0.25s;
+  text-decoration: none;
+}
+
+.item-kontak-hero:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.bulat-ikon-hero {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.bulat-hijau {
+  background: rgba(31, 191, 143, 0.2);
+  color: var(--hijau-muda);
+}
+.bulat-biru {
+  background: rgba(31, 60, 136, 0.3);
+  color: #7eb3ff;
+}
+.bulat-emas {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--emas);
+}
+.bulat-merah {
+  background: rgba(220, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.teks-item-hero label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 2px;
+}
+
+.teks-item-hero span {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Sisi kanan — form */
+.hero-kanan {
+  background: var(--latar);
+  padding: 140px 56px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+/* ══════════════════════════════════════
+         FORM KONTAK
+      ══════════════════════════════════════ */
+.judul-form {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  color: var(--teks);
+  margin-bottom: 6px;
+}
+
+.sub-form {
+  font-size: 14px;
+  color: var(--redup);
+  margin-bottom: 32px;
+  line-height: 1.65;
+}
+
+.grup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.baris-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.kolom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kolom-form label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hijau-tua);
+  letter-spacing: 0.5px;
+}
+
+.kolom-form label span {
+  color: #e53e3e;
+  margin-left: 2px;
+}
+
+.input-form {
+  width: 100%;
+  background: #fff;
+  border: 1.5px solid var(--batas);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13.5px;
+  color: var(--teks);
+  transition:
+    border-color 0.22s,
+    box-shadow 0.22s;
+  outline: none;
+  resize: none;
+}
+
+.input-form:focus {
+  border-color: var(--hijau-muda);
+  box-shadow: 0 0 0 3px rgba(31, 191, 143, 0.12);
+}
+
+.input-form::placeholder {
+  color: #aeb5be;
+}
+
+/* Dropdown subjek */
+.select-form {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+/* Tombol submit */
+.tombol-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--hijau-tua), #2a6e50);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 15px 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 6px 24px rgba(31, 77, 54, 0.3);
+  margin-top: 4px;
+}
+
+.tombol-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(31, 77, 54, 0.42);
+  background: linear-gradient(135deg, #2a6e50, var(--hijau-muda));
+}
+
+.tombol-submit:active {
+  transform: translateY(0);
+}
+
+/* Notif sukses */
+.notif-sukses {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  background: rgba(31, 191, 143, 0.1);
+  border: 1.5px solid rgba(31, 191, 143, 0.3);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 13.5px;
+  color: var(--hijau-tua);
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.notif-sukses i {
+  font-size: 20px;
+  color: var(--hijau-muda);
+}
+
+/* ══════════════════════════════════════
+         SEKSI PETA & LOKASI
+      ══════════════════════════════════════ */
+.seksi-peta {
+  padding: 80px 0 0;
+  background: #fff;
+}
+
+.kepala-seksi-peta {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.tag-seksi {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--hijau-mid);
+  margin-bottom: 12px;
+}
+
+.kepala-seksi-peta h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  color: var(--teks);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.kepala-seksi-peta h2 em {
+  font-style: italic;
+  color: var(--hijau-tua);
+}
+
+.kepala-seksi-peta p {
+  font-size: 15px;
+  color: var(--redup);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Grid Peta + Info */
+.grid-peta-info {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 0;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+  box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--batas);
+  border-bottom: none;
+}
+
+/* Google Maps embed */
+.wrapper-peta {
+  position: relative;
+  height: 480px;
+}
+
+.wrapper-peta iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Overlay label di atas peta */
+.label-peta {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(31, 77, 54, 0.92);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.label-peta i {
+  color: var(--hijau-muda);
+}
+
+/* Panel info kanan */
+.panel-info-lokasi {
+  background: linear-gradient(160deg, var(--hijau-tua), #0f2d1e);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel-info-lokasi::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+
+.panel-info-lokasi h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.sub-panel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Item info dalam panel */
+.daftar-info-lokasi {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.item-info-lokasi {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.ikon-info-lokasi {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hijau-muda);
+}
+
+.teks-info-lokasi .label-il {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 2px;
+}
+
+.teks-info-lokasi .nilai-il {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+/* Divider dalam panel */
+.pemisah-panel {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 6px 0;
+}
+
+/* Tombol buka di Google Maps */
+.tombol-buka-maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--emas);
+  color: var(--hijau-tua);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 24px;
+  transition: all 0.22s;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.35);
+  position: relative;
+  z-index: 1;
+}
+
+.tombol-buka-maps:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+  color: var(--hijau-tua);
+}
+
+/* ══════════════════════════════════════
+         SEKSI SOSIAL MEDIA
+      ══════════════════════════════════════ */
+.seksi-sosmed {
+  background: var(--latar);
+  padding: 72px 0 96px;
+}
+
+.grid-sosmed {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.kartu-sosmed {
+  background: #fff;
+  border: 1px solid var(--batas);
+  border-radius: 20px;
+  padding: 28px 22px;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.28s,
+    box-shadow 0.28s,
+    border-color 0.28s;
+  position: relative;
+  overflow: hidden;
+}
+
+.kartu-sosmed::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transform: scaleX(0);
+  transition: transform 0.28s;
+  transform-origin: left;
+}
+
+.kartu-sosmed:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.kartu-sosmed:hover::before {
+  transform: scaleX(1);
+}
+
+.kartu-sosmed.fb::before {
+  background: #1877f2;
+}
+.kartu-sosmed.ig::before {
+  background: linear-gradient(
+    90deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+.kartu-sosmed.yt::before {
+  background: #ff0000;
+}
+.kartu-sosmed.wa::before {
+  background: #25d366;
+}
+
+.ikon-sosmed {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 14px;
+}
+
+.ikon-fb {
+  background: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+}
+.ikon-ig {
+  background: rgba(220, 39, 67, 0.1);
+  color: #e1306c;
+}
+.ikon-yt {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+}
+.ikon-wa {
+  background: rgba(37, 211, 102, 0.1);
+  color: #25d366;
+}
+
+.nama-sosmed {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teks);
+  margin-bottom: 4px;
+}
+
+.handle-sosmed {
+  font-size: 12px;
+  color: var(--redup);
+}
+
+/* ══════════════════════════════════════
+         FAQ SINGKAT
+      ══════════════════════════════════════ */
+.seksi-faq {
+  background: #fff;
+  padding: 80px 0;
+  border-top: 1px solid var(--batas);
+}
+
+.grid-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.kartu-faq {
+  background: var(--latar);
+  border: 1px solid var(--batas);
+  border-radius: 16px;
+  padding: 22px 24px;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.kartu-faq:hover {
+  background: rgba(31, 191, 143, 0.05);
+  border-color: rgba(31, 191, 143, 0.25);
+}
+
+.kartu-faq h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--hijau-tua);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.4;
+}
+
+.kartu-faq h4 i {
+  font-size: 16px;
+  color: var(--hijau-muda);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.kartu-faq p {
+  font-size: 13.5px;
+  color: var(--redup);
+  line-height: 1.75;
+  margin: 0;
+  padding-left: 26px;
+}
+
+/* ══════════════════════════════════════
+         ANIMASI FLOATING BLOB DI HERO
+      ══════════════════════════════════════ */
+.blob-dekorasi {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.06;
+  animation: mengambang 8s ease-in-out infinite;
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--hijau-muda);
+  top: 10%;
+  left: -80px;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--emas);
+  top: 60%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+@keyframes mengambang {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.04);
+  }
+}
+
+/* ══════════════════════════════════════
+         RESPONSIVE
+      ══════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .hero-contact {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero-kiri {
+    padding: 130px 40px 60px;
+  }
+  .hero-kanan {
+    padding: 60px 40px 80px;
+  }
+  .hero-kiri-dalam {
+    max-width: 100%;
+  }
+  .hero-kiri h1 {
+    font-size: clamp(34px, 5vw, 50px);
+  }
+  .grid-peta-info {
+    grid-template-columns: 1fr;
+  }
+  .wrapper-peta {
+    height: 360px;
+  }
+  .panel-info-lokasi {
+    padding: 28px 24px;
+  }
+  .grid-sosmed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-faq {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-kiri {
+    padding: 120px 24px 48px;
+  }
+  .hero-kanan {
+    padding: 48px 24px 64px;
+  }
+  .baris-form {
+    grid-template-columns: 1fr;
+  }
+  .grid-sosmed {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .grid-peta-info {
+    border-radius: 16px 16px 0 0;
+  }
+  .seksi-peta {
+    padding: 60px 0 0;
+  }
+  .seksi-sosmed {
+    padding: 56px 0 72px;
+  }
+  .seksi-faq {
+    padding: 56px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .grid-sosmed {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wrapper-peta {
+    height: 280px;
+  }
+}

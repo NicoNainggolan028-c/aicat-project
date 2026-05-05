@@ -224,6 +224,14 @@ KONTEN UTAMA
   margin-bottom: 72px;
 }
 
+/* ── 2 card layout — lebih lebar dan proporsional ── */
+.grid-program-dua {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .kartu-program {
   background: var(--putih);
   border-radius: 22px;
@@ -852,6 +860,11 @@ RESPONSIVE
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  /* 2 card grid: masih 2 kolom di tablet */
+  .grid-program-dua {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
   .grid-langkah {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -879,6 +892,10 @@ RESPONSIVE
 
 @media (max-width: 576px) {
   .grid-program {
+    grid-template-columns: 1fr;
+  }
+  /* 2 card grid: 1 kolom di HP kecil */
+  .grid-program-dua {
     grid-template-columns: 1fr;
   }
   .grid-langkah {
