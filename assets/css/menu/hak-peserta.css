@@ -701,50 +701,233 @@ body {
   line-height: 1.4;
 }
 
-/* ══ RESPONSIVE ══ */
+/* =========================================================
+==================== RESPONSIVE MOBILE =====================
+========================================================= */
 @media (max-width: 991px) {
-  .stats-hak-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-angka-hak {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-kontak {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 575px) {
+  /* ================= HERO ================= */
   .hero-hak {
-    padding: 120px 0 70px;
+    height: auto;
+    min-height: unset;
+    padding: 90px 20px 50px;
+    text-align: center;
   }
-  .stats-hak-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .hero-hak h1 {
+    font-size: 26px;
+    line-height: 1.3;
   }
-  .grid-angka-hak {
-    grid-template-columns: 1fr 1fr;
+
+  .hero-hak h1 br {
+    display: none;
   }
-  .grid-kontak {
-    grid-template-columns: 1fr;
+
+  .sub-hero {
+    font-size: 13px;
+    line-height: 1.6;
   }
-  .isi-seksi {
-    padding: 18px;
+
+  /* ================= LAYOUT ================= */
+  .layout-hak {
+    padding: 30px 16px 60px;
+    gap: 18px;
   }
+
+  /* ================= HEADER SEKSI ================= */
   .header-seksi {
-    padding: 16px 18px;
+    padding: 16px;
+    gap: 12px;
+    align-items: flex-start;
   }
-  .seksi-cta-bawah {
-    padding: 32px 20px;
+
+  .ikon-seksi {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
+
+  .info-header-seksi h2 {
+    font-size: 15px;
+  }
+
   .badge-termasuk {
     display: none;
   }
-  .tabel-hak tbody td:first-child {
-    width: 40%;
-    font-size: 12px;
+
+  /* ================= ISI ================= */
+  .isi-seksi {
+    padding: 18px;
   }
+
+  .paragraf-konten {
+    font-size: 13px;
+  }
+
+  .list-konten li {
+    font-size: 13px;
+  }
+
+  /* ================= GRID ANGKA ================= */
+  .grid-angka-hak {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .kartu-angka {
+    padding: 14px 10px;
+  }
+
+  .kartu-angka .angka {
+    font-size: 20px;
+  }
+
+  .kartu-angka .keterangan {
+    font-size: 10.5px;
+  }
+
+  /* ================= TABEL ================= */
+  .wrapper-tabel-hak {
+    overflow-x: auto;
+  }
+
+  .tabel-hak {
+    min-width: 520px;
+  }
+
   .tabel-hak tbody td {
     font-size: 12px;
-    padding: 10px 12px;
+    padding: 10px;
+  }
+
+  .tabel-hak tbody td:first-child {
+    width: 45%;
+  }
+
+  /* ================= KOTAK INFO ================= */
+  .kotak-info {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .kotak-info p {
+    font-size: 12.5px;
+  }
+
+  /* ================= SLIP ================= */
+  .slip-aksi {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tombol-slip-download {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ================= KONTAK ================= */
+  .seksi-kontak {
+    padding: 26px 20px;
+    border-radius: 16px;
+  }
+
+  .seksi-kontak h3 {
+    font-size: 16px;
+  }
+
+  .sub-kontak {
+    font-size: 12px;
+  }
+
+  .grid-kontak {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .item-kontak {
+    padding: 14px;
+  }
+
+  .item-kontak .nilai-k {
+    font-size: 12px;
+  }
+
+  /* ================= CTA ================= */
+  .cta-card {
+    flex-direction: column;
+    padding: 24px 18px;
+    text-align: center;
+    gap: 18px;
+    margin-bottom: -40px;
+  }
+
+  .cta-left {
+    display: none; /* 🔥 hilangkan gambar */
+  }
+
+  .cta-right {
+    margin-left: 0;
+  }
+
+  .cta-right h3 {
+    font-size: 20px;
+  }
+
+  .cta-right p {
+    font-size: 12.5px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .btn-daftar,
+  .btn-program {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ================= EXTRA SMALL DEVICE ================= */
+@media (max-width: 575px) {
+  .hero-hak {
+    padding: 70px 16px 40px;
+  }
+
+  .hero-hak h1 {
+    font-size: 22px;
+  }
+
+  .sub-hero {
+    font-size: 12px;
+  }
+
+  .grid-angka-hak {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-kontak {
+    grid-template-columns: 1fr;
+  }
+
+  .header-seksi {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .info-header-seksi h2 {
+    font-size: 14px;
+  }
+
+  .kartu-angka .angka {
+    font-size: 18px;
+  }
+
+  .seksi-kontak h3 {
+    font-size: 15px;
+  }
+
+  .cta-right h3 {
+    font-size: 18px;
   }
 }

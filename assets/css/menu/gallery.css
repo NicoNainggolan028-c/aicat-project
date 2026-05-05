@@ -29,8 +29,8 @@ body {
 }
 
 /* ══════════════════════════════════════
-         HERO
-      ══════════════════════════════════════ */
+HERO
+══════════════════════════════════════ */
 .hero-galeri {
   position: relative;
   height: 72vh;
@@ -468,8 +468,8 @@ body {
 }
 
 /* ══════════════════════════════════════
-         RESPONSIVE
-      ══════════════════════════════════════ */
+RESPONSIVE
+══════════════════════════════════════ */
 @media (max-width: 1199px) {
   .grid-foto-galeri {
     columns: 3;
@@ -481,7 +481,7 @@ body {
     columns: 2;
   }
   .hero-galeri {
-    height: 56vh;
+    height: 65vh;
     min-height: 340px;
   }
   .tombol-kategori {

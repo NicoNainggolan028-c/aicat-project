@@ -1255,3 +1255,160 @@ HERO
     display: none;
   }
 }
+
+/* =========================================
+   RESPONSIVE TAMBAHAN (FIX MOBILE TOTAL)
+========================================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  /* HERO FIX */
+  .hero-cara-daftar {
+    height: auto;
+    min-height: 420px;
+    padding: 140px 20px 60px; /* 🔥 sebelumnya 580px, ini problem utama */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-dalam {
+    padding-bottom: 0;
+  }
+
+  .hero-dalam h1 {
+    font-size: clamp(28px, 6vw, 36px); /* 🔥 lebih masuk akal */
+  }
+
+  .hero-dalam p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .hero-tahapan {
+    gap: 6px;
+  }
+
+  .pill-tahap {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  /* LAYOUT */
+  .layout-utama {
+    padding: 20px 12px 60px;
+    gap: 16px;
+  }
+
+  /* SIDEBAR jadi horizontal scroll */
+  .daftar-sidebar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .daftar-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .daftar-sidebar a {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* CARD */
+  .kartu-seksi {
+    border-radius: 16px;
+  }
+
+  .kepala-kartu {
+    gap: 10px;
+  }
+
+  .ikon-kartu {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .meta-kepala-kartu h2 {
+    font-size: 15px;
+  }
+
+  .teks-p {
+    font-size: 13px;
+  }
+
+  /* GRID */
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-tiga-tahap {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA */
+  .kartu-cta-bawah h2 {
+    font-size: 20px;
+  }
+
+  .kartu-cta-bawah p {
+    font-size: 13px;
+  }
+}
+
+/* HP KECIL (Vivo Y12s dll) */
+@media (max-width: 480px) {
+  .hero-cara-daftar {
+    padding: 120px 14px 50px;
+  }
+
+  .hero-dalam h1 {
+    font-size: 26px;
+  }
+
+  .hero-dalam p {
+    font-size: 12.5px;
+  }
+
+  .pill-tahap {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  /* KARTU */
+  .badan-kartu {
+    padding: 14px;
+  }
+
+  .kepala-kartu {
+    padding: 14px;
+  }
+
+  .kotak-info {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .kotak-deadline,
+  .kotak-kirim,
+  .kartu-link-formulir {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tombol-buka,
+  .tombol-salin {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* LIST */
+  .list-isi li {
+    font-size: 12.5px;
+  }
+
+  .list-checklist li {
+    font-size: 12.5px;
+  }
+}

@@ -585,7 +585,7 @@ body {
 
 @media (max-width: 575px) {
   .hero-mitra {
-    height: 56vh;
+    height: 76vh;
     min-height: 340px;
   }
   .grid-statistik {

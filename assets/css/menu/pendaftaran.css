@@ -853,74 +853,158 @@ KONTEN UTAMA
 }
 
 /* ══════════════════════════════════════════
-RESPONSIVE
+RESPONSIVE (UPGRADE MODERN)
 ══════════════════════════════════════════ */
+
+/* ================= TABLET ================= */
 @media (max-width: 991px) {
   .grid-program {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  /* 2 card grid: masih 2 kolom di tablet */
+
+  /* tetap 2 kolom di tablet */
   .grid-program-dua {
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
   }
+
   .grid-langkah {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
+
   .grid-langkah::before {
     display: none;
   }
+
+  /* HERO lebih proporsional */
   .hero-daftar {
-    padding: 110px 0 60px;
+    padding: 110px 20px 60px;
+    height: auto;
+    min-height: 100vh;
   }
+
+  .hero-daftar h1 {
+    font-size: clamp(32px, 5vw, 46px);
+  }
+
+  /* tombol tetap rapi */
+  .grup-tombol-hero {
+    justify-content: center;
+  }
+
   .blok-tombol-utama {
     padding: 40px 28px;
   }
+
   .strip-akhir {
     padding: 44px 28px;
   }
+
   .grid-syarat {
     grid-template-columns: 1fr;
   }
+
   .kolom-syarat + .kolom-syarat {
     border-left: none;
     border-top: 1px solid var(--batas);
   }
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 576px) {
-  .grid-program {
-    grid-template-columns: 1fr;
-  }
-  /* 2 card grid: 1 kolom di HP kecil */
+  /* GRID */
+  .grid-program,
   .grid-program-dua {
     grid-template-columns: 1fr;
   }
+
   .grid-langkah {
     grid-template-columns: 1fr;
   }
+
+  /* SPACING */
   .konten-daftar {
-    padding: 52px 0 72px;
+    padding: 52px 16px 72px;
   }
+
   .blok-tombol-utama {
-    padding: 36px 22px;
+    padding: 36px 20px;
   }
+
   .strip-akhir {
     padding: 36px 20px;
     border-radius: 18px;
   }
-  .tombol-gform-besar {
+
+  /* HERO FIX BESAR */
+  .hero-daftar {
+    padding: 100px 16px 60px;
+  }
+
+  .hero-daftar-lingkup {
+    margin-top: 40px;
+  }
+
+  .hero-daftar h1 {
+    font-size: clamp(28px, 6vw, 36px);
+    line-height: 1.25;
+  }
+
+  .hero-daftar p.teks-lead {
     font-size: 14px;
-    padding: 14px 28px;
+    line-height: 1.7;
+    padding: 0 6px;
   }
-  .syarat-header,
-  .kolom-syarat {
-    padding: 22px 22px;
-  }
+
+  /* 🔥 TOMBOL JADI CENTER & FULL */
   .grup-tombol-hero {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .tombol-daftar-utama,
+  .tombol-info-hero {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* tombol besar */
+  .tombol-gform-besar {
+    font-size: 14px;
+    padding: 14px 24px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* SYARAT */
+  .syarat-header,
+  .kolom-syarat {
+    padding: 22px 20px;
+  }
+
+  /* LANGKAH biar lebih readable */
+  .kartu-langkah {
+    text-align: left;
+  }
+
+  .nomor-langkah {
+    margin: 0 0 12px;
+  }
+
+  /* STRIP BUTTON */
+  .grup-tombol-strip {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tombol-strip-utama,
+  .tombol-strip-kontak {
+    width: 100%;
+    justify-content: center;
   }
 }
