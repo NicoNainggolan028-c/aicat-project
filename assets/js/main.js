@@ -167,7 +167,6 @@ window.addEventListener("scroll", function () {
 /* ==================================================================================================================
    MOBILE SIDEBAR MENU
    ================================================================================================================== */
-
 const toggler = document.querySelector(".custom-toggler");
 const sidebar = document.querySelector(".mobile-sidebar");
 const overlay = document.querySelector(".mobile-overlay");
@@ -192,8 +191,8 @@ function closeSidebar() {
 }
 
 /* ==================================================================================================================
-   HERO SLIDER
-   ================================================================================================================== */
+HERO SLIDER
+================================================================================================================== */
 
 const slides = document.querySelectorAll(".hero-bg");
 const bars = document.querySelectorAll(".bar span");

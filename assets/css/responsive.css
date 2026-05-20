@@ -181,7 +181,6 @@
     margin: 6px 0 10px;
     padding-left: 16px;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
-    
   }
 
   .mobile-sidebar .dropdown-item {
@@ -374,6 +373,7 @@
     border-radius: 12px;
     font-size: 13px;
   }
+
   .btn-card-icon {
     width: 26px;
     height: 26px;
@@ -404,7 +404,8 @@
      4. ABOUT SECTION
   ────────────────────────────────────────── */
   .about-section {
-    padding: 100px 0 40px;
+    padding: 120px 0 60px;
+    margin-top: -50px;
   }
 
   .about-section .row {
@@ -508,12 +509,15 @@
   .tentang-singkat {
     padding: 60px 5%;
   }
+
   .section-header {
     margin-bottom: 36px;
   }
+
   .section-header h2 {
     font-size: 24px;
   }
+
   .section-header p {
     font-size: 14px;
   }

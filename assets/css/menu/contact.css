@@ -7,7 +7,7 @@ VARIABEL
   --hijau-muda: #1fbf8f;
   --emas: #d4af37;
   --navy: #1f3c88;
-  --latar: #f6f8f4;
+  --latar: #f4f7f4;
   --teks: #111827;
   --redup: #6b7280;
   --batas: rgba(31, 77, 54, 0.1);
@@ -31,17 +31,67 @@ body {
 }
 
 /* ══════════════════════════════════════
-         HERO — full split layout
-      ══════════════════════════════════════ */
-.hero-contact {
-  position: relative;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  overflow: hidden;
+   CONTACT SECTION — MODERN CARD VERSION
+══════════════════════════════════════ */
+
+/* Background halaman */
+body {
+  background:
+    radial-gradient(circle at top left, #163726 0%, transparent 30%),
+    radial-gradient(circle at bottom right, #173a5c 0%, transparent 28%),
+    #f3f6f9;
 }
 
-/* Sisi kiri — teks */
+/* ============================================================
+   HERO CONTACT CARD
+============================================================ */
+.hero-contact {
+  position: relative;
+
+  width: 92%;
+  min-height: calc(100vh - 120px);
+
+  margin: 120px auto 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+
+  overflow: hidden;
+
+  border-radius: 34px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  backdrop-filter: blur(12px);
+}
+
+/* efek glass tipis */
+.hero-contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0)
+  );
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================================================
+   SISI KIRI
+============================================================ */
 .hero-kiri {
   background: linear-gradient(
     160deg,
@@ -49,73 +99,107 @@ body {
     var(--hijau-tua) 50%,
     #162f4a 100%
   );
-  padding: 140px 60px 80px;
+
+  padding: 90px 60px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   position: relative;
   overflow: hidden;
+
+  border-radius: 34px 0 0 34px;
 }
 
-/* Dot pattern dekoratif */
+/* Dot pattern */
 .hero-kiri::before {
   content: "";
   position: absolute;
   inset: 0;
+
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.04) 1.5px,
+    rgba(255, 255, 255, 0.05) 1.5px,
     transparent 1.5px
   );
+
   background-size: 28px 28px;
+
   pointer-events: none;
 }
 
-/* Lingkaran blur besar */
+/* Glow kanan bawah */
 .hero-kiri::after {
   content: "";
+
   position: absolute;
+
   width: 420px;
   height: 420px;
+
   border-radius: 50%;
+
   background: radial-gradient(
     circle,
-    rgba(31, 191, 143, 0.15),
+    rgba(31, 191, 143, 0.18),
     transparent 70%
   );
-  bottom: -100px;
-  right: -80px;
+
+  bottom: -120px;
+  right: -90px;
+
   pointer-events: none;
 }
 
 .hero-kiri-dalam {
   position: relative;
-  z-index: 2;
-  max-width: 480px;
+  z-index: 3;
+  max-width: 500px;
 }
 
+/* ============================================================
+   LABEL CHIP
+============================================================ */
 .label-chip {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(31, 191, 143, 0.15);
+
+  background: rgba(31, 191, 143, 0.14);
+
   border: 1px solid rgba(31, 191, 143, 0.35);
+
   color: var(--hijau-muda);
+
   font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 2.5px;
+
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 5px 14px;
+
+  padding: 7px 15px;
+
   border-radius: 100px;
-  margin-bottom: 24px;
+
+  margin-bottom: 26px;
+
+  backdrop-filter: blur(6px);
 }
 
+/* ============================================================
+   TITLE
+============================================================ */
 .hero-kiri h1 {
   font-family: "Poppins", sans-serif;
 
+  font-size: 58px;
   font-weight: 700;
-  color: #fff;
+
   line-height: 1.08;
-  margin-bottom: 20px;
+
+  color: #fff;
+
+  margin-bottom: 24px;
 }
 
 .hero-kiri h1 em {
@@ -123,15 +207,24 @@ body {
   color: var(--emas);
 }
 
+/* ============================================================
+   PARAGRAF
+============================================================ */
 .hero-kiri > .hero-kiri-dalam > p {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.65);
-  line-height: 1.85;
-  margin-bottom: 40px;
-  max-width: 960px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  line-height: 1.9;
+
+  margin-bottom: 42px;
+
+  max-width: 470px;
 }
 
-/* Kontak info cards di hero kiri */
+/* ============================================================
+   INFO KONTAK
+============================================================ */
 .info-kontak-hero {
   display: flex;
   flex-direction: column;
@@ -141,31 +234,49 @@ body {
 .item-kontak-hero {
   display: flex;
   align-items: center;
-  gap: 14px;
-  background: rgba(255, 255, 255, 0.06);
+  gap: 15px;
+
+  padding: 16px 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.07);
+
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
-  padding: 14px 18px;
-  backdrop-filter: blur(8px);
-  transition:
-    background 0.25s,
-    transform 0.25s;
+
+  backdrop-filter: blur(12px);
+
   text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .item-kontak-hero:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(4px);
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.11);
+
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
+/* ============================================================
+   ICON BULAT
+============================================================ */
 .bulat-ikon-hero {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
+
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 17px;
+
   flex-shrink: 0;
 }
 
@@ -173,62 +284,93 @@ body {
   background: rgba(31, 191, 143, 0.2);
   color: var(--hijau-muda);
 }
+
 .bulat-biru {
-  background: rgba(31, 60, 136, 0.3);
-  color: #7eb3ff;
+  background: rgba(64, 120, 255, 0.2);
+  color: #8cb8ff;
 }
+
 .bulat-emas {
   background: rgba(212, 175, 55, 0.2);
   color: var(--emas);
 }
+
 .bulat-merah {
-  background: rgba(220, 68, 68, 0.2);
-  color: #f87171;
+  background: rgba(255, 85, 85, 0.18);
+  color: #ff8c8c;
 }
 
+/* ============================================================
+   TEXT INFO
+============================================================ */
 .teks-item-hero label {
   display: block;
+
   font-size: 10px;
   font-weight: 700;
+
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-  margin-bottom: 2px;
+
+  color: rgba(255, 255, 255, 0.42);
+
+  margin-bottom: 4px;
 }
 
 .teks-item-hero span {
   font-size: 13.5px;
   font-weight: 600;
+
   color: #fff;
 }
 
-/* Sisi kanan — form */
+/* ============================================================
+   SISI KANAN
+============================================================ */
 .hero-kanan {
-  background: var(--latar);
-  padding: 140px 56px 80px;
+  background: linear-gradient(to bottom, #ffffff, #f8fafc);
+
+  padding: 90px 56px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: auto;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+
+  border-radius: 0 34px 34px 0;
+
+  position: relative;
+  z-index: 2;
 }
 
-/* ══════════════════════════════════════
-         FORM KONTAK
-      ══════════════════════════════════════ */
+/* ============================================================
+   JUDUL FORM
+============================================================ */
 .judul-form {
   font-family: "Poppins", sans-serif;
-  font-size: 28px;
+
+  font-size: 34px;
+  font-weight: 700;
+
   color: var(--teks);
-  margin-bottom: 6px;
+
+  margin-bottom: 8px;
 }
 
 .sub-form {
   font-size: 14px;
+
   color: var(--redup);
-  margin-bottom: 32px;
-  line-height: 1.65;
+
+  line-height: 1.7;
+
+  margin-bottom: 34px;
 }
 
+/* ============================================================
+   FORM
+============================================================ */
 .grup-form {
   display: flex;
   flex-direction: column;
@@ -244,100 +386,152 @@ body {
 .kolom-form {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 7px;
 }
 
 .kolom-form label {
   font-size: 12px;
   font-weight: 700;
+
   color: var(--hijau-tua);
+
   letter-spacing: 0.5px;
 }
 
 .kolom-form label span {
   color: #e53e3e;
-  margin-left: 2px;
 }
 
+/* ============================================================
+   INPUT MODERN
+============================================================ */
 .input-form {
   width: 100%;
-  background: #fff;
-  border: 1.5px solid var(--batas);
-  border-radius: 12px;
-  padding: 12px 16px;
+
+  background: #f8fafc;
+
+  border: 1.5px solid #e5e7eb;
+
+  border-radius: 15px;
+
+  padding: 14px 18px;
+
   font-family: "Poppins", sans-serif;
   font-size: 13.5px;
+
   color: var(--teks);
-  transition:
-    border-color 0.22s,
-    box-shadow 0.22s;
+
   outline: none;
+
+  transition: all 0.25s ease;
+
   resize: none;
 }
 
+.input-form:hover {
+  border-color: #cbd5e1;
+}
+
 .input-form:focus {
+  background: #fff;
+
   border-color: var(--hijau-muda);
-  box-shadow: 0 0 0 3px rgba(31, 191, 143, 0.12);
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 0 0 4px rgba(31, 191, 143, 0.12);
 }
 
 .input-form::placeholder {
   color: #aeb5be;
 }
 
-/* Dropdown subjek */
+/* ============================================================
+   SELECT
+============================================================ */
 .select-form {
   appearance: none;
+
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+
   background-repeat: no-repeat;
+
   background-position: right 14px center;
-  padding-right: 36px;
+
+  padding-right: 38px;
+
   cursor: pointer;
 }
 
-/* Tombol submit */
+/* ============================================================
+   BUTTON
+============================================================ */
 .tombol-submit {
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%;
+
   background: linear-gradient(135deg, var(--hijau-tua), #2a6e50);
+
   color: #fff;
+
   border: none;
-  border-radius: 14px;
-  padding: 15px 28px;
+
+  border-radius: 16px;
+
+  padding: 16px 28px;
+
   font-family: "Poppins", sans-serif;
+
   font-size: 14px;
   font-weight: 700;
+
   cursor: pointer;
-  transition: all 0.25s;
-  box-shadow: 0 6px 24px rgba(31, 77, 54, 0.3);
+
   margin-top: 4px;
+
+  transition: all 0.28s ease;
+
+  box-shadow: 0 8px 24px rgba(31, 77, 54, 0.25);
 }
 
 .tombol-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(31, 77, 54, 0.42);
+  transform: translateY(-3px);
+
   background: linear-gradient(135deg, #2a6e50, var(--hijau-muda));
+
+  box-shadow: 0 14px 34px rgba(31, 77, 54, 0.35);
 }
 
 .tombol-submit:active {
   transform: translateY(0);
 }
 
-/* Notif sukses */
+/* ============================================================
+   NOTIFIKASI
+============================================================ */
 .notif-sukses {
   display: none;
   align-items: center;
   gap: 12px;
-  background: rgba(31, 191, 143, 0.1);
-  border: 1.5px solid rgba(31, 191, 143, 0.3);
-  border-radius: 12px;
+
   padding: 14px 18px;
-  font-size: 13.5px;
+
+  border-radius: 14px;
+
+  background: rgba(31, 191, 143, 0.1);
+
+  border: 1px solid rgba(31, 191, 143, 0.25);
+
   color: var(--hijau-tua);
+
+  font-size: 13.5px;
   font-weight: 600;
-  margin-top: 12px;
+
+  margin-top: 10px;
 }
 
 .notif-sukses i {
@@ -345,36 +539,178 @@ body {
   color: var(--hijau-muda);
 }
 
-/* ══════════════════════════════════════
-         SEKSI PETA & LOKASI
-      ══════════════════════════════════════ */
-.seksi-peta {
-  padding: 80px 0 0;
-  background: #fff;
+/* ============================================================
+   RESPONSIVE TABLET
+============================================================ */
+@media (max-width: 1100px) {
+  .hero-contact {
+    width: 95%;
+  }
+
+  .hero-kiri h1 {
+    font-size: 48px;
+  }
 }
 
+/* ============================================================
+   RESPONSIVE MOBILE
+============================================================ */
+@media (max-width: 992px) {
+  .hero-contact {
+    grid-template-columns: 1fr;
+
+    width: 94%;
+
+    border-radius: 28px;
+  }
+
+  .hero-kiri {
+    border-radius: 28px 28px 0 0;
+
+    padding: 70px 28px;
+  }
+
+  .hero-kanan {
+    border-radius: 0 0 28px 28px;
+
+    padding: 50px 28px;
+
+    border-left: none;
+  }
+
+  .hero-kiri h1 {
+    font-size: 40px;
+  }
+
+  .baris-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE HP KECIL
+============================================================ */
+@media (max-width: 576px) {
+  .hero-contact {
+    width: 96%;
+    margin-top: 95px;
+  }
+
+  .hero-kiri,
+  .hero-kanan {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .hero-kiri h1 {
+    font-size: 34px;
+  }
+
+  .judul-form {
+    font-size: 28px;
+  }
+
+  .item-kontak-hero {
+    padding: 14px;
+  }
+
+  .input-form {
+    padding: 13px 15px;
+  }
+
+  .tombol-submit {
+    padding: 15px 20px;
+  }
+}
+
+/* ══════════════════════════════════════
+   SEKSI PETA — MODERN PREMIUM UI
+══════════════════════════════════════ */
+
+.seksi-peta {
+  position: relative;
+
+  padding: 110px 0 40px;
+
+  background:
+    radial-gradient(circle at top left, #e8f5ee 0%, transparent 26%),
+    radial-gradient(circle at bottom right, #edf4ff 0%, transparent 28%),
+    #f5f7fb;
+
+  overflow: hidden;
+}
+
+/* Glow dekoratif */
+.seksi-peta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(31, 191, 143, 0.08),
+    transparent 70%
+  );
+
+  top: -180px;
+  left: -120px;
+
+  pointer-events: none;
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
 .kepala-seksi-peta {
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .tag-seksi {
-  display: inline-block;
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(31, 191, 143, 0.1);
+
+  border: 1px solid rgba(31, 191, 143, 0.2);
+
   color: var(--hijau-mid);
-  margin-bottom: 12px;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+
+  backdrop-filter: blur(8px);
 }
 
 .kepala-seksi-peta h2 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(28px, 3.5vw, 44px);
+
+  font-size: clamp(32px, 4vw, 54px);
+
+  font-weight: 700;
+
   color: var(--teks);
-  font-weight: 400;
+
   line-height: 1.15;
-  margin-bottom: 14px;
+
+  margin-bottom: 18px;
 }
 
 .kepala-seksi-peta h2 em {
@@ -384,176 +720,401 @@ body {
 
 .kepala-seksi-peta p {
   font-size: 15px;
+
   color: var(--redup);
-  max-width: 480px;
+
+  line-height: 1.9;
+
+  max-width: 640px;
+
   margin: 0 auto;
-  line-height: 1.75;
 }
 
-/* Grid Peta + Info */
+/* ============================================================
+   GRID WRAPPER
+============================================================ */
 .grid-peta-info {
+  position: relative;
+
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1.2fr 390px;
+
   gap: 0;
-  border-radius: 24px 24px 0 0;
+
+  border-radius: 34px;
+
   overflow: hidden;
-  box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--batas);
-  border-bottom: none;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-/* Google Maps embed */
+/* ============================================================
+   WRAPPER MAP
+============================================================ */
 .wrapper-peta {
   position: relative;
-  height: 480px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+/* efek overlay gradient */
+.wrapper-peta::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.08), transparent 40%);
+
+  pointer-events: none;
 }
 
 .wrapper-peta iframe {
   width: 100%;
   height: 100%;
+
   border: none;
+
   display: block;
+
+  filter: contrast(1.05) saturate(1.05);
 }
 
-/* Overlay label di atas peta */
+/* ============================================================
+   LABEL FLOATING MAP
+============================================================ */
 .label-peta {
   position: absolute;
-  top: 18px;
-  left: 18px;
-  background: rgba(31, 77, 54, 0.92);
-  backdrop-filter: blur(8px);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 12px;
-  font-size: 12.5px;
-  font-weight: 600;
+
+  top: 22px;
+  left: 22px;
+
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+
+  background: rgba(15, 23, 42, 0.72);
+
+  backdrop-filter: blur(14px);
+
+  color: #fff;
+
+  padding: 12px 18px;
+
+  border-radius: 18px;
+
+  font-size: 13px;
+  font-weight: 600;
+
   z-index: 10;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .label-peta i {
   color: var(--hijau-muda);
+  font-size: 15px;
 }
 
-/* Panel info kanan */
+/* ============================================================
+   PANEL INFO
+============================================================ */
 .panel-info-lokasi {
-  background: linear-gradient(160deg, var(--hijau-tua), #0f2d1e);
-  padding: 36px 28px;
+  position: relative;
+
+  background: linear-gradient(160deg, #0f2d1e 0%, #123726 45%, #162f4a 100%);
+
+  padding: 42px 32px;
+
   display: flex;
   flex-direction: column;
-  gap: 0;
-  position: relative;
+
   overflow: hidden;
 }
 
+/* dot pattern */
 .panel-info-lokasi::before {
   content: "";
+
   position: absolute;
   inset: 0;
+
   background-image: radial-gradient(
-    rgba(255, 255, 255, 0.04) 1px,
+    rgba(255, 255, 255, 0.05) 1px,
     transparent 1px
   );
+
   background-size: 22px 22px;
+
+  pointer-events: none;
+}
+
+/* glow */
+.panel-info-lokasi::after {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(31, 191, 143, 0.18),
+    transparent 70%
+  );
+
+  bottom: -100px;
+  right: -100px;
+
   pointer-events: none;
 }
 
 .panel-info-lokasi h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  color: #fff;
-  margin-bottom: 6px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #fff;
+
+  margin-bottom: 8px;
 }
 
 .sub-panel {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 28px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  margin-bottom: 34px;
 }
 
-/* Item info dalam panel */
+/* ============================================================
+   INFO LIST
+============================================================ */
 .daftar-info-lokasi {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
+
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
   flex: 1;
 }
 
 .item-info-lokasi {
   display: flex;
-  gap: 12px;
   align-items: flex-start;
+  gap: 14px;
 }
 
+/* ICON */
 .ikon-info-lokasi {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 46px;
+  height: 46px;
+
+  border-radius: 14px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+
   flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.1);
+
+  font-size: 17px;
+
   color: var(--hijau-muda);
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.04)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(6px);
 }
 
+/* TEXT */
 .teks-info-lokasi .label-il {
   font-size: 10px;
+
   font-weight: 700;
-  letter-spacing: 1.5px;
+
+  letter-spacing: 1.8px;
+
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 2px;
+
+  color: rgba(255, 255, 255, 0.42);
+
+  margin-bottom: 5px;
 }
 
 .teks-info-lokasi .nilai-il {
-  font-size: 13px;
+  font-size: 14px;
+
+  line-height: 1.7;
+
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.5;
+
+  color: rgba(255, 255, 255, 0.92);
 }
 
-/* Divider dalam panel */
+/* divider */
 .pemisah-panel {
   height: 1px;
-  background: rgba(255, 255, 255, 0.08);
-  margin: 6px 0;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.08), transparent);
+
+  margin: 4px 0;
 }
 
-/* Tombol buka di Google Maps */
+/* ============================================================
+   BUTTON MAPS
+============================================================ */
 .tombol-buka-maps {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  background: var(--emas);
+  gap: 10px;
+
+  width: 100%;
+
+  background: linear-gradient(135deg, var(--emas), #f3cd67);
+
   color: var(--hijau-tua);
-  padding: 12px 20px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 700;
+
+  padding: 15px 20px;
+
+  border-radius: 16px;
+
   text-decoration: none;
-  margin-top: 24px;
-  transition: all 0.22s;
-  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.35);
-  position: relative;
-  z-index: 1;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.28s ease;
+
+  box-shadow: 0 10px 24px rgba(212, 175, 55, 0.25);
 }
 
 .tombol-buka-maps:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+  transform: translateY(-3px);
+
+  box-shadow: 0 16px 34px rgba(212, 175, 55, 0.35);
+
   color: var(--hijau-tua);
+}
+
+/* ============================================================
+   RESPONSIVE TABLET
+============================================================ */
+@media (max-width: 1100px) {
+  .grid-peta-info {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper-peta {
+    min-height: 500px;
+  }
+
+  .panel-info-lokasi {
+    padding: 38px 28px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE MOBILE
+============================================================ */
+@media (max-width: 768px) {
+  .seksi-peta {
+    padding: 90px 0 20px;
+  }
+
+  .grid-peta-info {
+    border-radius: 26px;
+  }
+
+  .wrapper-peta {
+    min-height: 420px;
+  }
+
+  .kepala-seksi-peta h2 {
+    font-size: 34px;
+  }
+
+  .panel-info-lokasi h3 {
+    font-size: 24px;
+  }
+
+  .label-peta {
+    top: 16px;
+    left: 16px;
+
+    padding: 10px 14px;
+
+    font-size: 12px;
+  }
+
+  .panel-info-lokasi {
+    padding: 30px 22px;
+  }
+
+  .tombol-buka-maps {
+    padding: 14px 18px;
+  }
+}
+
+/* ============================================================
+   HP KECIL
+============================================================ */
+@media (max-width: 576px) {
+  .kepala-seksi-peta p {
+    font-size: 14px;
+  }
+
+  .wrapper-peta {
+    min-height: 360px;
+  }
+
+  .item-info-lokasi {
+    gap: 12px;
+  }
+
+  .ikon-info-lokasi {
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .teks-info-lokasi .nilai-il {
+    font-size: 13px;
+  }
 }
 
 /* ══════════════════════════════════════
@@ -671,9 +1232,16 @@ body {
          FAQ SINGKAT
       ══════════════════════════════════════ */
 .seksi-faq {
-  background: #fff;
-  padding: 80px 0;
-  border-top: 1px solid var(--batas);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: #ffffff;
+  padding-bottom: 400px;
+  margin-bottom: -400px;
+  position: relative;
+  z-index: 0;
 }
 
 .grid-faq {
@@ -681,6 +1249,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 48px;
+  margin-bottom: 40px;
 }
 
 .kartu-faq {
