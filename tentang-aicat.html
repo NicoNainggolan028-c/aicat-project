@@ -54,9 +54,18 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/partner-ind.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/indikator.css" />
     <link rel="stylesheet" href="assets/css/menu/tentang.css" />
   </head>
   <body>
+    <div class="floating-section-indicator" id="floatingIndicator">
+      <div class="fsi-dot"></div>
+      <div class="fsi-text">
+        <span class="fsi-label">Tentang > Tentang Aicat</span>
+        <span class="fsi-section" id="currentSection"></span>
+      </div>
+    </div>
+
     <!-- ========================================================================================================== -->
     <!-- =============================== Navbar Menu & Main Page =================================================== -->
     <!-- ========================================================================================================== -->
@@ -298,7 +307,7 @@
     <!-- ===================================================
          ABOUT INTRO
     =================================================== -->
-    <section class="about-intro">
+    <section class="about-intro" id="tentang">
       <div class="container">
         <div class="row align-items-start g-5">
           <div class="col-lg-6" data-aos="fade-right">
@@ -334,7 +343,7 @@
     <!-- ===================================================
          PROGRAM CARDS
     =================================================== -->
-    <section class="program-section">
+    <section class="program-section" id="program">
       <div class="container">
         <div data-aos="fade-up">
           <div class="section-eyebrow">Program Kami</div>
@@ -387,7 +396,7 @@
     <!-- ===================================================
          PRINSIP PEMBELAJARAN
     =================================================== -->
-    <section class="principle-section">
+    <section class="principle-section" id="filosofi">
       <div class="container">
         <div class="row align-items-start g-5">
           <div class="col-lg-5" data-aos="fade-right">
@@ -457,7 +466,7 @@
     <!-- ===================================================
          YAIR CENTER
     =================================================== -->
-    <section class="yair-section">
+    <section class="yair-section" id="kolaborasi">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-5" data-aos="fade-right">
@@ -517,7 +526,7 @@
     <!-- ===================================================
          MITRA INSTITUSI
     =================================================== -->
-    <section class="mitra-section">
+    <section class="mitra-section" id="mitra">
       <div class="container">
         <div data-aos="fade-up">
           <div class="section-eyebrow">Mitra & Pendukung</div>
@@ -599,7 +608,7 @@
     <!-- ========================================= -->
     <!-- ============ CTA + FOOTER =============== -->
     <!-- ========================================= -->
-    <section class="footer-wrapper">
+    <section class="footer-wrapper" id="footer">
       <!-- CTA CARD -->
       <div
         class="container"
@@ -726,6 +735,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Main Javascript -->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/indicator.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

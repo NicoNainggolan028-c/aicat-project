@@ -1,0 +1,87 @@
+/* ===================== FLOATING SECTION INDICATOR ===================== */
+.floating-section-indicator {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(13, 43, 26, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(31, 191, 143, 0.25);
+  border-radius: 50px;
+  padding: 10px 18px 10px 12px;
+
+  /* State awal: tersembunyi */
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* State aktif: tampil */
+.floating-section-indicator.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fsi-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1fbf8f;
+  flex-shrink: 0;
+  animation: fsi-pulse 2s ease-in-out infinite;
+}
+
+@keyframes fsi-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(31, 191, 143, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(31, 191, 143, 0);
+  }
+}
+
+.fsi-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.fsi-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.fsi-section {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .floating-section-indicator {
+    bottom: 20px;
+    right: 16px;
+    padding: 8px 14px 8px 10px;
+  }
+  .fsi-section {
+    font-size: 12px;
+  }
+}

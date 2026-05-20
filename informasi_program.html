@@ -54,9 +54,17 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/partner-ind.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/indikator.css" />
     <link rel="stylesheet" href="assets/css/menu/Informasi_program.css" />
   </head>
   <body>
+    <div class="floating-section-indicator" id="floatingIndicator">
+      <div class="fsi-dot"></div>
+      <div class="fsi-text">
+        <span class="fsi-label">Program > Informasi Program</span>
+        <span class="fsi-section" id="currentSection"></span>
+      </div>
+    </div>
     <!-- ========================================================================================================== -->
     <!-- =============================== Navbar Menu & Main Page =================================================== -->
     <!-- ========================================================================================================== -->
@@ -274,7 +282,7 @@
     </section>
 
     <!-- KONTEN UTAMA -->
-    <div class="container">
+    <div class="container" id="hero-prog">
       <div class="layout-infoprog">
         <!-- 4 Tab -->
         <div class="wrapper-tab-halaman" id="wrapper-tab">
@@ -1461,7 +1469,7 @@
     <!-- ========================================= -->
     <!-- ============ CTA + FOOTER =============== -->
     <!-- ========================================= -->
-    <section class="footer-wrapper">
+    <section class="footer-wrapper" id="footer">
       <!-- CTA CARD -->
       <div
         class="container"
@@ -1649,6 +1657,60 @@
         },
         { passive: true },
       );
+    </script>
+
+    <script>
+      // ===================== FLOATING SECTION INDICATOR =====================
+      (function () {
+        const indicator = document.getElementById("floatingIndicator");
+        const sectionEl = document.getElementById("currentSection");
+        if (!indicator || !sectionEl) return;
+
+        // Daftar section yang ingin dilacak beserta label tampilannya
+        const sections = [{ id: "hero-prog", label: "Informasi Program" }];
+
+        // Batas atas: mulai muncul saat #tentang masuk viewport
+        const triggerStart = document.getElementById("hero-prog");
+        // Batas bawah: hilang saat #footer masuk viewport
+        const triggerEnd = document.getElementById("footer");
+
+        if (!triggerStart || !triggerEnd) return;
+
+        function getCurrentLabel() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          let active = null;
+
+          for (const s of sections) {
+            const el = document.getElementById(s.id);
+            if (!el) continue;
+            // Section dianggap "aktif" kalau titik tengah layar sudah melewati top-nya
+            if (el.getBoundingClientRect().top <= windowHeight * 0.5) {
+              active = s.label;
+            }
+          }
+          return active || sections[0].label;
+        }
+
+        function updateIndicator() {
+          const startTop = triggerStart.getBoundingClientRect().top;
+          const endTop = triggerEnd.getBoundingClientRect().top;
+
+          // Tampilkan: setelah #tentang masuk layar DAN sebelum #footer masuk layar
+          const shouldShow = startTop <= window.innerHeight * 0.9 && endTop > 0;
+
+          if (shouldShow) {
+            sectionEl.textContent = getCurrentLabel();
+            indicator.classList.add("visible");
+          } else {
+            indicator.classList.remove("visible");
+          }
+        }
+
+        // Jalankan saat scroll dan saat pertama load
+        window.addEventListener("scroll", updateIndicator, { passive: true });
+        updateIndicator();
+      })();
     </script>
   </body>
 </html>
