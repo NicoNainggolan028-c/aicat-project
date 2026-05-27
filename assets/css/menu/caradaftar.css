@@ -9,7 +9,7 @@
   --biru-tua: #1f3c88;
   --latar-krem: #f4f7f4;
   --teks-gelap: #111;
-  --teks-redup: #6b7280;
+  --teks-redup: #000000;
   --garis-batas: rgba(31, 77, 54, 0.1);
   --merah: #c0392b;
   --oranye: #e67e22;
@@ -1335,7 +1335,7 @@ HERO
   }
 
   .teks-p {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   /* GRID */

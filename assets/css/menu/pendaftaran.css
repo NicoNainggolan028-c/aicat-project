@@ -183,8 +183,16 @@ body {
 KONTEN UTAMA
 ══════════════════════════════════════════ */
 .konten-daftar {
-  padding: 80px 0 100px;
-  background: var(--krem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f4f7f4; /* ← warna background testimonial */
+  padding-bottom: 400px; /* sesuaikan dengan tinggi footer */
+  margin-bottom: -400px; /* tarik ke atas supaya footer nempel */
+  position: relative;
+  z-index: 0;
 }
 
 .konten-daftar h2 {
@@ -910,6 +918,10 @@ RESPONSIVE (UPGRADE MODERN)
     border-left: none;
     border-top: 1px solid var(--batas);
   }
+
+  .footer-wrapper {
+    padding-top: 400px;
+  }
 }
 
 /* ================= MOBILE ================= */
@@ -926,7 +938,8 @@ RESPONSIVE (UPGRADE MODERN)
 
   /* SPACING */
   .konten-daftar {
-    padding: 52px 16px 72px;
+    padding: 52px 16px 600px;
+    margin-bottom: -900px;
   }
 
   .blok-tombol-utama {

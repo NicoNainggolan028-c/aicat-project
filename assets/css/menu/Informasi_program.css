@@ -713,6 +713,7 @@ TABEL KURIKULUM
 }
 
 .angka-biaya {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: #fff;
@@ -720,6 +721,7 @@ TABEL KURIKULUM
   margin-bottom: 6px;
   position: relative;
   z-index: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .angka-biaya span {

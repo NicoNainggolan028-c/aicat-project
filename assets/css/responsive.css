@@ -113,7 +113,7 @@
   }
 
   .close-sidebar:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 0, 0, 0.15);
     transform: rotate(90deg);
   }
 
@@ -191,7 +191,7 @@
   }
 
   .mobile-sidebar .dropdown-item:hover {
-    color: #fff;
+    color: #000000;
     padding-left: 4px;
   }
 
