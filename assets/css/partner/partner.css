@@ -21,17 +21,23 @@ body {
   overflow: hidden;
 }
 
-.hero-video {
-  position: absolute;
-  top: 50%; /* diperbaiki dari 85% */
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 1;
+.country-hero {
+  position: relative;
+  height: 72vh;
+  min-height: 520px;
+
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+      center/cover no-repeat;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
 }
 
 .hero-overlay {
@@ -80,16 +86,9 @@ body {
    COUNTRY DETAIL SECTION
 ───────────────────────────────────────────── */
 .country-detail {
-  padding: 72px 0 100px;
+  padding: 72px 0 500px;
   background: #f6f8f4;
-}
-
-.country-title {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 800;
-  margin-bottom: 50px;
-  color: #111;
+  margin-bottom: -400px;
 }
 
 .country-subtitle {
@@ -263,91 +262,126 @@ body {
   line-height: 1.3;
 }
 
-/* ─────────────────────────────────────────────
-   BREADCRUMB (opsional, jika ingin ditambah)
-───────────────────────────────────────────── */
-.country-breadcrumb {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 16px;
-}
-
-.country-breadcrumb a {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.country-breadcrumb a:hover {
-  color: #d4af37;
-}
-.country-breadcrumb span {
-  margin: 0 8px;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-/* ─────────────────────────────────────────────
-   RESPONSIVE
-───────────────────────────────────────────── */
-@media (max-width: 991px) {
-  .country-top-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Flag pindah jadi full width di bawah */
-  .flag-box {
-    grid-column: 1 / -1;
-    min-height: 160px;
-    padding: 20px;
-  }
-
-  .flag-box img {
-    max-width: 140px;
-  }
-
-  .info-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
+/* ═════════════════════════════════
+   MOBILE RESPONSIVE CLEAN
+═════════════════════════════════ */
 @media (max-width: 576px) {
+  /* HERO */
   .country-hero {
-    height: 50vh;
-    min-height: 260px;
+    height: 42vh;
+    min-height: 240px;
+
+    background-position: center;
   }
+
+  .hero-content {
+    padding: 0 20px 28px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 10vw, 40px);
+    line-height: 1.15;
+  }
+
+  .hero-content .hero-sub {
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+
+  /* SECTION */
   .country-detail {
-    padding: 48px 0 70px;
+    padding: 42px 0 60px;
+    margin-bottom: 0;
   }
+
   .country-title {
-    font-size: 26px;
+    font-size: 28px;
+    margin-bottom: 28px;
   }
 
+  /* TOP GRID */
   .country-top-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 40px;
   }
 
+  /* HANYA TAMPILKAN MAP */
+  .slider-box,
   .flag-box {
-    grid-column: auto;
-    min-height: 140px;
+    display: none;
   }
 
-  .slider,
-  .slider-box {
-    min-height: 220px;
+  /* MAP FULL */
+  .map-box {
+    width: 100%;
+    min-height: 260px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
   }
-  .slide {
-    min-height: 220px;
-  }
-  .map-box,
+
   .map-box iframe {
-    min-height: 220px;
+    width: 100%;
+    height: 260px;
+    min-height: 260px;
+    border: none;
   }
 
+  .country-detail {
+    padding: 72px 0 350px;
+    background: #f6f8f4;
+    margin-bottom: -400px;
+  }
+
+  /* INFO */
+  .country-info {
+    margin-top: 6px;
+  }
+
+  .country-info h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .country-info > p {
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 100%;
+  }
+
+  /* INFO GRID */
   .info-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+
+    margin-top: 22px;
   }
 
   .info-grid > div {
-    padding: 14px 16px;
+    padding: 16px 18px;
+
+    border-radius: 16px;
+  }
+
+  .info-grid strong {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .info-grid > div span,
+  .info-grid > div {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* DIVIDER */
+  .country-divider {
+    margin: 36px 0;
   }
 }

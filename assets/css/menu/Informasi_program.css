@@ -10,6 +10,16 @@
   --garis-batas: rgba(31, 77, 54, 0.1);
   --merah-soft: #c0392b;
   --biru-soft: #2471a3;
+
+  --fs-xs: clamp(12px, 1vw, 13px);
+  --fs-sm: clamp(13px, 1.1vw, 14px);
+  --fs-base: clamp(14px, 1.15vw, 16px);
+  --fs-md: clamp(16px, 1.3vw, 18px);
+  --fs-lg: clamp(20px, 2vw, 28px);
+  --fs-xl: clamp(28px, 4vw, 54px);
+
+  --lh-normal: 1.7;
+  --lh-relaxed: 1.9;
 }
 
 *,
@@ -89,7 +99,8 @@ HERO
   font-size: clamp(90px, 5vw, 60px);
   font-weight: 600;
   line-height: 1.1;
-  margin-bottom: 18px;
+
+  margin-bottom: 20px;
 }
 
 .hero-dalam h1 em {
@@ -99,9 +110,10 @@ HERO
 
 .hero-dalam p {
   position: relative;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.72);
-  max-width: 1000px;
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 850px;
   line-height: 1.85;
   margin-bottom: 0;
   margin: 0 auto;
@@ -247,11 +259,11 @@ KARTU SEKSI KONTEN
 }
 
 .info-header-seksi h2 {
-  font-size: 17px;
+  font-size: clamp(18px, 1.5vw, 22px);
   font-weight: 700;
+  line-height: 1.4;
   color: var(--teks-gelap);
   margin-bottom: 2px;
-  line-height: 1.3;
 }
 
 .nomor-seksi {
@@ -298,8 +310,9 @@ KARTU SEKSI KONTEN
 
 /* Paragraf */
 .paragraf-konten {
-  font-size: 14px;
-  color: var(--teks-redup);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: #4b5563;
   line-height: 1.85;
   margin-bottom: 14px;
 }
@@ -321,9 +334,9 @@ KARTU SEKSI KONTEN
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 13.5px;
+  font-size: var(--fs-sm);
+  line-height: 1.8;
   color: #374151;
-  line-height: 1.7;
 }
 
 .list-konten li::before {
@@ -363,7 +376,7 @@ KARTU SEKSI KONTEN
 
 /* Sub judul dalam konten */
 .sub-judul-konten {
-  font-size: 13.5px;
+  font-size: clamp(15px, 1.2vw, 17px);
   font-weight: 700;
   color: var(--hijau-tua);
   margin-top: 20px;
@@ -393,8 +406,7 @@ TABEL KURIKULUM
 .tabel-kurikulum {
   width: 100%;
   border-collapse: collapse;
-
-  font-size: 13px;
+  font-size: var(--fs-sm);
 }
 
 .tabel-kurikulum thead tr {
@@ -405,7 +417,7 @@ TABEL KURIKULUM
 .tabel-kurikulum thead th {
   padding: 13px 16px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-align: left;
 }
@@ -783,7 +795,8 @@ TABEL KURIKULUM
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.75;
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
   position: relative;
   z-index: 1;
 }
@@ -910,9 +923,9 @@ TABEL KURIKULUM
 }
 
 .tab-sub {
-  font-size: 11px;
+  font-size: 13px;
+  line-height: 1.6;
   color: #6b7280;
-  line-height: 1.4;
 }
 
 .tab-halaman.aktif-tab .tab-judul {
