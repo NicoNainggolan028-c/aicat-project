@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>AICAT - Program Diploma</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- =============== Library eksternal (urutan 1) =============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =============== Google Fonts (urutan 2) =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS lokal =============== -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/partner-ind.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/menu/pendaftaran.css" />
+    <link rel="stylesheet" href="assets/css/menu/indikator.css" />
+    <link rel="stylesheet" href="assets/css/menu/diploma.css" />
+  </head>
+  <body>
+    <div class="floating-section-indicator" id="floatingIndicator">
+      <div class="fsi-dot"></div>
+      <div class="fsi-text">
+        <span class="fsi-label"></span>
+        <span class="fsi-section" id="currentSection"></span>
+      </div>
+    </div>
+    <!-- ========================================================================================================== -->
+    <!-- =============================== Navbar Menu & Main Page =================================================== -->
+    <!-- ========================================================================================================== -->
+    <div class="mobile-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container position-relative">
+        <!-- ================================== MENU KIRI (DESKTOP)  ============================================-->
+        <div class="desktop-menu-left d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-landmark menu-icon"></i>
+
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="tentang-aicat.html"
+                    >Tentang AICAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lokasi.html">Lokasi Kerja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Negara Mitra</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="staff.html">Staf</a></li>
+                <li>
+                  <a class="dropdown-item" href="partner negara/partner.html"
+                    >Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-graduation-cap menu-icon"></i>
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="informasi_program.html"
+                    >Informasi Program</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hak-peserta.html"
+                    >Hak Peserta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cara-daftar.html"
+                    >Cara Daftar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pendaftaran.html"
+                    >Pendaftaran</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============================================ LOGO TENGAH  ============================================-->
+        <a
+          class="navbar-brand mx-auto d-flex align-items-center"
+          href="index.html"
+        >
+          <img src="assets/images/icons/AICAT_logo.png" class="logo-img" />
+        </a>
+
+        <!-- ===================================== MENU KANAN (DESKTOP) ============================================-->
+        <div class="desktop-menu-right d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fa-solid fa-images menu-icon"></i> Gallery</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-envelope menu-icon"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======================================================================================== -->
+        <!-- ================= MOBILE TOGGLER ======================================================= -->
+        <!-- ======================================================================================== -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ======================================== MOBILE SIDEBAR ================================== -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar-header">
+        <img src="assets/images/icons/AICAT_logo.png" class="sidebar-logo" />
+        <button class="close-sidebar">&times;</button>
+      </div>
+
+      <ul class="navbar-nav flex-column">
+        <!-- =========================== MENU KIRI MOBILE ============================================ -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-landmark menu-icon"></i>
+              Tentang
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="tentang-aicat.html"
+                >Tentang AICAT</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="lokasi.html">Lokasi kerja</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Negara Mitra</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Staf</a></li>
+            <li>
+              <a class="dropdown-item" href="partner negara/partner.html"
+                >Mitra</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            <span class="menu-left">
+              <i class="fa-solid fa-graduation-cap menu-icon"></i>
+              Program
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="informasi_program.html"
+                >Informasi Program</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="hak-peserta.html">Hak Peserta</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="cara-daftar.html">Cara Daftar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- ======================================== MENU KANAN Mobile ============================================-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-images menu-icon"></i>Gallery</span
+            ></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="menu-left">
+              <i class="fa-solid fa-envelope menu-icon"></i>Hubungi kami
+            </span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ══════════════════════════════════
+         HERO
+    ══════════════════════════════════ -->
+    <section class="dp-hero" id="hero-diploma">
+      <div class="dp-hero-inner">
+        <div class="dp-chip" data-aos="fade-down">
+          <span></span> Program Unggulan AICAT
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          Program<br /><em>Diploma</em> Pertanian<br />Internasional
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Selama 11 bulan di Israel, peserta belajar langsung di farm modern
+          menggunakan teknologi pertanian terkini sambil mendapatkan penghasilan
+          nyata.
+        </p>
+        <div class="dp-hero-btns" data-aos="fade-up" data-aos-delay="300">
+          <a href="pendaftaran.html" class="btn-primary-dp">
+            <i class="bi bi-person-plus-fill"></i> Daftar Sekarang
+          </a>
+          <a href="#overview" class="btn-outline-dp">
+            <i class="bi bi-arrow-down"></i> Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </div>
+      <div class="dp-scroll">
+        <i class="bi bi-chevron-down"></i>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         STATS BAR
+    ══════════════════════════════════ -->
+    <div class="dp-stats">
+      <div class="container">
+        <div class="dp-stats-grid">
+          <div class="dp-stat" data-aos="fade-up" data-aos-delay="0">
+            <div class="dp-stat-num">11</div>
+            <div class="dp-stat-label">Bulan Program</div>
+          </div>
+          <div class="dp-stat" data-aos="fade-up" data-aos-delay="80">
+            <div class="dp-stat-num gold">1000+</div>
+            <div class="dp-stat-label">Alumni Global</div>
+          </div>
+          <div class="dp-stat" data-aos="fade-up" data-aos-delay="160">
+            <div class="dp-stat-num">20–28</div>
+            <div class="dp-stat-label">Usia Peserta (tahun)</div>
+          </div>
+          <div class="dp-stat" data-aos="fade-up" data-aos-delay="240">
+            <div class="dp-stat-num gold">10+</div>
+            <div class="dp-stat-label">Negara Mitra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         OVERVIEW
+    ══════════════════════════════════ -->
+    <section class="dp-section-awal" id="overview">
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="dp-eyebrow">Gambaran Umum</div>
+            <h2 class="dp-h2">Belajar Sambil<br /><em>Bekerja Nyata</em></h2>
+            <div class="dp-rule"></div>
+            <p class="dp-lead">
+              AICAT dengan bangga mengundang mahasiswa pertanian untuk mengikuti
+              program pelatihan profesional berbasis
+              <strong>"Learning by Doing"</strong> metode yang telah terbukti
+              mengubah cara berpikir dan berkarya di sektor agrikultur.
+            </p>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="dp-pullquote">
+              "Selama 11 bulan, peserta tinggal langsung di farm-farm Arava dan
+              menyaksikan sendiri teknologi pertanian mutakhir yang digunakan
+              oleh para petani Israel."
+            </div>
+            <div class="dp-intro-text">
+              <p>
+                Program ini dirancang untuk mahasiswa tingkat sarjana dari
+                institusi pertanian di Asia dan Afrika. Selama satu musim
+                pertanian penuh di kawasan Arava, peserta tidak hanya belajar di
+                kelas, tetapi langsung terlibat dalam proses produksi pertanian
+                sesungguhnya.
+              </p>
+              <p>
+                Kurikulum dibangun bersama institusi akademik negara asal
+                peserta dan dievaluasi setiap tahun untuk mengikuti perkembangan
+                teknologi dan kebutuhan lokal yang terus berubah.
+              </p>
+            </div>
+
+            <div class="dp-box dp-box-green" style="margin-top: 24px">
+              <i class="bi bi-info-circle-fill"></i>
+              <p>
+                <strong>Kredit Akademik</strong>Beberapa institusi akademik
+                memberikan kredit menuju gelar sarjana untuk mata kuliah yang
+                dicakup dalam program ini. AICAT terus memperluas perjanjian
+                serupa ke seluruh negara mitra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         DAMPAK PROGRAM
+    ══════════════════════════════════ -->
+    <section class="dp-section dp-section-alt">
+      <div class="container">
+        <div class="text-center mb-2" data-aos="fade-up">
+          <div class="dp-eyebrow" style="justify-content: center">
+            Dampak Program
+          </div>
+          <h2 class="dp-h2">Tiga Dimensi<br /><em>Perubahan Nyata</em></h2>
+        </div>
+
+        <div class="dp-impact-grid">
+          <!-- Social -->
+          <div class="dp-impact-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="dp-impact-icon ic-green">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h3>Dampak Sosial</h3>
+            <p>
+              Peserta kembali sebagai pemimpin komunitas dan mentor pertanian.
+              Mereka mengubah pola pikir dari cara tradisional menuju inovatif
+              berpikir "out of the box" untuk solusi nyata di desa
+              masing-masing.
+            </p>
+          </div>
+
+          <!-- Academic -->
+          <div class="dp-impact-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="dp-impact-icon ic-blue">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h3>Dampak Akademik</h3>
+            <p>
+              Alumni pulang dengan bekal teori dan keterampilan praktis yang
+              krusial untuk meningkatkan ketahanan pangan negaranya. Banyak yang
+              melanjutkan pendidikan lebih tinggi di Israel maupun negara lain.
+            </p>
+          </div>
+
+          <!-- Economic -->
+          <div class="dp-impact-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="dp-impact-icon ic-gold">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3>Dampak Ekonomi</h3>
+            <p>
+              Alumni mendirikan farm percontohan yang sukses dan membuka
+              lapangan kerja baru di komunitas mereka. Banyak pula yang
+              bergabung ke sektor publik dan swasta, memanfaatkan keterampilan
+              manajemen dari AICAT.
+            </p>
+          </div>
+        </div>
+
+        <!-- Model Ekonomi -->
+        <div class="dp-eco-wrap" data-aos="fade-up">
+          <h3>Model <em>Ekonomi Program</em></h3>
+          <p>
+            Selama masa magang, peserta menerima gaji atas pelatihan praktis di
+            farm. Penghasilan ini memungkinkan peserta menutup biaya kuliah,
+            biaya hidup, makan, dan tiket pulang.
+          </p>
+          <p>
+            Setelah 11 bulan di Israel, peserta dapat menabung untuk memulai,
+            mengimplementasikan, atau melanjutkan proyek pertanian di negara
+            asal mereka.
+          </p>
+          <div class="dp-box dp-box-gold-gaji" style="margin-top: 4px">
+            <i class="bi bi-cash-coin"></i>
+            <p>
+              <strong>Gaji Selama Pelatihan</strong>Sesuai hukum Israel, peserta
+              menerima upah yang adil atas pelatihan praktis di farm memastikan
+              program ini dapat diakses tanpa beban finansial bagi keluarga.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SYARAT PENERIMAAN
+    ══════════════════════════════════ -->
+    <section class="dp-section">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="dp-eyebrow">Persyaratan</div>
+            <h2 class="dp-h2">Kriteria<br /><em>Penerimaan</em></h2>
+            <div class="dp-rule"></div>
+            <p class="dp-lead">
+              Proses seleksi awal dilakukan oleh institusi akademik peserta,
+              diikuti wawancara langsung dengan perwakilan AICAT. Kedutaan
+              Israel di negara asal turut membantu proses kolaborasi.
+            </p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left">
+            <div class="dp-req-grid">
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <p>
+                  <strong>Tingkat Pendidikan</strong>
+                  Minimal semester 2 perguruan tinggi dengan latar belakang
+                  pertanian, biologi, atau bidang terkait. Sertakan dokumen
+                  konfirmasi dari institusi.
+                </p>
+              </div>
+
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-user-clock"></i>
+                </div>
+                <p>
+                  <strong>Usia</strong>
+                  Berusia antara <strong>20 hingga 28 tahun</strong> pada saat
+                  tiba di Israel.
+                </p>
+              </div>
+
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>
+                  <strong>Kesehatan</strong>
+                  Sehat jasmani dan rohani. Wajib menyerahkan laporan medis yang
+                  ditandatangani dokter sebelum keberangkatan.
+                </p>
+              </div>
+
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-passport"></i>
+                </div>
+                <p>
+                  <strong>Paspor</strong>
+                  Paspor aktif yang masih berlaku setidaknya
+                  <strong>dua tahun</strong> ke depan.
+                </p>
+              </div>
+
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <p>
+                  <strong>Catatan Bersih</strong>
+                  Tidak memiliki catatan kriminal apapun.
+                </p>
+              </div>
+
+              <div class="dp-req-item">
+                <div class="rq-icon">
+                  <i class="fa-solid fa-ban"></i>
+                </div>
+                <p>
+                  <strong>Belum Pernah Ikut</strong>
+                  Belum pernah mengikuti program serupa di Israel sebelumnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PELATIHAN DI FARM
+    ══════════════════════════════════ -->
+    <section class="dp-section dp-section-alt">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="dp-eyebrow">Praktik Lapangan</div>
+            <h2 class="dp-h2">Pelatihan<br /><em>Langsung di Farm</em></h2>
+            <div class="dp-rule"></div>
+            <p class="dp-lead">
+              Setiap peserta menjalani pelatihan praktis di farm yang beroperasi
+              sesuai standar pertanian modern dunia — langsung di bawah
+              bimbingan petani berpengalaman.
+            </p>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="dp-farm-feature">
+              <div class="dp-farm-row">
+                <div class="dp-farm-num">01</div>
+                <div>
+                  <h4>Tinggal di Farm</h4>
+                  <p>
+                    Peserta tinggal langsung di farm dalam kondisi yang layak,
+                    memungkinkan pengamatan dan keterlibatan penuh dalam siklus
+                    pertanian dari penanaman hingga panen.
+                  </p>
+                </div>
+              </div>
+              <div class="dp-farm-row">
+                <div class="dp-farm-num">02</div>
+                <div>
+                  <h4>Bimbingan Petani Ahli</h4>
+                  <p>
+                    Petani adalah supervisor utama yang membimbing peserta dalam
+                    studi praktis pertanian modern mulai pemilihan teknologi
+                    hingga penentuan varietas tanaman yang optimal.
+                  </p>
+                </div>
+              </div>
+              <div class="dp-farm-row">
+                <div class="dp-farm-num">03</div>
+                <div>
+                  <h4>Pemimpin Kelompok Alumni</h4>
+                  <p>
+                    Setiap kelompok didampingi oleh pemimpin kelompok yang
+                    merupakan alumni terbaik AICAT bagian dari staf resmi selama
+                    durasi program berlangsung.
+                  </p>
+                </div>
+              </div>
+              <div class="dp-farm-row">
+                <div class="dp-farm-num">04</div>
+                <div>
+                  <h4>Upah Adil Sesuai Hukum</h4>
+                  <p>
+                    Sesuai ketentuan hukum Israel, peserta menerima upah yang
+                    layak atas setiap jam pelatihan praktis yang dijalani di
+                    farm.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         KURIKULUM
+    ══════════════════════════════════ -->
+    <section class="dp-section">
+      <div class="container">
+        <div class="text-center mb-2" data-aos="fade-up">
+          <div class="dp-eyebrow" style="justify-content: center">
+            Kurikulum
+          </div>
+          <h2 class="dp-h2">Dua Bidang<br /><em>Studi Utama</em></h2>
+        </div>
+
+        <div class="dp-curriculum" data-aos="fade-up" data-aos-delay="100">
+          <!-- Pertanian -->
+          <div class="dp-curri-card">
+            <div class="dp-curri-head">
+              <i class="bi bi-tree-fill"></i>
+              <h4>Pertanian</h4>
+            </div>
+            <div class="dp-curri-body">
+              <p
+                style="
+                  font-size: 13.5px;
+                  color: var(--muted);
+                  margin-bottom: 14px;
+                  line-height: 1.7;
+                "
+              >
+                Inti kurikulum meliputi pelatihan praktis di farm dengan
+                bimbingan langsung dari petani. Peserta terekspos teknologi
+                canggih dan diharapkan menyelesaikan proyek riset mandiri.
+              </p>
+              <ul class="dp-curri-list">
+                <li>Produksi sayuran sebagai dasar ilmu tanaman</li>
+                <li>Irigasi dan pemupukan modern</li>
+                <li>Budidaya ikan (Aquaculture)</li>
+                <li>Pertanian buah-buahan & kebun</li>
+                <li>Budidaya bunga</li>
+                <li>Mekanisasi pertanian</li>
+                <li>Perlindungan tanaman & pengendalian hama</li>
+                <li>Metodologi penelitian ilmiah</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Ekonomi -->
+          <div class="dp-curri-card">
+            <div class="dp-curri-head">
+              <i class="bi bi-bar-chart-fill"></i>
+              <h4>Ekonomi & Manajemen</h4>
+            </div>
+            <div class="dp-curri-body">
+              <p
+                style="
+                  font-size: 13.5px;
+                  color: var(--muted);
+                  margin-bottom: 14px;
+                  line-height: 1.7;
+                "
+              >
+                Kuliah frontal dan tur profesional rata-rata
+                <strong>13,5 jam akademik per minggu</strong> — mencakup wawasan
+                bisnis pertanian yang langsung dapat diterapkan.
+              </p>
+              <ul class="dp-curri-list">
+                <li>Manajemen ekonomi usaha tani</li>
+                <li>Sistem informasi manajemen pertanian</li>
+                <li>Tur profesional ke pusat pertanian & riset Israel</li>
+                <li>Studi kasus agribisnis internasional</li>
+                <li>Perencanaan dan analisis kelayakan proyek</li>
+                <li>Kepemimpinan dan kewirausahaan pertanian</li>
+              </ul>
+
+              <div class="dp-box dp-box-gold-ek" style="margin-top: 16px">
+                <i class="bi bi-info-circle-fill"></i>
+                <p>
+                  Kurikulum disusun bersama institusi akademik di negara asal
+                  dan dievaluasi ulang setiap tahun.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mata kuliah pills -->
+        <div data-aos="fade-up" data-aos-delay="150" style="margin-top: 40px">
+          <h4
+            style="
+              font-family: var(--fd);
+              font-size: 20px;
+              color: var(--ink);
+              margin-bottom: 6px;
+            "
+          >
+            Mata Kuliah Program Diploma
+          </h4>
+          <p style="font-size: 13.5px; color: var(--muted); margin-bottom: 0">
+            Daftar lengkap mata kuliah yang dicakup dalam program:
+          </p>
+          <div class="dp-course-pills">
+            <div class="dp-pill">
+              <i class="bi bi-flower1"></i> Biologi & Fisiologi Tanaman
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-droplet-fill"></i> Tanah, Irigasi & Pemupukan
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-building"></i> Struktur Pertanian & Teknologi
+              Tinggi
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-bug-fill"></i> Perlindungan Tanaman & Hama
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-water"></i> Budidaya Perairan (Aquaculture)
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-flower3"></i> Produksi Bunga
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-tree"></i> Viticulture & Kebun Buah
+            </div>
+            <div class="dp-pill"><i class="bi bi-egg-fill"></i> Peternakan</div>
+            <div class="dp-pill">
+              <i class="bi bi-cash-stack"></i> Manajemen Ekonomi
+            </div>
+            <div class="dp-pill">
+              <i class="bi bi-laptop-fill"></i> Sistem Informasi Manajemen
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PROYEK RISET
+    ══════════════════════════════════ -->
+    <section class="dp-section dp-section-alt-riset">
+      <div class="container">
+        <div class="dp-research" data-aos="fade-up">
+          <h3>Proyek <em>Riset Mandiri</em></h3>
+          <p>
+            Proyek riset adalah salah satu pilar kurikulum yang menghubungkan
+            pelatihan praktis di farm dengan teori. Sepanjang proyek ini,
+            peserta mengembangkan kemampuan berpikir ilmiah secara nyata.
+          </p>
+
+          <div class="rs-steps">
+            <div class="rs-step">
+              <div class="rs-num">01</div>
+              <p>Perencanaan & Perumusan Pertanyaan Riset</p>
+            </div>
+            <div class="rs-step">
+              <div class="rs-num">02</div>
+              <p>Pelaksanaan Eksperimen & Pengumpulan Data</p>
+            </div>
+            <div class="rs-step">
+              <div class="rs-num">03</div>
+              <p>Analisis Data & Penarikan Kesimpulan</p>
+            </div>
+            <div class="rs-step">
+              <div class="rs-num">04</div>
+              <p>Presentasi Hasil di Hadapan Supervisor & AICAT</p>
+            </div>
+          </div>
+
+          <p style="margin-top: 24px; font-size: 13.5px">
+            Nilai proyek riset akan tercantum resmi di diploma akhir peserta.
+            Proyek dibimbing oleh staf akademik AICAT berpendidikan minimal
+            sarjana di bidang terkait.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ============ CTA + FOOTER =============== -->
+    <!-- ========================================= -->
+    <section class="footer-wrapper" id="footer">
+      <!-- CTA CARD -->
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        <div class="cta-card">
+          <div class="cta-left">
+            <img
+              src="assets/images/background/cta_cat2.png"
+              alt="Agriculture Training"
+            />
+          </div>
+
+          <div class="cta-right">
+            <h3>Siap Menjadi Generasi Pertanian Modern?</h3>
+
+            <p>
+              Bergabunglah dengan program pelatihan internasional AICAT dan
+              pelajari teknologi pertanian <br />
+              modern langsung dari para ahli.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="./pendaftaran.html" class="btn-daftar">
+                <span>
+                  <i class="fa-solid fa-user-plus"></i> Daftar Sekarang
+                </span>
+
+                <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" class="btn-program">
+                <span>Lihat Program</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div class="col-lg-4 footer-about">
+              <img
+                src="assets/images/icons/AICAT_logo.png"
+                class="footer-logo"
+              />
+
+              <p>
+                Arava International Center for Agriculture Training (AICAT)
+                merupakan pusat pelatihan pertanian internasional yang berfokus
+                pada inovasi, teknologi modern, dan kolaborasi global.
+              </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 footer-links">
+              <h5>Menu</h5>
+
+              <ul>
+                <li><a href="tentang-aicat.html">Tentang</a></li>
+                <li><a href="lokasi.html">Lokasi Kerja</a></li>
+                <li><a href="partner negara/partner.html">Negara Mitra</a></li>
+                <li><a href="staff.html">Staf</a></li>
+                <li><a href="mitra.html">Mitra</a></li>
+              </ul>
+            </div>
+
+            <!-- PROGRAM -->
+            <div class="col-lg-3 footer-links">
+              <h5>Program</h5>
+
+              <ul>
+                <li><a href="informasi_program.html">Informasi Program</a></li>
+                <li><a href="hak-peserta.html">Hak Peserta</a></li>
+                <li><a href="cara-daftar.html">Cara Daftar</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-lg-3 footer-contact">
+              <h5>Kontak</h5>
+
+              <p>Email : aicat_del@del.ac.id</p>
+              <p>Phone : ********</p>
+
+              <div class="footer-social">
+                <a
+                  href="https://www.facebook.com/aravainternationalcenter"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/aicat_arava/" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 AICAT. All Rights Reserved. | Developed by AICAT Team
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================================================================================== -->
+    <!-- ========================================= Script =================================================== -->
+    <!-- ========================================================================================================== -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      // ===================== FLOATING SECTION INDICATOR =====================
+      (function () {
+        const indicator = document.getElementById("floatingIndicator");
+        const sectionEl = document.getElementById("currentSection");
+        if (!indicator || !sectionEl) return;
+
+        // Daftar section yang ingin dilacak beserta label tampilannya
+        const sections = [{ id: "hero-diploma", label: "Program Diploma" }];
+
+        // Batas atas: mulai muncul saat #tentang masuk viewport
+        const triggerStart = document.getElementById("hero-diploma");
+        // Batas bawah: hilang saat #footer masuk viewport
+        const triggerEnd = document.getElementById("footer");
+
+        if (!triggerStart || !triggerEnd) return;
+
+        function getCurrentLabel() {
+          const scrollY = window.scrollY;
+          const windowHeight = window.innerHeight;
+          let active = null;
+
+          for (const s of sections) {
+            const el = document.getElementById(s.id);
+            if (!el) continue;
+            // Section dianggap "aktif" kalau titik tengah layar sudah melewati top-nya
+            if (el.getBoundingClientRect().top <= windowHeight * 0.5) {
+              active = s.label;
+            }
+          }
+          return active || sections[0].label;
+        }
+
+        function updateIndicator() {
+          const startTop = triggerStart.getBoundingClientRect().top;
+          const endTop = triggerEnd.getBoundingClientRect().top;
+
+          // Tampilkan: setelah #tentang masuk layar DAN sebelum #footer masuk layar
+          const shouldShow = startTop <= window.innerHeight * 0.9 && endTop > 0;
+
+          if (shouldShow) {
+            sectionEl.textContent = getCurrentLabel();
+            indicator.classList.add("visible");
+          } else {
+            indicator.classList.remove("visible");
+          }
+        }
+
+        // Jalankan saat scroll dan saat pertama load
+        window.addEventListener("scroll", updateIndicator, { passive: true });
+        updateIndicator();
+      })();
+    </script>
+  </body>
+</html>
