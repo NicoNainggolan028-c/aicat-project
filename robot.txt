@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap:
+https://niconainggolan028-c.github.io/aicat-project/sitemap.xml
