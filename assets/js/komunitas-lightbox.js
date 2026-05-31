@@ -23,19 +23,19 @@
       chipClass: "",
       photos: [
         {
-          src: "/assets/images/komunitas/idan/idan1.jpg",
+          src: "assets/images/komunitas/idan/idan1.jpg",
           caption: "Lahan pertanian Idan",
         },
         {
-          src: "/assets/images/komunitas/idan/idan2.jpg",
+          src: "assets/images/komunitas/idan/idan2.jpg",
           caption: "Sistem irigasi modern",
         },
         {
-          src: "/assets/images/komunitas/idan/idan3.jpg",
+          src: "assets/images/komunitas/idan/idan3.jpg",
           caption: "Hasil panen sayuran",
         },
         {
-          src: "/assets/images/komunitas/idan/idan4.jpg",
+          src: "assets/images/komunitas/idan/idan4.jpg",
           caption: "Hasil panen sayuran",
         },
       ],
@@ -55,15 +55,15 @@
       chipClass: "",
       photos: [
         {
-          src: "/assets/images/komunitas/hatzeva/unnamed (1).jpg",
+          src: "assets/images/komunitas/hatzeva/unnamed (1).jpg",
           caption: "Kebun bunga Hatzeva",
         },
         {
-          src: "/assets/images/komunitas/hatzeva/unnamed (2).jpg",
+          src: "assets/images/komunitas/hatzeva/unnamed (2).jpg",
           caption: "Produksi bunga ekspor",
         },
         {
-          src: "/assets/images/komunitas/hatzeva/unnamed (29).jpg",
+          src: "assets/images/komunitas/hatzeva/unnamed (29).jpg",
           caption: "Greenhouse herbal",
         },
       ],
@@ -82,15 +82,15 @@
       chipClass: "",
       photos: [
         {
-          src: "/assets/images/komunitas/ein_yahav/unnamed (2).jpg",
+          src: "assets/images/komunitas/ein_yahav/unnamed (2).jpg",
           caption: "Greenhouse Ein Yahav",
         },
         {
-          src: "/assets/images/komunitas/ein_yahav/unnamed (3).jpg",
+          src: "assets/images/komunitas/ein_yahav/unnamed (3).jpg",
           caption: "Sistem sensor tanah IoT",
         },
         {
-          src: "/assets/images/komunitas/ein_yahav/unnamed (4).jpg",
+          src: "assets/images/komunitas/ein_yahav/unnamed (4).jpg",
           caption: "Kolam aquakultur",
         },
       ],
@@ -120,27 +120,27 @@
 
       photos: [
         {
-          src: "/assets/images/komunitas/sapir/sapir6.jpeg",
+          src: "assets/images/komunitas/sapir/sapir6.jpeg",
           caption: "Kampus AICAT Sapir",
         },
         {
-          src: "/assets/images/komunitas/sapir/sapir1.jpg",
+          src: "assets/images/komunitas/sapir/sapir1.jpg",
           caption: "Kampus AICAT Sapir",
         },
         {
-          src: "/assets/images/komunitas/sapir/sapir5.jpg",
+          src: "assets/images/komunitas/sapir/sapir5.jpg",
           caption: "Kampus AICAT Sapir",
         },
         {
-          src: "/assets/images/komunitas/sapir/sapir2.jpg",
+          src: "assets/images/komunitas/sapir/sapir2.jpg",
           caption: "Kampus AICAT Sapir",
         },
         {
-          src: "/assets/images/komunitas/sapir/sapir3.jpg",
+          src: "assets/images/komunitas/sapir/sapir3.jpg",
           caption: "Kampus AICAT Sapir",
         },
         {
-          src: "/assets/images/komunitas/sapir/sapir4.jpg",
+          src: "assets/images/komunitas/sapir/sapir4.jpg",
           caption: "Kampus AICAT Sapir",
         },
       ],
@@ -168,23 +168,23 @@
       chipClass: "",
       photos: [
         {
-          src: "/assets/images/komunitas/tsofar/tsofar1.jpg",
+          src: "assets/images/komunitas/tsofar/tsofar1.jpg",
           caption: "Tsofar",
         },
         {
-          src: "/assets/images/komunitas/tsofar/tsofar2.jpg",
+          src: "assets/images/komunitas/tsofar/tsofar2.jpg",
           caption: "Tsofar",
         },
         {
-          src: "/assets/images/komunitas/tsofar/tsofar3.jpg",
+          src: "assets/images/komunitas/tsofar/tsofar3.jpg",
           caption: "Tsofar",
         },
         {
-          src: "/assets/images/komunitas/tsofar/tsofar4.jpg",
+          src: "assets/images/komunitas/tsofar/tsofar4.jpg",
           caption: "Tsofar",
         },
         {
-          src: "/assets/images/komunitas/tsofar/tsofar5.jpg",
+          src: "assets/images/komunitas/tsofar/tsofar5.jpg",
           caption: "Tsofar",
         },
       ],
@@ -212,23 +212,23 @@
       chipClass: "blue",
       photos: [
         {
-          src: "/assets/images/komunitas/zuqim/zuqim1.jpg",
+          src: "assets/images/komunitas/zuqim/zuqim1.jpg",
           caption: "Zuqim",
         },
         {
-          src: "/assets/images/komunitas/zuqim/zuqim2.jpg",
+          src: "assets/images/komunitas/zuqim/zuqim2.jpg",
           caption: "Zuqim",
         },
         {
-          src: "/assets/images/komunitas/zuqim/zuqim3.jpg",
+          src: "assets/images/komunitas/zuqim/zuqim3.jpg",
           caption: "Zuqim",
         },
         {
-          src: "/assets/images/komunitas/zuqim/zuqim4.jpg",
+          src: "assets/images/komunitas/zuqim/zuqim4.jpg",
           caption: "Zuqim",
         },
         {
-          src: "/assets/images/komunitas/zuqim/zuqim5.jpg",
+          src: "assets/images/komunitas/zuqim/zuqim5.jpg",
           caption: "Zuqim",
         },
       ],
@@ -256,23 +256,23 @@
       chipClass: "",
       photos: [
         {
-          src: "/assets/images/komunitas/paran/paran1.jpg",
+          src: "assets/images/komunitas/paran/paran1.jpg",
           caption: "paran",
         },
         {
-          src: "/assets/images/komunitas/paran/paran2.jpg",
+          src: "assets/images/komunitas/paran/paran2.jpg",
           caption: "paran",
         },
         {
-          src: "/assets/images/komunitas/paran/paran5.jpg",
+          src: "assets/images/komunitas/paran/paran5.jpg",
           caption: "paran",
         },
         {
-          src: "/assets/images/komunitas/paran/paran3.jpg",
+          src: "assets/images/komunitas/paran/paran3.jpg",
           caption: "paran",
         },
         {
-          src: "/assets/images/komunitas/paran/paran4.jpg",
+          src: "assets/images/komunitas/paran/paran4.jpg",
           caption: "paran",
         },
       ],
