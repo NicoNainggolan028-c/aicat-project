@@ -548,12 +548,16 @@ body {
 
 @media (max-width: 480px) {
   .hero-staf {
-    height: 44vh;
+    height: 60vh;
     min-height: 260px;
+    padding-bottom: 30px;
   }
+
   .menu-lingkaran-grid {
     gap: 10px;
+    margin-top: 40px;
   }
+
   .lingkaran,
   .menu-lingkaran-item .lingkaran {
     width: 100px !important;
