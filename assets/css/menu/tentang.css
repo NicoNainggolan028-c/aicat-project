@@ -534,11 +534,21 @@ body {
   align-items: center;
   gap: 10px;
   min-width: 150px;
-  transition:    box-shadow 0.3s,    transform 0.3s;
-  -webkit-transition:    box-shadow 0.3s,    transform 0.3s;
-  -moz-transition:    box-shadow 0.3s,    transform 0.3s;
-  -ms-transition:    box-shadow 0.3s,    transform 0.3s;
-  -o-transition:    box-shadow 0.3s,    transform 0.3s;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+  -webkit-transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+  -moz-transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+  -ms-transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+  -o-transition:
+    box-shadow 0.3s,
+    transform 0.3s;
 }
 
 .mitra-item:hover {
@@ -630,6 +640,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+    padding-bottom: 300px;
   }
 }
 

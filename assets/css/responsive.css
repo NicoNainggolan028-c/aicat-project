@@ -764,6 +764,7 @@
   ────────────────────────────────────────── */
   .testimonial-wrapper {
     padding: 0;
+    padding-bottom: 400px;
   }
 
   .testimonial-section {
@@ -870,7 +871,7 @@
      12. FOOTER
   ────────────────────────────────────────── */
   .footer {
-    padding-top: 76px;
+    padding-top: 96px;
   }
 
   .footer .row {
