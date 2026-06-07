@@ -365,6 +365,7 @@
             <div class="kolom-form">
               <label>Nama Depan <span>*</span></label>
               <input
+                id="namaDepan"
                 type="text"
                 class="input-form"
                 placeholder="Nama depan kamu"
@@ -374,6 +375,7 @@
             <div class="kolom-form">
               <label>Nama Belakang <span>*</span></label>
               <input
+                id="namaBelakang"
                 type="text"
                 class="input-form"
                 placeholder="Nama belakang kamu"
@@ -385,6 +387,7 @@
           <div class="kolom-form">
             <label>Email <span>*</span></label>
             <input
+              id="email"
               type="email"
               class="input-form"
               placeholder="email@contoh.com"
@@ -396,6 +399,7 @@
             <div class="kolom-form">
               <label>No. WhatsApp</label>
               <input
+                id="whatsapp"
                 type="tel"
                 class="input-form"
                 placeholder="+62 8xx xxxx xxxx"
@@ -404,6 +408,7 @@
             <div class="kolom-form">
               <label>Asal Negara <span>*</span></label>
               <input
+                id="negara"
                 type="text"
                 class="input-form"
                 placeholder="Indonesia"
@@ -414,7 +419,7 @@
 
           <div class="kolom-form">
             <label>Topik Pertanyaan <span>*</span></label>
-            <select class="input-form select-form" required>
+            <select id="topik" class="input-form select-form" required>
               <option value="" disabled selected>Pilih topik...</option>
               <option>Informasi Diploma Program</option>
               <option>Informasi Short Term Courses</option>
@@ -430,6 +435,7 @@
           <div class="kolom-form">
             <label>Pesan <span>*</span></label>
             <textarea
+              id="pesan"
               class="input-form"
               rows="5"
               placeholder="Tulis pertanyaan atau pesanmu di sini..."
@@ -440,11 +446,6 @@
           <button type="submit" class="tombol-submit">
             <i class="bi bi-send-fill"></i> Kirim Pesan Sekarang
           </button>
-
-          <div class="notif-sukses" id="notif-sukses">
-            <i class="bi bi-check-circle-fill"></i>
-            Pesanmu berhasil terkirim! Tim AICAT akan menghubungimu segera. 🌱
-          </div>
         </form>
       </div>
     </section>
@@ -467,7 +468,8 @@
           <!-- Google Maps Embed -->
           <div class="wrapper-peta">
             <div class="label-peta">
-              <i class="bi bi-geo-alt-fill"></i> AICAT — Sapir, Arava, Timur Tengah
+              <i class="bi bi-geo-alt-fill"></i> AICAT — Sapir, Arava, Timur
+              Tengah
             </div>
             <!-- Google Maps embed untuk Sapir, Arava, Timur Tengah -->
             <iframe
@@ -542,7 +544,7 @@
             </div>
 
             <a
-              href="https://maps.app.goo.gl/KZqBXa4sqoHMfpKQ9"
+              href="https://maps.app.goo.gl/N6jz9hSpnkaqpfpJ9"
               target="_blank"
               rel="noopener"
               class="tombol-buka-maps"
@@ -597,19 +599,6 @@
             </div>
             <div class="nama-sosmed">Instagram</div>
             <div class="handle-sosmed">@aicat_arava</div>
-          </a>
-
-          <a
-            href="https://www.youtube.com/@aicatarava"
-            target="_blank"
-            rel="noopener"
-            class="kartu-sosmed yt"
-            data-aos="fade-up"
-            data-aos-delay="120"
-          >
-            <div class="ikon-sosmed ikon-yt"><i class="bi bi-youtube"></i></div>
-            <div class="nama-sosmed">YouTube</div>
-            <div class="handle-sosmed">AICAT Arava</div>
           </a>
 
           <a
@@ -709,9 +698,9 @@
               visa ke Timur Tengah?
             </h4>
             <p>
-              Proses visa dibantu oleh AICAT bersama Kedutaan Timur Tengah di negara
-              asal kamu. Lihat halaman Cara Daftar untuk panduan lengkap proses
-              visa.
+              Proses visa dibantu oleh AICAT bersama Kedutaan Timur Tengah di
+              negara asal kamu. Lihat halaman Cara Daftar untuk panduan lengkap
+              proses visa.
             </p>
           </div>
         </div>
@@ -838,6 +827,19 @@
       </footer>
     </section>
 
+    <div class="notif-overlay" id="notif-overlay"></div>
+
+    <div class="notif-sukses" id="notif-sukses">
+      <div class="notif-icon-wrap">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <p class="notif-title">Pesan Berhasil Terkirim!</p>
+      <p class="notif-sub">Tim AICAT akan menghubungimu sesegera mungkin. 🌱</p>
+      <div class="notif-progress">
+        <div class="notif-progress-fill" id="notif-progress-fill"></div>
+      </div>
+    </div>
+
     <!-- ========================================================================================================== -->
     <!-- ========================================= Script =================================================== -->
     <!-- ========================================================================================================== -->
@@ -898,6 +900,86 @@
         window.addEventListener("scroll", updateIndicator, { passive: true });
         updateIndicator();
       })();
+    </script>
+
+    <script>
+      async function kirimForm(event) {
+        event.preventDefault();
+
+        const tombol = document.querySelector(".tombol-submit");
+        tombol.disabled = true;
+        tombol.innerHTML = "Mengirim...";
+
+        const data = {
+          namaDepan: document.getElementById("namaDepan").value,
+          namaBelakang: document.getElementById("namaBelakang").value,
+          email: document.getElementById("email").value,
+          whatsapp: document.getElementById("whatsapp").value,
+          negara: document.getElementById("negara").value,
+          topik: document.getElementById("topik").value,
+          pesan: document.getElementById("pesan").value,
+        };
+
+        try {
+          // ✅ FIX: Gunakan FormData + no-cors agar tidak trigger CORS preflight
+          const formData = new FormData();
+          formData.append("data", JSON.stringify(data));
+
+          await fetch(
+            "https://script.google.com/macros/s/AKfycbwVJ2RzlWJwTwUTgq0yOE6NxONBMYzgjsCOGF4PG48Y_xbXA9XR1-LikqRVgTppWB2GXg/exec",
+            {
+              method: "POST",
+              mode: "no-cors",
+              body: formData,
+            },
+          );
+
+          // no-cors tidak bisa baca response, tapi request tetap sampai ke GAS
+          showNotif();
+          document.getElementById("form-kontak").reset();
+        } catch (error) {
+          console.error("Error:", error);
+          alert("Gagal mengirim pesan. Coba lagi.");
+        }
+
+        tombol.disabled = false;
+        tombol.innerHTML =
+          '<i class="bi bi-send-fill"></i> Kirim Pesan Sekarang';
+
+        function showNotif() {
+          const notif = document.getElementById("notif-sukses");
+          const overlay = document.getElementById("notif-overlay");
+          const fill = document.getElementById("notif-progress-fill");
+
+          // Reset
+          notif.classList.remove("hide");
+          overlay.classList.remove("hide");
+          fill.style.transition = "none";
+          fill.style.transform = "scaleX(1)";
+
+          // Tampilkan
+          notif.classList.add("show");
+          overlay.classList.add("show");
+
+          // Jalankan progress bar
+          setTimeout(() => {
+            fill.style.transition = "transform 3s linear";
+            fill.style.transform = "scaleX(0)";
+          }, 50);
+
+          // Setelah 3 detik → fade out
+          setTimeout(() => {
+            notif.classList.add("hide");
+            overlay.classList.add("hide");
+
+            // Setelah animasi selesai → sembunyikan total
+            setTimeout(() => {
+              notif.classList.remove("show", "hide");
+              overlay.classList.remove("show", "hide");
+            }, 400);
+          }, 3000);
+        }
+      }
     </script>
   </body>
 </html>

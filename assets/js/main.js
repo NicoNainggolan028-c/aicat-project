@@ -205,7 +205,7 @@ const heroTexts = [
     desc: "Budidaya labu dengan teknik modern mampu meningkatkan hasil panen sekaligus nilai jual di pasar lokal dan ekspor.",
   },
   {
-    title: "Kurma: Potensi Besar di Lahan Tropis",
+    title: "Kurma Potensi Besar di Lahan Tropis",
     desc: "Inovasi pertanian memungkinkan kurma tumbuh optimal di berbagai kondisi, membuka peluang bisnis baru bagi petani muda.",
   },
   {
