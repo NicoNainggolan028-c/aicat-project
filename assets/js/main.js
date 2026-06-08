@@ -42,7 +42,7 @@ function toggleAccordion(id) {
    HERO INTRO PAGE
    ================================================================================================================== */
 
-const aicatSound = new Audio("assets/sounds/soound1.mp3");
+const aicatSound = new Audio("../assets/sounds/soound1.mp3");
 aicatSound.preload = "auto";
 aicatSound.volume = 0.9;
 
